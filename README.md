@@ -14,4 +14,3 @@ Visual Studio Code 相关
 * 快捷键 : `用户数据`\keybindings.json
 * 语言 : `用户数据`\locale.json
 * 设置 : `用户数据`\settings.json
-* 同步 : `用户数据`\syncing.json
