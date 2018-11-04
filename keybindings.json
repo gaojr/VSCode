@@ -1117,11 +1117,6 @@
         "when": "editorTextFocus && editorLangId == 'markdown'"
     },
     {
-        "key": "ctrl+v ctrl+t",
-        "command": "markdownExtended.pasteAsTable",
-        "when": "editorTextFocus && editorLangId == 'markdown'"
-    },
-    {
         "key": "ctrl+shift+t ctrl+shift+p",
         "command": "-markdownExtended.pasteAsTable",
         "when": "editorTextFocus && editorLangId == 'markdown'"
