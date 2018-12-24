@@ -1,73 +1,93 @@
 {
-    "editor.acceptSuggestionOnCommitCharacter": false,
-    "editor.autoClosingBrackets": "beforeWhitespace",
-    "editor.autoClosingQuotes": "beforeWhitespace",
-    "editor.fontSize": 16,
-    "editor.fontFamily": "'PT Mono','Fira Code',Monaco,'Courier New','PingFang SC','Microsoft YaHei',monospace",
+    "workbench.settings.editor": "json",
+    "workbench.iconTheme": "vs-seti",
+    "workbench.colorTheme": "Atom One Light",
+    "workbench.colorCustomizations": {
+        // 黑色
+        // "activityBar.background": "#3f3f3f",
+        // "editor.background": "#00000000",
+        // "terminal.background": "#000000",
+        // "terminal.foreground": "#cccccc",
+        // "titleBar.activeBackground": "#3f3f3f",
+        // "statusBar.background": "#3f3f3f"
+        // 白色
+        "activityBar.background": "#ffffff00",
+        "editor.background": "#ffffff00",
+        "terminal.background": "#cccccc",
+        "terminal.foreground": "#000000",
+        // "titleBar.activeBackground": "#3f3f3f",
+        // "statusBar.background": "#3f3f3f"
+    },
+    "workbench.enableExperiments": false,
+    "workbench.activityBar.visible": true,
+    "workbench.statusBar.visible": true,
+    "workbench.statusBar.feedback.visible": false,
+    "editor.multiCursorModifier": "alt",
+    "editor.fontFamily": "'PT Mono','Fira Code',Monaco,'Courier New','Microsoft YaHei',monospace",
+    "editor.scrollBeyondLastLine": false,
     "editor.detectIndentation": false,
-    "editor.minimap.enabled": true,
-    "editor.minimap.maxColumn": 140,
+    "editor.renderWhitespace": "all",
+    "editor.renderControlCharacters": false,
+    "editor.acceptSuggestionOnCommitCharacter": false,
+    "editor.quickSuggestions": {
+        "other": true,
+        "comments": false,
+        "strings": false
+    },
     "editor.parameterHints.cycle": true,
     "editor.quickSuggestionsDelay": 100,
-    "editor.renderWhitespace": "all",
-    "editor.showFoldingControls": "always",
     "editor.snippetSuggestions": "top",
-    "editor.scrollBeyondLastLine": false,
+    "editor.codeActionsOnSaveTimeout": 500,
+    "editor.formatOnType": true,
+    "editor.minimap.enabled": false,
     "editor.wordWrap": "on",
-    "workbench.colorCustomizations": {
-        // "activityBar.background": "#3f3f3f",
-        //     "editor.background": "#00000000",
-        //     "terminal.background": "#000000",
-        //     "terminal.foreground": "#cccccc",
-        //     "titleBar.activeBackground": "#3f3f3f",
-        //     "statusBar.background": "#3f3f3f"
+    "files.autoGuessEncoding": true,
+    "files.trimTrailingWhitespace": true,
+    "files.trimFinalNewlines": true,
+    "files.exclude": {
+        "* */.git": true,
+        "* */.svn": true,
+        "* */.hg": true,
+        "* */CVS": true,
+        "* */.DS_Store": true
     },
-    "workbench.colorTheme": "One Dark Pro",
-    "workbench.enableExperiments": false,
-    "workbench.iconTheme": "material-icon-theme",
-    "workbench.settings.editor": "json",
-    "workbench.settings.enableNaturalLanguageSearch": false,
-    "workbench.statusBar.feedback.visible": false,
-    "workbench.tree.horizontalScrolling": true,
+    "files.associations": {
+        "*.ftl": "xml",
+        "*.extension": "html",
+        "*.txt": "markdown",
+        "*.vue": "html"
+    },
     "window.menuBarVisibility": "default",
     "window.newWindowDimensions": "inherit",
     "window.restoreWindows": "all",
     "window.title": "${dirty}${activeEditorShort}${separator}${rootName}",
+    "window.titleBarStyle": "custom",
     "window.zoomLevel": 0,
-    "files.associations": {
-        "*.extension": "html",
-        "*.txt": "markdown",
-        "plaintext": "markdown"
-    },
-    "files.autoGuessEncoding": true,
-    "files.exclude": {
-        "* */.git": false,
-        "* */.svn": false
-    },
-    "files.trimTrailingWhitespace": true,
-    "files.trimFinalNewlines": true,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "diffEditor.renderSideBySide": true,
     "search.exclude": {
-        "**/target/**": true,
         "**/node_modules": true,
         "**/bower_components": true
     },
-    "terminal.integrated.cursorBlinking": true,
-    "terminal.integrated.cursorStyle": "line",
-    "breadcrumbs.enabled": true,
+    "search.showLineNumbers": true,
+    "search.useReplacePreview": false,
     "telemetry.enableCrashReporter": false,
     "telemetry.enableTelemetry": false,
+    "terminal.integrated.shell.windows": "C:\\Windows\\System32\\cmd.exe",
+    "breadcrumbs.enabled": true,
+    "breadcrumbs.symbolSortOrder": "name",
     /* 扩展相关 */
     "extensions.autoUpdate": false,
+    "extensions.ignoreRecommendations": false,
     "extensions.showRecommendationsOnlyOnDemand": true,
+    /* 路径补全 */
+    "path-intellisense.absolutePathToWorkspace": true,
+    "path-intellisense.autoSlashAfterDirectory": true,
+    "path-intellisense.extensionOnImport": true,
+    "path-intellisense.mappings": {},
+    "path-intellisense.showHiddenFiles": true,
     /* 比较 */
-    "partialDiff.commandsOnContextMenu": {
-        "markSection1": true,
-        "markSection2AndTakeDiff": true,
-        "diffSelectionWithClipboard": true,
-        "diffVisibleEditors": false,
-        "togglePreComparisonTextNormalizationRules": true
-    },
-    "partialDiff.enableTelemetry": false,
+    "partialDiff.hideCommandsOnContextMenu": false,
     "partialDiff.preComparisonTextNormalizationRules": [
         {
             "name": "Replace tabs with whitespaces",
@@ -81,21 +101,90 @@
         }
     ],
     /* git */
+    "git.enabled": true,
+    "git.path": "D:/Program Files/Git/bin/git.exe",
+    "git.autorefresh": true,
     "git.ignoreMissingGitWarning": true,
     "git.ignoreLegacyWarning": true,
-    "git.enabled": true,
-    "git.path": "C:/Program Files/Git/bin/git.exe",
-    /* markdown */
-    "[markdown]": {
-        "editor.wordWrap": "on",
-        "editor.quickSuggestions": false,
-        "files.trimTrailingWhitespace": false
+    "gitlens.defaultDateFormat": "YYYY-MM-DD HH:mm",
+    "gitlens.defaultDateStyle": "relative",
+    "gitlens.defaultGravatarsStyle": "retro",
+    "gitlens.blame.avatars": false,
+    "gitlens.blame.ignoreWhitespace": true,
+    "gitlens.blame.dateFormat": "YYYY-MM-DD",
+    "gitlens.blame.format": "${id|7}", // 责问
+    "gitlens.blame.heatmap.location": "left",
+    "gitlens.blame.highlight.enabled": true,
+    "gitlens.blame.highlight.locations": [
+        // "gutter",// 行号
+        "line", // 行
+        "overview" // 滚动栏
+    ],
+    "gitlens.currentLine.enabled": true,
+    "gitlens.currentLine.dateFormat": "YYYY-MM-DD",
+    "gitlens.currentLine.format": "${author},${date}", // 当前行
+    // ${path} = ${directory}/${file}
+    // ${filePath} ≈ ${file} · ${directory}
+    "gitlens.statusBar.enabled": true,
+    "gitlens.statusBar.alignment": "left",
+    "gitlens.statusBar.command": "gitlens.diffWithWorking",
+    "gitlens.statusBar.dateFormat": "YYYY-MM-DD HH:mm",
+    "gitlens.statusBar.format": "${date} (${id}) ${message}", // 状态栏
+    "gitlens.advanced.messages": {
+        "suppressFileNotUnderSourceControlWarning": true,
+        "suppressShowKeyBindingsNotice": true
     },
+    "gitlens.menus": {
+        "editor": {
+            "compare": false,
+            "history": false,
+            "remote": false,
+            "blame": false,
+            "clipboard": true,
+            "details": false
+        },
+        "editorGroup": {
+            "compare": true,
+            "history": true,
+            "remote": false,
+            "blame": false
+        },
+        "editorTab": {
+            "compare": true,
+            "history": true,
+            "remote": false
+        },
+        "explorer": {
+            "compare": true,
+            "history": true,
+            "remote": false
+        }
+    },
+    "gitHistory.hideCommitViewExplorer": true,
+    "gitHistory.pageSize": 150,
+    "gitHistory.showEditorTitleMenuBarIcons": false,
+    /* svn */
+    "svn.enabled": true,
+    "svn.path": "D:/Program Files/TortoiseSVN/bin",
+    "svn.autorefresh": false,
+    "svn.default.encoding": "UTF-8",
+    "svn.multipleFolders.enabled": false,
+    "svn.multipleFolders.ignore": [
+        "**/.git",
+        "**/.hg",
+        "**/vendor",
+        "**/node_modules"
+    ],
+    /* markdown */
     "markdown.preview.breaks": true,
-    "markdown.preview.fontFamily": "'PT Serif','Times New Roman','Hiragino Sans GB','Microsoft YaHei'",
-    "markdown.preview.fontSize": 16,
+    "markdown.preview.fontFamily": "'PT Serif','Hiragino Sans GB','Microsoft YaHei','Times New Roman'",
     "markdown.preview.lineHeight": 1.5,
-    // "markdown.styles": [],
+    "markdown.styles": [],
+    "[markdown]": {
+        // "files.trimTrailingWhitespace": true,
+        // "editor.wordWrap": "on",
+        "editor.quickSuggestions": false
+    },
     "markdownExtended.imageOmitBackground": true,
     "markdownExtended.pdfDisplayHeaderFooter": true,
     "markdownExtended.pdfHeaderTemplate": "<div style='font-size: 9px; margin: 0 auto;'><span class='title'></span></div><div style='font-size: 9px; margin: 0 auto;'><span class='date'></span></div>",
@@ -104,6 +193,112 @@
     "markdownExtended.pdfMarginBottom": "0cm",
     "markdownExtended.pdfMarginLeft": "0cm",
     "markdownExtended.pdfMarginRight": "0cm",
+    "markdown-preview-enhanced.codeBlockTheme": "auto.css",
+    "markdown-preview-enhanced.previewTheme": "one-light.css",
+    "markdown-preview-enhanced.singlePreview": false,
+    /* java */
+    "[java]": {
+        "editor.rulers": [
+            80,
+            120,
+            140
+        ],
+        "editor.wordWrap": "off"
+    },
+    "java.autobuild.enabled": false,
+    "java.home": "D:\\Java\\jdk1.8.0_181",
+    "java.debug.logLevel": "info",
+    "java.errors.incompleteClasspath.severity": "ignore",
+    // "java.configuration.maven.userSettings": null,
+    "java.configuration.updateBuildConfiguration": "interactive",
+    // "java.contentProvider.preferred": null,
+    "java.implementationsCodeLens.enabled": false,
+    "java.import.gradle.enabled": false,
+    "java.import.maven.enabled": true,
+    "java.format.enabled": true,
+    "java.format.comments.enabled": true,
+    // "java.format.settings.profile": "Eclipse",// .settings/org.eclipse.jdt.core.prefs中
+    "java.format.settings.url": "D:\\Program Files\\Microsoft VS Code\\resources\\app\\extensions\\java\\format\\Thunisoft_Develop_1.xml",
+    "java.format.onType.enabled": true,
+    "java.completion.importOrder": [
+        "java",
+        "javax",
+        "org",
+        "com"
+    ],
+    "java.jdt.ls.vmargs": "-noverify -Xmx1G -XX:+UseG1GC -XX:+UseStringDeduplication -javaagent:\"C:\\Users\\Gao\\.vscode\\extensions\\gabrielbb.vscode-lombok-0.9.7/server/lombok.jar\" -Xbootclasspath/a:\"C:\\Users\\Gao\\.vscode\\extensions\\gabrielbb.vscode-lombok-0.9.7/server/lombok.jar\"",
+    /* javascript */
+    "[javascript]": {
+        "editor.tabSize": 2,
+        "editor.rulers": [
+            80,
+            120,
+            140
+        ],
+        "editor.wordWrap": "off"
+    },
+    "javascript.format.enable": false,
+    "javascript.format.insertSpaceAfterCommaDelimiter": true,
+    "javascript.format.insertSpaceAfterConstructor": false,
+    "javascript.format.insertSpaceAfterFunctionKeywordForAnonymousFunctions": true,
+    "javascript.format.insertSpaceAfterKeywordsInControlFlowStatements": true,
+    "javascript.format.insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces": false,
+    "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": false,
+    "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": false,
+    "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis": false,
+    "javascript.format.insertSpaceAfterOpeningAndBeforeClosingTemplateStringBraces": false,
+    "javascript.format.insertSpaceAfterSemicolonInForStatements": true,
+    "javascript.format.insertSpaceBeforeAndAfterBinaryOperators": true,
+    "javascript.format.insertSpaceBeforeFunctionParenthesis": false,
+    "javascript.format.placeOpenBraceOnNewLineForControlBlocks": false,
+    "javascript.format.placeOpenBraceOnNewLineForFunctions": false,
+    /* html */
+    "[html]": {
+        "editor.rulers": [
+            80,
+            120,
+            140
+        ],
+        "editor.wordWrap": "off"
+    },
+    "html.format.enable": false,
+    "html.format.endWithNewline": false,
+    "html.format.indentHandlebars": true,
+    "html.format.indentInnerHtml": true,
+    "html.format.extraLiners": "head,body,/html",
+    "html.format.contentUnformatted": "pre,code,textarea",
+    "html.format.unformatted": "wbr,b,i",
+    "html.format.maxPreserveNewLines": 1,
+    "html.format.preserveNewLines": true,
+    // "html.format.wrapAttributes": "auto",
+    "html.format.wrapLineLength": 120,
+    "htmlhint.enable": true,
+    "htmlhint.options": {
+        "tagname-lowercase": true,
+        "attr-lowercase": true,
+        "attr-value-double-quotes": false,
+        "doctype-first": false,
+        "tag-pair": true,
+        "spec-char-escape": true,
+        "id-unique": true,
+        "src-not-empty": true,
+        "attr-no-duplication": true,
+        "title-require": true
+    },
+    /* css */
+    "[css]": {
+        "editor.rulers": [
+            80,
+            120,
+            140
+        ],
+        "editor.wordWrap": "off"
+    },
+    "css.validate": true,
+    "css.lint.duplicateProperties": "warning",
+    "css.lint.emptyRules": "ignore",
+    "css.lint.fontFaceProperties": "ignore",
+    "css.lint.zeroUnits": "warning",
     /* beautify */
     "beautify.config": {
         // all
@@ -248,12 +443,11 @@
         // ？？
         // "eval_code": false, // 默认:
     },
-    // "beautify.ignore": [],
+    "beautify.ignore": [],
     "beautify.language": {
         "js": {
             "type": [
-                "javascript",
-                "typescript"
+                "javascript"
             ],
             "filename": [
                 ".jshintrc",
@@ -269,67 +463,9 @@
             "html"
         ]
     },
-    /* javascript */
-    "[javascript]": {
-        "editor.rulers": [
-            80,
-            120,
-            140
-        ],
-        "editor.wordWrap": "off"
-    },
-    "javascript.format.enable": false,
-    /* html */
-    "[html]": {
-        "editor.rulers": [
-            80,
-            120,
-            140
-        ],
-        "editor.wordWrap": "off"
-    },
-    "html.format.enable": false,
-    // "html.format.endWithNewline": false,
-    // "html.format.indentHandlebars": true,
-    // "html.format.indentInnerHtml": true,
-    // "html.format.extraLiners": "head,body,/html",
-    // "html.format.contentUnformatted": "pre,code,textarea",
-    // "html.format.unformatted": "wbr,b,i",
-    // "html.format.maxPreserveNewLines": 1,
-    // "html.format.preserveNewLines": true,
-    // "html.format.wrapAttributes": "aligned-multiple",
-    // "html.format.wrapLineLength": 140,
-    "htmlhint.documentSelector": [
-        "html",
-        "htm"
-    ],
-    "htmlhint.enable": true,
-    "htmlhint.options": {
-        "tagname-lowercase": true,
-        "attr-lowercase": true,
-        "attr-value-double-quotes": false,
-        "doctype-first": false,
-        "tag-pair": true,
-        "spec-char-escape": true,
-        "id-unique": true,
-        "src-not-empty": true,
-        "attr-no-duplication": true,
-        "title-require": true
-    },
-    /* css */
-    "[css]": {
-        "editor.rulers": [
-            80,
-            120,
-            140
-        ],
-        "editor.wordWrap": "off"
-    },
-    "css.lint.boxModel": "warning",
-    "css.lint.duplicateProperties": "warning",
-    "css.lint.fontFaceProperties": "ignore",
-    "css.lint.zeroUnits": "warning",
-    "css.validate": true,
+    /* emmet */
+    "emmet.showExpandedAbbreviation": "inMarkupAndStylesheetFilesOnly",
+    "emmet.triggerExpansionOnTab": true,
     /* xml */
     "[xml]": {
         "editor.quickSuggestions": {
@@ -342,6 +478,7 @@
         ],
         "editor.wordWrap": "off"
     },
+    "xmlTools.xmlFormatterImplementation": "v2",
     /* yaml */
     "[yaml]": {
         "editor.rulers": [
@@ -363,7 +500,7 @@
             120,
             140
         ],
-        "editor.wordWrap": "on"
+        "editor.wordWrap": "off"
     },
     "[jsonc]": {
         "editor.quickSuggestions": {
@@ -387,5 +524,21 @@
             140
         ],
         "editor.wordWrap": "off"
-    }
+    },
+    /* sonarlint */
+    "sonarlint.ls.javaHome": "D:\\Java\\jdk1.8.0_181",
+    "sonarlint.ls.vmargs": "-Xmx1024m",
+    "gitlens.views.repositories.files.layout": "list",
+    "gitlens.views.fileHistory.enabled": false,
+    "gitlens.views.lineHistory.enabled": false,
+    "gitlens.views.compare.files.layout": "list",
+    "gitlens.views.search.files.layout": "list",
+    "gitlens.views.commitFileFormat": "${filePath}",
+    "gitlens.views.commitFormat": "${author}>${message}",
+    "gitlens.views.stashFileFormat": "${filePath}",
+    "gitlens.views.stashFormat": "${author}>${message}",
+    "gitlens.views.statusFileFormat": "${working}${filePath}",
+    "gitlens.views.compare.avatars": true,
+    "gitlens.views.repositories.avatars": true,
+    "gitlens.views.search.avatars": true
 }
