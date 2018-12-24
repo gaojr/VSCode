@@ -426,6 +426,11 @@
         "when": "editorLangId == 'markdown'"
     },
     {
+        "key": "ctrl+shift+v",
+        "command": "markdown-preview-enhanced.openPreview",
+        "when": "editorLangId == 'markdown'"
+    },
+    {
         "key": "ctrl+shift+m",
         "command": "-markdown-preview-enhanced.openPreview",
         "when": "editorLangId == 'markdown'"
@@ -993,6 +998,11 @@
         "command": "-workbench.action.findInFiles"
     },
     {
+        "key": "ctrl+shift+t ctrl+shift+p",
+        "command": "-markdownExtended.pasteAsTable",
+        "when": "editorTextFocus && editorLangId == 'markdown'"
+    },
+    {
         "key": "ctrl+oem_3",
         "command": "markdownExtended.toggleCodeInline",
         "when": "editorTextFocus && editorLangId == 'markdown'"
@@ -1000,6 +1010,11 @@
     {
         "key": "alt+oem_3",
         "command": "-markdownExtended.toggleCodeInline",
+        "when": "editorTextFocus && editorLangId == 'markdown'"
+    },
+    {
+        "key": "ctrl+m ctrl+t",
+        "command": "markdown-preview-enhanced.insertTable",
         "when": "editorTextFocus && editorLangId == 'markdown'"
     },
     {
@@ -1057,68 +1072,12 @@
         "when": "editorTextFocus"
     },
     {
-        "key": "ctrl+shift+v",
-        "command": "markdown.showPreviewToSide",
-        "when": "editorLangId == 'markdown'"
+        "key": "alt+l",
+        "command": "bookmarks.toggleLabeled"
     },
     {
-        "key": "ctrl+k v",
-        "command": "-markdown.showPreviewToSide",
-        "when": "editorLangId == 'markdown'"
-    },
-    {
-        "key": "alt+enter",
-        "command": "-debug.openBreakpointToSide",
-        "when": "breakpointsFocused"
-    },
-    {
-        "key": "alt+enter",
-        "command": "-editor.action.selectAllMatches",
-        "when": "editorFocus && findWidgetVisible"
-    },
-    {
-        "key": "alt+enter",
-        "command": "editor.action.triggerSuggest",
-        "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly"
-    },
-    {
-        "key": "ctrl+space",
-        "command": "-editor.action.triggerSuggest",
-        "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly"
-    },
-    {
-        "key": "alt+enter",
-        "command": "toggleSuggestionDetails",
-        "when": "suggestWidgetVisible && textInputFocus"
-    },
-    {
-        "key": "ctrl+space",
-        "command": "-toggleSuggestionDetails",
-        "when": "suggestWidgetVisible && textInputFocus"
-    },
-    {
-        "key": "ctrl+shift+oem_3",
-        "command": "markdownExtended.toggleCodeBlock",
-        "when": "editorTextFocus && editorLangId == 'markdown'"
-    },
-    {
-        "key": "shift+alt+oem_3",
-        "command": "-markdownExtended.toggleCodeBlock",
-        "when": "editorTextFocus && editorLangId == 'markdown'"
-    },
-    {
-        "key": "ctrl+m ctrl+s",
-        "command": "markdownExtended.toggleStrikethrough",
-        "when": "editorTextFocus && editorLangId == 'markdown'"
-    },
-    {
-        "key": "alt+s",
-        "command": "-markdownExtended.toggleStrikethrough",
-        "when": "editorTextFocus && editorLangId == 'markdown'"
-    },
-    {
-        "key": "ctrl+shift+t ctrl+shift+p",
-        "command": "-markdownExtended.pasteAsTable",
-        "when": "editorTextFocus && editorLangId == 'markdown'"
+        "key": "alt+l",
+        "command": "-toggleFindInSelection",
+        "when": "editorFocus"
     }
 ]
