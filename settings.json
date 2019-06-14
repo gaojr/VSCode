@@ -1,7 +1,7 @@
 {
-    "workbench.settings.editor": "json",
-    "workbench.iconTheme": "vs-seti",
-    "workbench.colorTheme": "Atom One Light",
+    "workbench.settings.editor": "ui",
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.colorTheme": "Dracula",
     "workbench.colorCustomizations": {
         // 黑色
         // "activityBar.background": "#3f3f3f",
@@ -11,10 +11,10 @@
         // "titleBar.activeBackground": "#3f3f3f",
         // "statusBar.background": "#3f3f3f"
         // 白色
-        "activityBar.background": "#ffffff00",
-        "editor.background": "#ffffff00",
-        "terminal.background": "#cccccc",
-        "terminal.foreground": "#000000",
+        // "activityBar.background": "#ffffff00",
+        // "editor.background": "#ffffff00",
+        // "terminal.background": "#dddddd",
+        // "terminal.foreground": "#000000",
         // "titleBar.activeBackground": "#3f3f3f",
         // "statusBar.background": "#3f3f3f"
     },
@@ -23,23 +23,28 @@
     "workbench.statusBar.visible": true,
     "workbench.statusBar.feedback.visible": false,
     "editor.multiCursorModifier": "alt",
-    "editor.fontFamily": "'PT Mono','Fira Code',Monaco,'Courier New','Microsoft YaHei',monospace",
+    //'FiraCode QiHei NF','DejaVuSansMono YaHei NF',
+    "editor.fontFamily": "'PT Mono','Microsoft YaHei UI','汉仪旗黑-55S',Monaco,'Courier New',monospace",
+    "editor.fontLigatures": false,
     "editor.scrollBeyondLastLine": false,
     "editor.detectIndentation": false,
     "editor.renderWhitespace": "all",
     "editor.renderControlCharacters": false,
     "editor.acceptSuggestionOnCommitCharacter": false,
     "editor.quickSuggestions": {
-        "other": true,
+        "strings": false,
         "comments": false,
-        "strings": false
+        "other": true
     },
     "editor.parameterHints.cycle": true,
     "editor.quickSuggestionsDelay": 100,
     "editor.snippetSuggestions": "top",
     "editor.codeActionsOnSaveTimeout": 500,
+    "editor.defaultFormatter": null,
     "editor.formatOnType": true,
-    "editor.minimap.enabled": false,
+    "editor.minimap.enabled": true,
+    "editor.minimap.maxColumn": 120,
+    "editor.minimap.renderCharacters": true,
     "editor.wordWrap": "on",
     "files.autoGuessEncoding": true,
     "files.trimTrailingWhitespace": true,
@@ -73,33 +78,21 @@
     "search.useReplacePreview": false,
     "telemetry.enableCrashReporter": false,
     "telemetry.enableTelemetry": false,
-    "terminal.integrated.shell.windows": "C:\\Windows\\System32\\cmd.exe",
+    "terminal.integrated.shell.windows": "D:\\Program Files\\Git\\bin\\bash.exe",
     "breadcrumbs.enabled": true,
     "breadcrumbs.symbolSortOrder": "name",
+    "update.mode": "manual",
+    "update.enableWindowsBackgroundUpdates": false,
     /* 扩展相关 */
     "extensions.autoUpdate": false,
     "extensions.ignoreRecommendations": false,
     "extensions.showRecommendationsOnlyOnDemand": true,
     /* 路径补全 */
-    "path-intellisense.absolutePathToWorkspace": true,
+    // "path-intellisense.absolutePathToWorkspace": true,
     "path-intellisense.autoSlashAfterDirectory": true,
     "path-intellisense.extensionOnImport": true,
-    "path-intellisense.mappings": {},
-    "path-intellisense.showHiddenFiles": true,
-    /* 比较 */
-    "partialDiff.hideCommandsOnContextMenu": false,
-    "partialDiff.preComparisonTextNormalizationRules": [
-        {
-            "name": "Replace tabs with whitespaces",
-            "match": "\t",
-            "replaceWith": "    "
-        },
-        {
-            "name": "One space after comma",
-            "match": ", *([^,\n]+)",
-            "replaceWith": ", $1"
-        }
-    ],
+    // "path-intellisense.mappings": {},
+    // "path-intellisense.showHiddenFiles": false,
     /* git */
     "git.enabled": true,
     "git.path": "D:/Program Files/Git/bin/git.exe",
@@ -160,30 +153,50 @@
             "remote": false
         }
     },
-    "gitHistory.hideCommitViewExplorer": true,
-    "gitHistory.pageSize": 150,
-    "gitHistory.showEditorTitleMenuBarIcons": false,
-    /* svn */
-    "svn.enabled": true,
-    "svn.path": "D:/Program Files/TortoiseSVN/bin",
-    "svn.autorefresh": false,
-    "svn.default.encoding": "UTF-8",
-    "svn.multipleFolders.enabled": false,
-    "svn.multipleFolders.ignore": [
-        "**/.git",
-        "**/.hg",
-        "**/vendor",
-        "**/node_modules"
+    "gitlens.views.commitFileFormat": "${filePath}",
+    "gitlens.views.commitFormat": "${author}>${message}",
+    "gitlens.views.stashFileFormat": "${filePath}",
+    "gitlens.views.stashFormat": "${author}>${message}",
+    "gitlens.views.statusFileFormat": "${working}${filePath}",
+    // "git-graph.autoCenterCommitDetailsView": true,
+    // "git-graph.combineLocalAndRemoteBranchLabels": true,
+    "git-graph.commitDetailsViewLocation": "Docked to Bottom",
+    // "git-graph.customBranchGlobPatterns": [],
+    // "git-graph.dateFormat":"Date & Time",
+    "git-graph.showStatusBarItem": false,
+    "git-graph.dateType": "Commit Date",
+    "git-graph.defaultColumnVisibility": {
+        "Date": true,
+        "Author": true,
+        "Commit": false
+    },
+    // "git-graph.fetchAvatars": false,
+    "git-graph.initialLoadCommits": 50,
+    "git-graph.graphColours": [
+        "#0085d9",
+        "#d9008f",
+        "#00d90a",
+        "#d98500",
+        "#a300d9",
+        "#ff0000",
+        "#00d9cc",
+        "#e138e8",
+        "#85d900",
+        "#dc5b23",
+        "#6f24d6",
+        "#ffcc00"
     ],
+    // "git-graph.graphStyle": "rounded",
+    "git-graph.loadMoreCommits": 50,
+    // "git-graph.tabIconColourTheme": "colour",
     /* markdown */
     "markdown.preview.breaks": true,
     "markdown.preview.fontFamily": "'PT Serif','Hiragino Sans GB','Microsoft YaHei','Times New Roman'",
     "markdown.preview.lineHeight": 1.5,
     "markdown.styles": [],
     "[markdown]": {
-        // "files.trimTrailingWhitespace": true,
+        "files.trimTrailingWhitespace": false,
         // "editor.wordWrap": "on",
-        "editor.quickSuggestions": false
     },
     "markdownExtended.imageOmitBackground": true,
     "markdownExtended.pdfDisplayHeaderFooter": true,
@@ -193,9 +206,10 @@
     "markdownExtended.pdfMarginBottom": "0cm",
     "markdownExtended.pdfMarginLeft": "0cm",
     "markdownExtended.pdfMarginRight": "0cm",
-    "markdown-preview-enhanced.codeBlockTheme": "auto.css",
-    "markdown-preview-enhanced.previewTheme": "one-light.css",
-    "markdown-preview-enhanced.singlePreview": false,
+    "MarkdownFormat.note": false,
+    "MarkdownFormat.replaceFullChars": false,
+    "MarkdownFormat.replaceFullNums": false,
+    "MarkdownFormat.replacePunctuations": false,
     /* java */
     "[java]": {
         "editor.rulers": [
@@ -205,28 +219,6 @@
         ],
         "editor.wordWrap": "off"
     },
-    "java.autobuild.enabled": false,
-    "java.home": "D:\\Java\\jdk1.8.0_181",
-    "java.debug.logLevel": "info",
-    "java.errors.incompleteClasspath.severity": "ignore",
-    // "java.configuration.maven.userSettings": null,
-    "java.configuration.updateBuildConfiguration": "interactive",
-    // "java.contentProvider.preferred": null,
-    "java.implementationsCodeLens.enabled": false,
-    "java.import.gradle.enabled": false,
-    "java.import.maven.enabled": true,
-    "java.format.enabled": true,
-    "java.format.comments.enabled": true,
-    // "java.format.settings.profile": "Eclipse",// .settings/org.eclipse.jdt.core.prefs中
-    "java.format.settings.url": "D:\\Program Files\\Microsoft VS Code\\resources\\app\\extensions\\java\\format\\Thunisoft_Develop_1.xml",
-    "java.format.onType.enabled": true,
-    "java.completion.importOrder": [
-        "java",
-        "javax",
-        "org",
-        "com"
-    ],
-    "java.jdt.ls.vmargs": "-noverify -Xmx1G -XX:+UseG1GC -XX:+UseStringDeduplication -javaagent:\"C:\\Users\\Gao\\.vscode\\extensions\\gabrielbb.vscode-lombok-0.9.7/server/lombok.jar\" -Xbootclasspath/a:\"C:\\Users\\Gao\\.vscode\\extensions\\gabrielbb.vscode-lombok-0.9.7/server/lombok.jar\"",
     /* javascript */
     "[javascript]": {
         "editor.tabSize": 2,
@@ -478,7 +470,10 @@
         ],
         "editor.wordWrap": "off"
     },
-    "xmlTools.xmlFormatterImplementation": "v2",
+    "xml.format.enabled": true,
+    "xml.format.spaceBeforeEmptyCloseTag": false,
+    "xml.format.preserveEmptyContent": true,
+    "xml.server.vmargs": "-noverify -Xmx64M -XX:+UseG1GC -XX:+UseStringDeduplication",
     /* yaml */
     "[yaml]": {
         "editor.rulers": [
@@ -489,6 +484,13 @@
         "editor.tabSize": 2,
         "editor.autoIndent": true
     },
+    // "yaml.customTags": [],
+    "yaml.format.enable": true,
+    "yaml.format.bracketSpacing": false,
+    "yaml.format.printWidth": 120,
+    "yaml.format.proseWrap": "never",
+    "yaml.format.singleQuote": true,
+    // "yaml.schemas": {"http://json.schemastore.org/composer": "/*"},
     /* json */
     "json.format.enable": true,
     "[json]": {
@@ -525,20 +527,61 @@
         ],
         "editor.wordWrap": "off"
     },
-    /* sonarlint */
-    "sonarlint.ls.javaHome": "D:\\Java\\jdk1.8.0_181",
-    "sonarlint.ls.vmargs": "-Xmx1024m",
-    "gitlens.views.repositories.files.layout": "list",
-    "gitlens.views.fileHistory.enabled": false,
-    "gitlens.views.lineHistory.enabled": false,
-    "gitlens.views.compare.files.layout": "list",
-    "gitlens.views.search.files.layout": "list",
-    "gitlens.views.commitFileFormat": "${filePath}",
-    "gitlens.views.commitFormat": "${author}>${message}",
-    "gitlens.views.stashFileFormat": "${filePath}",
-    "gitlens.views.stashFormat": "${author}>${message}",
-    "gitlens.views.statusFileFormat": "${working}${filePath}",
-    "gitlens.views.compare.avatars": true,
-    "gitlens.views.repositories.avatars": true,
-    "gitlens.views.search.avatars": true
+    /* sql */
+    "sqltools.autoOpenSessionFiles": false,
+    // "sqltools.format": {},
+    /* comments */
+    "commentAnchors.tags.list": [
+        {
+            "tag": "MARK",
+            "iconColor": "default",
+            "highlightColor": "#A8C023",
+            "scope": "file"
+        },
+        {
+            "tag": "ANCHOR",
+            "highlightColor": "",
+            "scope": "file",
+            "enabled": false
+        },
+        {
+            "tag": "TODO",
+            "iconColor": "blue",
+            "highlightColor": "#3ea8ff",
+            "scope": "workspace"
+        },
+        {
+            "tag": "FIXME",
+            "iconColor": "red",
+            "highlightColor": "#F44336",
+            "scope": "workspace"
+        },
+        {
+            "tag": "NOTE",
+            "iconColor": "orange",
+            "highlightColor": "#FFB300",
+            "scope": "file"
+        },
+        {
+            "tag": "REVIEW",
+            "highlightColor": "",
+            "scope": "file",
+            "enabled": false
+        },
+        {
+            "tag": "SECTION",
+            "highlightColor": "",
+            "scope": "file",
+            "enabled": false
+        }
+    ],
+    "commentAnchors.tags.matchCase": false,
+    "commentAnchors.tags.separators": [
+        " ",
+        ":"
+    ],
+    "commentAnchors.workspace.excludeFiles": "**/{node_modules,.git,.idea,target,out,build,vendor,lib}/**/*",
+    "commentAnchors.workspace.lazyLoad": true,
+    /* bookmark */
+    "bookmarks.navigateThroughAllFiles": true
 }
