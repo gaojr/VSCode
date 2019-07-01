@@ -6,16 +6,6 @@
         "when": "editorFocus"
     },
     {
-        "key": "ctrl+d",
-        "command": "editor.action.deleteLines",
-        "when": "editorTextFocus && !editorReadonly"
-    },
-    {
-        "key": "ctrl+shift+k",
-        "command": "-editor.action.deleteLines",
-        "when": "editorTextFocus && !editorReadonly"
-    },
-    {
         "key": "ctrl+k ctrl+u",
         "command": "-editor.action.removeCommentLine",
         "when": "editorTextFocus && !editorReadonly"
@@ -44,16 +34,6 @@
         "key": "ctrl+alt+down",
         "command": "-editor.action.insertCursorBelow",
         "when": "editorTextFocus"
-    },
-    {
-        "key": "ctrl+alt+up",
-        "command": "editor.action.copyLinesUpAction",
-        "when": "editorTextFocus && !editorReadonly"
-    },
-    {
-        "key": "shift+alt+up",
-        "command": "-editor.action.copyLinesUpAction",
-        "when": "editorTextFocus && !editorReadonly"
     },
     {
         "key": "ctrl+alt+down",
@@ -543,11 +523,6 @@
         "command": "-workbench.action.gotoSymbol"
     },
     {
-        "key": "ctrl+shift+k",
-        "command": "-editor.action.deleteLines",
-        "when": "textInputFocus && !editorReadonly"
-    },
-    {
         "key": "ctrl+shift+j",
         "command": "-workbench.action.search.toggleQueryDetails",
         "when": "searchViewletVisible"
@@ -873,5 +848,25 @@
         "key": "ctrl+shift+d ctrl+shift+c",
         "command": "-markdownExtended.DeleteColumn",
         "when": "editorTextFocus && editorLangId == 'markdown'"
+    },
+    {
+        "key": "ctrl+d",
+        "command": "editor.action.deleteLines",
+        "when": "textInputFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+shift+k",
+        "command": "-editor.action.deleteLines",
+        "when": "textInputFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+alt+up",
+        "command": "editor.action.copyLinesUpAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "shift+alt+up",
+        "command": "-editor.action.copyLinesUpAction",
+        "when": "editorTextFocus && !editorReadonly"
     }
 ]
