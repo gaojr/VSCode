@@ -111,15 +111,17 @@
     "gitlens.defaultDateShortFormat": "YY-M-D H:m",
     "gitlens.defaultDateStyle": "relative",
     "gitlens.defaultGravatarsStyle": "retro",
+    "gitlens.blame.avatars": false,
     "gitlens.blame.ignoreWhitespace": true,
     "gitlens.blame.dateFormat": "YYYY-MM-DD",
     "gitlens.blame.format": "${id|7}", // 责问
     "gitlens.blame.heatmap.location": "left",
-    "gitlens.blame.avatars": false,
     "gitlens.blame.highlight.locations": [
-        "line",
-        "overview"
+        // "gutter",// 行号
+        "line", // 行
+        "overview" // 滚动栏
     ],
+    "gitlens.currentLine.enabled":true,
     "gitlens.currentLine.dateFormat": "YYYY-MM-DD",
     "gitlens.currentLine.format": "${author},${date}",
     "gitlens.statusBar.alignment": "left",
@@ -132,7 +134,7 @@
         "suppressShowKeyBindingsNotice": true
     },
     "gitlens.views.commitFileFormat": "${filePath}",
-    "gitlens.views.commitFormat": "${❰ tips ❱➤  }${author}>${message}",
+    "gitlens.views.commitFormat": "${author}>${message}",
     "gitlens.views.stashFileFormat": "${filePath}",
     "gitlens.views.stashFormat": "${author}>${message}",
     "gitlens.views.statusFileFormat": "${working}${filePath}",
