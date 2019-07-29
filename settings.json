@@ -1,7 +1,8 @@
 {
     "workbench.settings.editor": "ui",
     "workbench.iconTheme": "material-icon-theme",
-    "workbench.colorTheme": "Dracula",
+    "material-icon-theme.activeIconPack": "vue",
+    "workbench.colorTheme": "Night Owl",
     "workbench.colorCustomizations": {
         // 黑色
         // "activityBar.background": "#3f3f3f",
@@ -67,7 +68,7 @@
     "window.title": "${dirty}${activeEditorShort}${separator}${rootName}",
     "window.titleBarStyle": "custom",
     "window.zoomLevel": 0,
-    "diffEditor.ignoreTrimWhitespace": false,
+    "diffEditor.ignoreTrimWhitespace": true,
     "diffEditor.renderSideBySide": true,
     "search.exclude": {
         "**/node_modules": true,
@@ -98,62 +99,40 @@
     "git.autorefresh": true,
     "git.ignoreMissingGitWarning": true,
     "git.ignoreLegacyWarning": true,
+    "gitlens.codeLens.scopes": [
+        "document"
+    ],
+    "gitlens.codeLens.authors.enabled": false,
+    "gitlens.codeLens.recentChange.command": "gitlens.toggleFileBlame",
+    "gitlens.views.repositories.avatars": false,
+    "gitlens.views.repositories.showBranchComparison": false,
+    "gitlens.mode.statusBar.enabled": false,
     "gitlens.defaultDateFormat": "YYYY-MM-DD HH:mm",
+    "gitlens.defaultDateShortFormat": "YY-M-D H:m",
     "gitlens.defaultDateStyle": "relative",
     "gitlens.defaultGravatarsStyle": "retro",
-    "gitlens.blame.avatars": false,
     "gitlens.blame.ignoreWhitespace": true,
     "gitlens.blame.dateFormat": "YYYY-MM-DD",
     "gitlens.blame.format": "${id|7}", // 责问
     "gitlens.blame.heatmap.location": "left",
-    "gitlens.blame.highlight.enabled": true,
+    "gitlens.blame.avatars": false,
     "gitlens.blame.highlight.locations": [
-        // "gutter",// 行号
-        "line", // 行
-        "overview" // 滚动栏
+        "line",
+        "overview"
     ],
-    "gitlens.currentLine.enabled": true,
     "gitlens.currentLine.dateFormat": "YYYY-MM-DD",
-    "gitlens.currentLine.format": "${author},${date}", // 当前行
-    // ${path} = ${directory}/${file}
-    // ${filePath} ≈ ${file} · ${directory}
-    "gitlens.statusBar.enabled": true,
+    "gitlens.currentLine.format": "${author},${date}",
     "gitlens.statusBar.alignment": "left",
-    "gitlens.statusBar.command": "gitlens.diffWithWorking",
     "gitlens.statusBar.dateFormat": "YYYY-MM-DD HH:mm",
     "gitlens.statusBar.format": "${date} (${id}) ${message}", // 状态栏
+    "gitlens.hovers.avatars": false,
+    "gitlens.hovers.annotations.over": "annotation",
     "gitlens.advanced.messages": {
         "suppressFileNotUnderSourceControlWarning": true,
         "suppressShowKeyBindingsNotice": true
     },
-    "gitlens.menus": {
-        "editor": {
-            "compare": false,
-            "history": false,
-            "remote": false,
-            "blame": false,
-            "clipboard": true,
-            "details": false
-        },
-        "editorGroup": {
-            "compare": true,
-            "history": true,
-            "remote": false,
-            "blame": false
-        },
-        "editorTab": {
-            "compare": true,
-            "history": true,
-            "remote": false
-        },
-        "explorer": {
-            "compare": true,
-            "history": true,
-            "remote": false
-        }
-    },
     "gitlens.views.commitFileFormat": "${filePath}",
-    "gitlens.views.commitFormat": "${author}>${message}",
+    "gitlens.views.commitFormat": "${❰ tips ❱➤  }${author}>${message}",
     "gitlens.views.stashFileFormat": "${filePath}",
     "gitlens.views.stashFormat": "${author}>${message}",
     "gitlens.views.statusFileFormat": "${working}${filePath}",
@@ -167,7 +146,11 @@
     "gitlens.views.repositories.location": "scm",
     "gitlens.views.search.enabled": true,
     "gitlens.views.search.location": "scm",
-    "gitlens.mode.statusBar.enabled": false,
+    "gitlens.recentChanges.highlight.locations": [
+        "gutter",
+        "line",
+        "overview"
+    ],
     // "git-graph.autoCenterCommitDetailsView": true,
     // "git-graph.combineLocalAndRemoteBranchLabels": true,
     "git-graph.commitDetailsViewLocation": "Docked to Bottom",
@@ -209,17 +192,19 @@
         // "editor.wordWrap": "on",
     },
     "markdownExtended.imageOmitBackground": true,
-    "markdownExtended.pdfDisplayHeaderFooter": true,
+    "markdownExtended.pdfDisplayHeaderFooter": false,
     "markdownExtended.pdfHeaderTemplate": "<div style='font-size: 9px; margin: 0 auto;'><span class='title'></span></div><div style='font-size: 9px; margin: 0 auto;'><span class='date'></span></div>",
     "markdownExtended.pdfFooterTemplate": "<div style='font-size: 9px; margin: 0 auto;'><span class='pageNumber'></span> / <span class='totalPages'></span></div>",
     "markdownExtended.pdfMarginTop": "0cm",
     "markdownExtended.pdfMarginBottom": "0cm",
     "markdownExtended.pdfMarginLeft": "0cm",
     "markdownExtended.pdfMarginRight": "0cm",
-    "MarkdownFormat.note": false,
-    "MarkdownFormat.replaceFullChars": false,
-    "MarkdownFormat.replaceFullNums": false,
-    "MarkdownFormat.replacePunctuations": false,
+    "markdownExtended.tocLevels": [
+        1,
+        2,
+        3,
+        4
+    ],
     /* java */
     "[java]": {
         "editor.rulers": [
@@ -298,9 +283,9 @@
     },
     "css.validate": true,
     "css.lint.duplicateProperties": "warning",
-    "css.lint.emptyRules": "ignore",
     "css.lint.fontFaceProperties": "ignore",
     "css.lint.zeroUnits": "warning",
+    "css.remoteStyleSheets": ["https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css"],
     /* beautify */
     "beautify.config": {
         // all
@@ -453,7 +438,7 @@
             ],
             "filename": [
                 ".jshintrc",
-                ".jsbeautify"
+                ".jsbeautifyrc"
             ]
         },
         "css": [
@@ -480,10 +465,6 @@
         ],
         "editor.wordWrap": "off"
     },
-    "xml.format.enabled": true,
-    "xml.format.spaceBeforeEmptyCloseTag": false,
-    "xml.format.preserveEmptyContent": true,
-    "xml.server.vmargs": "-noverify -Xmx64M -XX:+UseG1GC -XX:+UseStringDeduplication",
     /* yaml */
     "[yaml]": {
         "editor.rulers": [
@@ -494,15 +475,8 @@
         "editor.tabSize": 2,
         "editor.autoIndent": true
     },
-    // "yaml.customTags": [],
-    "yaml.format.enable": true,
-    "yaml.format.bracketSpacing": false,
-    "yaml.format.printWidth": 120,
-    "yaml.format.proseWrap": "never",
-    "yaml.format.singleQuote": true,
-    // "yaml.schemas": {"http://json.schemastore.org/composer": "/*"},
     /* json */
-    "json.format.enable": true,
+    "json.format.enable": false,
     "[json]": {
         "editor.quickSuggestions": {
             "strings": true
@@ -537,9 +511,6 @@
         ],
         "editor.wordWrap": "off"
     },
-    /* sql */
-    "sqltools.autoOpenSessionFiles": false,
-    // "sqltools.format": {},
     /* comments */
     "commentAnchors.tags.list": [
         {
@@ -593,5 +564,15 @@
     "commentAnchors.workspace.excludeFiles": "**/{node_modules,.git,.idea,target,out,build,vendor,lib}/**/*",
     "commentAnchors.workspace.lazyLoad": true,
     /* bookmark */
-    "bookmarks.navigateThroughAllFiles": true
+    "bookmarks.navigateThroughAllFiles": true,
+    /* togglequotes */
+    "togglequotes.chars": [
+        "\"",
+        "'"
+    ],
+    "editor.matchBrackets": false,
+    /* bracket-pair-colorizer */
+    "bracket-pair-colorizer-2.highlightActiveScope": true,
+    "bracket-pair-colorizer-2.showBracketsInGutter": true,
+    "bracket-pair-colorizer-2.showHorizontalScopeLine": false
 }
