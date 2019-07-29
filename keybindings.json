@@ -745,11 +745,6 @@
         "when": "editorHasDocumentSelectionFormattingProvider && editorHasDocumentSelectionFormattingProvider && editorTextFocus && !editorReadonly"
     },
     {
-        "key": "ctrl+e ctrl+b",
-        "command": "-SQLTools.formatSql",
-        "when": "editorTextFocus && !editorReadonly"
-    },
-    {
         "key": "ctrl+shift+f",
         "command": "editor.action.formatDocument",
         "when": "editorHasDocumentFormattingProvider && editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly"
@@ -833,5 +828,22 @@
         "key": "shift+alt+up",
         "command": "-editor.action.copyLinesUpAction",
         "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+oem_comma",
+        "command": "-workbench.action.openSettings"
+    },
+    {
+        "key": "ctrl+shift+t ctrl+shift+f",
+        "command": "-markdownExtended.formateTable",
+        "when": "editorTextFocus && editorLangId == 'markdown'"
+    },
+    {
+        "key": "ctrl+k ctrl+m",
+        "command": "-workbench.extensions.action.showRecommendedKeymapExtensions"
+    },
+    {
+        "key": "ctrl+k ctrl+s",
+        "command": "-workbench.action.openGlobalKeybindings"
     }
 ]
