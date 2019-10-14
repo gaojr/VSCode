@@ -555,16 +555,6 @@
         "when": "editorTextFocus && gitlens:activeIsTracked && !isInDiffEditor && gitlens:keymap == 'alternate'"
     },
     {
-        "key": "alt+oem_comma",
-        "command": "-gitlens.diffWithPreviousInDiff",
-        "when": "gitlens:activeIsTracked && isInDiffEditor && gitlens:keymap == 'chorded'"
-    },
-    {
-        "key": "alt+oem_comma",
-        "command": "-gitlens.diffWithPreviousInDiff",
-        "when": "gitlens:activeIsTracked && isInDiffEditor && gitlens:keymap == 'alternate'"
-    },
-    {
         "key": "ctrl+shift+5",
         "command": "-workbench.action.terminal.split",
         "when": "terminalFocus"
@@ -615,11 +605,6 @@
         "when": "inQuickOpen && inViewsPicker"
     },
     {
-        "key": "ctrl+shift+d ctrl+shift+r",
-        "command": "-markdownExtended.DeleteRow",
-        "when": "editorTextFocus && editorLangId == 'markdown'"
-    },
-    {
         "key": "ctrl+t",
         "command": "-workbench.action.showAllSymbols"
     },
@@ -628,53 +613,8 @@
         "command": "-workbench.action.selectTheme"
     },
     {
-        "key": "ctrl+t ctrl+up",
-        "command": "markdownExtended.addRowAbove",
-        "when": "editorTextFocus && editorLangId == 'markdown'"
-    },
-    {
-        "key": "ctrl+shift+t ctrl+shift+a",
-        "command": "-markdownExtended.addRowAbove",
-        "when": "editorTextFocus && editorLangId == 'markdown'"
-    },
-    {
-        "key": "ctrl+t ctrl+down",
-        "command": "markdownExtended.addRowBelow",
-        "when": "editorTextFocus && editorLangId == 'markdown'"
-    },
-    {
-        "key": "ctrl+shift+t ctrl+shift+b",
-        "command": "-markdownExtended.addRowBelow",
-        "when": "editorTextFocus && editorLangId == 'markdown'"
-    },
-    {
-        "key": "ctrl+t ctrl+right",
-        "command": "markdownExtended.addColumnRight",
-        "when": "editorTextFocus && editorLangId == 'markdown'"
-    },
-    {
-        "key": "ctrl+shift+t ctrl+shift+r",
-        "command": "-markdownExtended.addColumnRight",
-        "when": "editorTextFocus && editorLangId == 'markdown'"
-    },
-    {
-        "key": "ctrl+t ctrl+left",
-        "command": "markdownExtended.addColumnLeft",
-        "when": "editorTextFocus && editorLangId == 'markdown'"
-    },
-    {
-        "key": "ctrl+shift+t ctrl+shift+l",
-        "command": "-markdownExtended.addColumnLeft",
-        "when": "editorTextFocus && editorLangId == 'markdown'"
-    },
-    {
         "key": "ctrl+shift+f",
         "command": "-workbench.action.findInFiles"
-    },
-    {
-        "key": "ctrl+shift+t ctrl+shift+p",
-        "command": "-markdownExtended.pasteAsTable",
-        "when": "editorTextFocus && editorLangId == 'markdown'"
     },
     {
         "key": "shift+alt+l",
@@ -759,21 +699,6 @@
         "command": "editor.emmet.action.matchTag"
     },
     {
-        "key": "ctrl+shift+v",
-        "command": "-markdown.showPreview",
-        "when": "editorLangId == 'markdown'"
-    },
-    {
-        "key": "ctrl+shift+v",
-        "command": "markdown.showPreviewToSide",
-        "when": "editorLangId == 'markdown'"
-    },
-    {
-        "key": "ctrl+k v",
-        "command": "-markdown.showPreviewToSide",
-        "when": "editorLangId == 'markdown'"
-    },
-    {
         "key": "ctrl+shift+b",
         "command": "-workbench.action.tasks.build"
     },
@@ -800,16 +725,6 @@
         "command": "-workbench.action.terminal.toggleTerminal"
     },
     {
-        "key": "ctrl+shift+d",
-        "command": "markdownExtended.DeleteColumn",
-        "when": "editorTextFocus && editorLangId == 'markdown'"
-    },
-    {
-        "key": "ctrl+shift+d ctrl+shift+c",
-        "command": "-markdownExtended.DeleteColumn",
-        "when": "editorTextFocus && editorLangId == 'markdown'"
-    },
-    {
         "key": "ctrl+d",
         "command": "editor.action.deleteLines",
         "when": "textInputFocus && !editorReadonly"
@@ -834,16 +749,75 @@
         "command": "-workbench.action.openSettings"
     },
     {
-        "key": "ctrl+shift+t ctrl+shift+f",
-        "command": "-markdownExtended.formateTable",
-        "when": "editorTextFocus && editorLangId == 'markdown'"
-    },
-    {
         "key": "ctrl+k ctrl+m",
         "command": "-workbench.extensions.action.showRecommendedKeymapExtensions"
     },
     {
         "key": "ctrl+k ctrl+s",
         "command": "-workbench.action.openGlobalKeybindings"
+    },
+    {
+        "key": "ctrl+alt+o",
+        "command": "openInApplication.open"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "-expandLineSelection",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "ctrl+f2",
+        "command": "-editor.action.changeAll",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+f2",
+        "command": "editor.action.selectHighlights",
+        "when": "editorFocus"
+    },
+    {
+        "key": "ctrl+shift+l",
+        "command": "-editor.action.selectHighlights",
+        "when": "editorFocus"
+    },
+    {
+        "key": "ctrl+shift+v",
+        "command": "markdown.showPreviewToSide",
+        "when": "editorLangId == 'markdown'"
+    },
+    {
+        "key": "ctrl+k v",
+        "command": "-markdown.showPreviewToSide",
+        "when": "editorLangId == 'markdown'"
+    },
+    {
+        "key": "ctrl+shift+v",
+        "command": "-markdown.showPreview",
+        "when": "editorLangId == 'markdown'"
+    },
+    {
+        "key": "shift+alt+up",
+        "command": "-markdown.extension.onCopyLineUp",
+        "when": "editorTextFocus && !editorReadonly && !suggestWidgetVisible && editorLangId == 'markdown'"
+    },
+    {
+        "key": "shift+alt+down",
+        "command": "-markdown.extension.onCopyLineDown",
+        "when": "editorTextFocus && !editorReadonly && !suggestWidgetVisible && editorLangId == 'markdown'"
+    },
+    {
+        "key": "ctrl+m",
+        "command": "-markdown.extension.editing.toggleMath",
+        "when": "editorTextFocus && !editorReadonly && editorLangId == 'markdown'"
+    },
+    {
+        "key": "ctrl+shift+v",
+        "command": "-markdown.extension.togglePreview",
+        "when": "!terminalFocus"
+    },
+    {
+        "key": "ctrl+k v",
+        "command": "-markdown.extension.togglePreviewToSide",
+        "when": "!terminalFocus"
     }
 ]
