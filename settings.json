@@ -23,9 +23,12 @@
     "workbench.activityBar.visible": true,
     "workbench.statusBar.visible": true,
     "editor.multiCursorModifier": "alt",
-    //'FiraCode QiHei NF','DejaVuSansMono YaHei NF',
-    "editor.fontFamily": "'PT Mono','Microsoft YaHei UI','汉仪旗黑-55S',Monaco,'Courier New',monospace",
-    "editor.fontLigatures": false,
+    // 'Sarasa Term SC','FiraCode QiHei NF','DejaVuSansMono YaHei NF',
+    // 'Fira Code','Cascadia Code','PT Mono',
+    // 'Alibaba PuHuiTi','Hiragino Sans GB','HYQiHei 55S',
+    // '汉仪意宋W',
+    "editor.fontFamily": "'Fira Code','HYQiHei 55S',monospace",
+    "editor.fontLigatures": true,
     "editor.scrollBeyondLastLine": false,
     "editor.detectIndentation": false,
     "editor.renderWhitespace": "all",
@@ -41,12 +44,14 @@
     "editor.snippetSuggestions": "top",
     "editor.codeActionsOnSaveTimeout": 500,
     "editor.defaultFormatter": null,
+    "editor.matchBrackets": false,
     "editor.minimap.enabled": true,
     "editor.minimap.maxColumn": 120,
     "editor.minimap.renderCharacters": true,
     "editor.wordWrap": "on",
     "zenMode.hideActivityBar": false,
     "files.autoGuessEncoding": false,
+    "files.simpleDialog.enable": true,
     "files.trimTrailingWhitespace": true,
     "files.trimFinalNewlines": true,
     "files.exclude": {
@@ -59,7 +64,6 @@
     "files.associations": {
         "*.ftl": "xml",
         "*.extension": "html",
-        "*.txt": "markdown",
         "*.vue": "html"
     },
     "window.menuBarVisibility": "default",
@@ -78,7 +82,9 @@
     "search.useReplacePreview": false,
     "telemetry.enableCrashReporter": false,
     "telemetry.enableTelemetry": false,
+    "terminal.integrated.rendererType": "auto",
     "terminal.integrated.shell.windows": "D:\\Program Files\\Git\\bin\\bash.exe",
+    "terminal.integrated.cursorStyle": "line",
     "breadcrumbs.enabled": true,
     "breadcrumbs.symbolSortOrder": "name",
     "update.mode": "manual",
@@ -99,6 +105,7 @@
     "git.autorefresh": true,
     "git.ignoreMissingGitWarning": true,
     "git.ignoreLegacyWarning": true,
+    "gitlens.codeLens.enabled": false,
     "gitlens.codeLens.scopes": [
         "document"
     ],
@@ -114,14 +121,14 @@
     "gitlens.blame.avatars": false,
     "gitlens.blame.ignoreWhitespace": true,
     "gitlens.blame.dateFormat": "YYYY-MM-DD",
-    "gitlens.blame.format": "${id|7}", // 责问
+    "gitlens.blame.format": "${author|14}", // 责问
     "gitlens.blame.heatmap.location": "left",
     "gitlens.blame.highlight.locations": [
         // "gutter",// 行号
         "line", // 行
         "overview" // 滚动栏
     ],
-    "gitlens.currentLine.enabled":true,
+    "gitlens.currentLine.enabled": true,
     "gitlens.currentLine.dateFormat": "YYYY-MM-DD",
     "gitlens.currentLine.format": "${author},${date}",
     "gitlens.statusBar.alignment": "left",
@@ -159,6 +166,7 @@
     // "git-graph.customBranchGlobPatterns": [],
     // "git-graph.dateFormat":"Date & Time",
     "git-graph.showStatusBarItem": false,
+    "git-graph.dialog.merge.squashCommits": true,
     "git-graph.dateType": "Commit Date",
     "git-graph.defaultColumnVisibility": {
         "Date": true,
@@ -182,31 +190,187 @@
         "#ffcc00"
     ],
     // "git-graph.graphStyle": "rounded",
-    "git-graph.loadMoreCommits": 50,
+    "git-graph.loadMoreCommits": 10,
     // "git-graph.tabIconColourTheme": "colour",
+    "git-graph.fetchAndPrune": false,
     /* markdown */
     "markdown.preview.breaks": true,
-    "markdown.preview.fontFamily": "'PT Serif','Hiragino Sans GB','Microsoft YaHei','Times New Roman'",
+    "markdown.preview.fontFamily": "'Fira Code','PT Serif','HYQihei 55S','Hiragino Sans GB'",
     "markdown.preview.lineHeight": 1.5,
-    "markdown.styles": [],
-    "[markdown]": {
-        "files.trimTrailingWhitespace": false,
-        // "editor.wordWrap": "on",
-    },
-    "markdownExtended.imageOmitBackground": true,
-    "markdownExtended.pdfDisplayHeaderFooter": false,
-    "markdownExtended.pdfHeaderTemplate": "<div style='font-size: 9px; margin: 0 auto;'><span class='title'></span></div><div style='font-size: 9px; margin: 0 auto;'><span class='date'></span></div>",
-    "markdownExtended.pdfFooterTemplate": "<div style='font-size: 9px; margin: 0 auto;'><span class='pageNumber'></span> / <span class='totalPages'></span></div>",
-    "markdownExtended.pdfMarginTop": "0cm",
-    "markdownExtended.pdfMarginBottom": "0cm",
-    "markdownExtended.pdfMarginLeft": "0cm",
-    "markdownExtended.pdfMarginRight": "0cm",
-    "markdownExtended.tocLevels": [
-        1,
-        2,
-        3,
-        4
+    "markdown.preview.doubleClickToSwitchToEditor": false,
+    "markdown.styles": [
+        // "https://raw.githubusercontent.com/raycon/vscode-markdown-style/master/preview/github.css"
     ],
+    "[markdown]": {
+        "editor.fontFamily": "'Sarasa Term SC','Fira Code','Alibaba PuHuiTi',monospace"
+    },
+    "markdown.extension.toc.levels": "2..4",
+    "markdown.extension.italic.indicator": "*",
+    "markdown.extension.list.indentationSize": "inherit",
+    "markdown.extension.print.absoluteImgPath": false,
+    "markdown.extension.toc.unorderedList.marker": "*",
+    "markdown.extension.toc.orderedList": true,
+    "markdown.extension.syntax.decorations": false,
+    "markdown.extension.syntax.plainTheme": true,
+    "markdown.extension.toc.githubCompatibility": true,
+    "markdown.extension.toc.plaintext": false,
+    /* comments */
+    "commentAnchors.tags.list": [
+        // custom
+        {
+            "tag": "TOTEST",
+            "iconColor": "yellow",
+            "highlightColor": "#f4d13d",
+            "scope": "file"
+        },
+        {
+            "tag": "QUESTION",
+            "iconColor": "purple",
+            "highlightColor": "#BA68C8",
+            "scope": "file"
+        },
+        // default
+        {
+            "tag": "FIXME",
+            "iconColor": "red",
+            "highlightColor": "#f44336",
+            "scope": "file"
+        },
+        {
+            "tag": "MARK",
+            "iconColor": "orange",
+            "highlightColor": "#ffa100",
+            "scope": "file"
+        },
+        {
+            "tag": "NOTE",
+            "iconColor": "emerald",
+            "highlightColor": "#2ecc71",
+            "scope": "file"
+        },
+        {
+            "tag": "TODO",
+            "iconColor": "teal",
+            "highlightColor": "#00cec9",
+            "scope": "file"
+        },
+        {
+            "tag": "SECTION",
+            "iconColor": "default",
+            "highlightColor": "default",
+            "scope": "file"
+        },
+        {
+            "enabled": false,
+            "tag": "ANCHOR",
+            "iconColor": "none",
+            "highlightColor": "",
+            "scope": "file"
+        },
+        {
+            "enabled": false,
+            "tag": "REVIEW",
+            "iconColor": "none",
+            "highlightColor": "",
+            "scope": "file"
+        },
+        {
+            "enabled": false,
+            "tag": "STUB",
+            "iconColor": "none",
+            "highlightColor": "",
+            "scope": "file"
+        }
+    ],
+    "commentAnchors.tags.matchCase": false,
+    "commentAnchors.tags.separators": [
+        " ",
+        ":",
+        "-"
+    ],
+    "commentAnchors.parseDelay": 400,
+    "commentAnchors.workspace.enabled": false,
+    "commentAnchors.workspace.excludeFiles": "**/{node_modules,.git,.idea,target,out,build,vendor,lib}/**/*",
+    "commentAnchors.workspace.lazyLoad": true,
+    /* bookmark */
+    "bookmarks.backgroundLineColor": "rgba(251,126,251,0.1)",
+    "bookmarks.navigateThroughAllFiles": true,
+    /* togglequotes */
+    "togglequotes.chars": [
+        "\"",
+        "'"
+    ],
+    /* bracket-pair-colorizer */
+    "bracket-pair-colorizer-2.highlightActiveScope": true,
+    "bracket-pair-colorizer-2.showBracketsInGutter": true,
+    "bracket-pair-colorizer-2.showHorizontalScopeLine": false,
+    /* open-in-application */
+    "openInApplication.applications": {
+    },
+    /* python */
+    "[python]": {
+        "editor.quickSuggestions": {
+            "strings": true
+        },
+        "editor.rulers": [
+            80,
+            120,
+            140
+        ],
+        "editor.wordWrap": "off"
+    },
+    /* typescript */
+    "typescript.format.enable": true,
+    "[typescript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    /* xml */
+    "[xml]": {
+        "editor.quickSuggestions": {
+            "strings": true
+        },
+        "editor.rulers": [
+            80,
+            120,
+            140
+        ],
+        "editor.wordWrap": "off"
+    },
+    /* yaml */
+    "[yaml]": {
+        "editor.rulers": [
+            80,
+            120,
+            140
+        ],
+        "editor.tabSize": 2,
+        "editor.autoIndent": true
+    },
+    /* json */
+    "json.format.enable": false,
+    "[json]": {
+        "editor.quickSuggestions": {
+            "strings": true
+        },
+        "editor.rulers": [
+            80,
+            120,
+            140
+        ],
+        "editor.wordWrap": "off"
+    },
+    "[jsonc]": {
+        "editor.quickSuggestions": {
+            "strings": true
+        },
+        "editor.rulers": [
+            80,
+            120,
+            140
+        ],
+        "editor.wordWrap": "on",
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
     /* java */
     "[java]": {
         "editor.rulers": [
@@ -287,294 +451,37 @@
     "css.lint.duplicateProperties": "warning",
     "css.lint.fontFaceProperties": "ignore",
     "css.lint.zeroUnits": "warning",
-    "css.remoteStyleSheets": ["https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css"],
+    "css.remoteStyleSheets": [
+        "https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css"
+    ],
     /* beautify */
-    "beautify.config": {
-        // all
-        "eol": "\n", // 默认:"\n"
-        "end_with_newline": false, // 默认:false
-        "indent_char": " ", // 默认:" "
-        "indent_size": 4, // 默认:4
-        "indent_with_tabs": false, // 默认:false
-        "preserve_newlines": true, // 默认:true
-        // js, html
-        "brace_style": "collapse,preserve-inline", // 默认:"collapse"
-        "max_preserve_newlines": 1, // 默认:10
-        "wrap_line_length": 0, // 默认:0
-        // js
-        "break_chained_methods": false, // 默认:false
-        "comma_first": false, // 默认:false
-        "e4x": false, // 默认:false
-        "indent_level": 0, // 默认:0
-        "jslint_happy": false, // 默认:false
-        "keep_array_indentation": true, // 默认:false
-        "keep_function_indentation": false, // 默认:false
-        "operator_position": "after-newline", // 默认:"before-newline"
-        "space_after_anon_function": true, // 默认:false
-        "space_before_conditional": true, // 默认:true
-        "space_in_empty_paren": false, // 默认:false
-        "space_in_paren": false, // 默认:false
-        "unescape_strings": false, // 默认:false
-        "unindent_chained_methods": false, // 默认:false
-        // html
-        "extra_liners": [
-            // 默认
-            "head",
-            "body",
-            "/html"
-            // 自定义
-        ],
-        "indent_body_inner_html": true, // 默认:true
-        "indent_handlebars": false, // 默认:false
-        "indent_head_inner_html": true, // 默认:true
-        "indent_inner_html": false, // 默认:false
-        "indent_scripts": "normal", // 默认:"normal"
-        "wrap_attributes": "auto", // 默认:"auto"
-        "wrap_attributes_indent_size": 4, // 默认:同'indent_size'
-        "unformatted": [
-            // 默认
-            // "a",
-            "abbr",
-            "area",
-            "audio",
-            "b",
-            "bdi",
-            "bdo",
-            // "br",
-            // "button",
-            "canvas",
-            "cite",
-            "code",
-            "data",
-            "datalist",
-            "del",
-            "dfn",
-            "em",
-            "embed",
-            "i",
-            // "iframe",
-            // "img",
-            // "input",
-            "ins",
-            "kbd",
-            "keygen",
-            // "label",
-            "map",
-            "mark",
-            "math",
-            "meter",
-            "noscript",
-            "object",
-            "output",
-            "progress",
-            "q",
-            "ruby",
-            "s",
-            "samp",
-            // "select",
-            "small",
-            // "span",
-            "strong",
-            "sub",
-            "sup",
-            "svg",
-            "template",
-            // "textarea",
-            "time",
-            "u",
-            "var",
-            "video",
-            "wbr",
-            "text",
-            "acronym",
-            "address",
-            "big",
-            // "dt",
-            "ins",
-            "strike",
-            // "tt"
-            // 自定义
-        ],
-        "content_unformatted": [
-            // 默认
-            "pre"
-            // 自定义
-        ],
-        "void_elements": [
-            // 默认
-            "area",
-            "base",
-            "br",
-            "col",
-            "embed",
-            "hr",
-            "img",
-            "input",
-            "keygen",
-            "link",
-            "menuitem",
-            "meta",
-            "param",
-            "source",
-            "track",
-            "wbr",
-            "!doctype",
-            "?xml",
-            "?php",
-            "basefont",
-            "isindex"
-            // 自定义
-        ],
-        // css
-        "newline_between_rules": false, // 默认:false
-        "selector_separator_newline": true, // 默认:true
-        "space_around_combinator": false, // 默认:false
-        // ？？
-        // "eval_code": false, // 默认:
-    },
+    "beautify.config": "~/AppData/Roaming/Code/User/.jsbeautifyrc",
     "beautify.ignore": [],
     "beautify.language": {
         "js": {
             "type": [
-                "javascript"
+                "javascript",
+                "typescript"
             ],
             "filename": [
                 ".jshintrc",
                 ".jsbeautifyrc"
             ]
         },
-        "css": [
-            "css",
-            "scss"
-        ],
-        "html": [
-            "htm",
-            "html"
-        ]
+        "css": {
+            "type": [
+                "css",
+                "scss"
+            ]
+        },
+        "html": {
+            "type": [
+                "htm",
+                "html"
+            ]
+        }
     },
     /* emmet */
     "emmet.showExpandedAbbreviation": "inMarkupAndStylesheetFilesOnly",
-    "emmet.triggerExpansionOnTab": true,
-    /* xml */
-    "[xml]": {
-        "editor.quickSuggestions": {
-            "strings": true
-        },
-        "editor.rulers": [
-            80,
-            120,
-            140
-        ],
-        "editor.wordWrap": "off"
-    },
-    /* yaml */
-    "[yaml]": {
-        "editor.rulers": [
-            80,
-            120,
-            140
-        ],
-        "editor.tabSize": 2,
-        "editor.autoIndent": true
-    },
-    /* json */
-    "json.format.enable": false,
-    "[json]": {
-        "editor.quickSuggestions": {
-            "strings": true
-        },
-        "editor.rulers": [
-            80,
-            120,
-            140
-        ],
-        "editor.wordWrap": "off"
-    },
-    "[jsonc]": {
-        "editor.quickSuggestions": {
-            "strings": true
-        },
-        "editor.rulers": [
-            80,
-            120,
-            140
-        ],
-        "editor.wordWrap": "on"
-    },
-    /* python */
-    "[python]": {
-        "editor.quickSuggestions": {
-            "strings": true
-        },
-        "editor.rulers": [
-            80,
-            120,
-            140
-        ],
-        "editor.wordWrap": "off"
-    },
-    /* comments */
-    "commentAnchors.tags.list": [
-        {
-            "tag": "MARK",
-            "iconColor": "default",
-            "highlightColor": "#A8C023",
-            "scope": "file"
-        },
-        {
-            "tag": "ANCHOR",
-            "highlightColor": "",
-            "scope": "file",
-            "enabled": false
-        },
-        {
-            "tag": "TODO",
-            "iconColor": "blue",
-            "highlightColor": "#3ea8ff",
-            "scope": "workspace"
-        },
-        {
-            "tag": "FIXME",
-            "iconColor": "red",
-            "highlightColor": "#F44336",
-            "scope": "workspace"
-        },
-        {
-            "tag": "NOTE",
-            "iconColor": "orange",
-            "highlightColor": "#FFB300",
-            "scope": "file"
-        },
-        {
-            "tag": "REVIEW",
-            "highlightColor": "",
-            "scope": "file",
-            "enabled": false
-        },
-        {
-            "tag": "SECTION",
-            "highlightColor": "",
-            "scope": "file",
-            "enabled": false
-        }
-    ],
-    "commentAnchors.tags.matchCase": false,
-    "commentAnchors.tags.separators": [
-        " ",
-        ":"
-    ],
-    "commentAnchors.workspace.excludeFiles": "**/{node_modules,.git,.idea,target,out,build,vendor,lib}/**/*",
-    "commentAnchors.workspace.lazyLoad": true,
-    /* bookmark */
-    "bookmarks.navigateThroughAllFiles": true,
-    /* togglequotes */
-    "togglequotes.chars": [
-        "\"",
-        "'"
-    ],
-    "editor.matchBrackets": false,
-    /* bracket-pair-colorizer */
-    "bracket-pair-colorizer-2.highlightActiveScope": true,
-    "bracket-pair-colorizer-2.showBracketsInGutter": true,
-    "bracket-pair-colorizer-2.showHorizontalScopeLine": false
+    "emmet.triggerExpansionOnTab": true
 }
