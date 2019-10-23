@@ -819,5 +819,90 @@
         "key": "ctrl+k v",
         "command": "-markdown.extension.togglePreviewToSide",
         "when": "!terminalFocus"
+    },
+    {
+        "key": "ctrl+b",
+        "command": "-markdownExtended.toggleBold",
+        "when": "editorTextFocus && editorLangId == 'markdown'"
+    },
+    {
+        "key": "ctrl+shift+t ctrl+shift+f",
+        "command": "-markdownExtended.formateTable",
+        "when": "editorTextFocus && editorLangId == 'markdown'"
+    },
+    {
+        "key": "ctrl+m",
+        "command": "-markdownExtended.toggleMark",
+        "when": "editorTextFocus && editorLangId == 'markdown'"
+    },
+    {
+        "key": "shift+alt+oem_3",
+        "command": "-markdownExtended.toggleCodeBlock",
+        "when": "editorTextFocus && editorLangId == 'markdown'"
+    },
+    {
+        "key": "ctrl+shift+q",
+        "command": "-markdownExtended.toggleBlockQuote",
+        "when": "editorTextFocus && editorLangId == 'markdown'"
+    },
+    {
+        "key": "alt+oem_3",
+        "command": "-markdownExtended.toggleCodeInline",
+        "when": "editorTextFocus && editorLangId == 'markdown'"
+    },
+    {
+        "key": "alt+s",
+        "command": "-markdownExtended.toggleStrikethrough",
+        "when": "editorTextFocus && editorLangId == 'markdown'"
+    },
+    {
+        "key": "ctrl+l ctrl+o",
+        "command": "-markdownExtended.toggleOList",
+        "when": "editorTextFocus && editorLangId == 'markdown'"
+    },
+    {
+        "key": "ctrl+i",
+        "command": "-markdownExtended.toggleItalics",
+        "when": "editorTextFocus && editorLangId == 'markdown'"
+    },
+    {
+        "key": "ctrl+u",
+        "command": "-markdownExtended.toggleUnderLine",
+        "when": "editorTextFocus && editorLangId == 'markdown'"
+    },
+    {
+        "key": "ctrl+shift+u",
+        "command": "-markdownExtended.toggleSuperscript",
+        "when": "editorTextFocus && editorLangId == 'markdown'"
+    },
+    {
+        "key": "ctrl+l ctrl+u",
+        "command": "-markdownExtended.toggleUList",
+        "when": "editorTextFocus && editorLangId == 'markdown'"
+    },
+    {
+        "key": "ctrl+shift+l",
+        "command": "-markdownExtended.toggleSubscript",
+        "when": "editorTextFocus && editorLangId == 'markdown'"
+    },
+    {
+        "key": "ctrl+shift+d ctrl+shift+r",
+        "command": "-markdownExtended.DeleteRow",
+        "when": "editorTextFocus && editorLangId == 'markdown'"
+    },
+    {
+        "key": "ctrl+shift+t ctrl+shift+a",
+        "command": "-markdownExtended.addRowAbove",
+        "when": "editorTextFocus && editorLangId == 'markdown'"
+    },
+    {
+        "key": "ctrl+shift+t ctrl+shift+b",
+        "command": "-markdownExtended.addRowBelow",
+        "when": "editorTextFocus && editorLangId == 'markdown'"
+    },
+    {
+        "key": "ctrl+shift+t ctrl+shift+p",
+        "command": "-markdownExtended.pasteAsTable",
+        "when": "editorTextFocus && editorLangId == 'markdown'"
     }
 ]
