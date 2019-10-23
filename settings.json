@@ -51,7 +51,7 @@
     "editor.wordWrap": "on",
     "zenMode.hideActivityBar": false,
     "files.autoGuessEncoding": false,
-    "files.simpleDialog.enable": true,
+    "files.simpleDialog.enable": false,
     "files.trimTrailingWhitespace": true,
     "files.trimFinalNewlines": true,
     "files.exclude": {
@@ -160,6 +160,35 @@
         "line",
         "overview"
     ],
+    "gitlens.menus": {
+        "editor": {
+            "blame": false,
+            "clipboard": false,
+            "compare": true,
+            "details": false,
+            "history": false,
+            "remote": false
+        },
+        "editorGroup": {
+            "blame": true,
+            "compare": true
+        },
+        "editorTab": false,
+        "explorer": false,
+        "scmGroup": {
+            "compare": false,
+            "openClose": true,
+            "stash": true,
+            "stashInline": true
+        },
+        "scmItem": {
+            "clipboard": true,
+            "compare": false,
+            "history": false,
+            "remote": false,
+            "stash": true
+        }
+    },
     // "git-graph.autoCenterCommitDetailsView": true,
     // "git-graph.combineLocalAndRemoteBranchLabels": true,
     "git-graph.commitDetailsViewLocation": "Docked to Bottom",
@@ -293,6 +322,7 @@
     "commentAnchors.workspace.excludeFiles": "**/{node_modules,.git,.idea,target,out,build,vendor,lib}/**/*",
     "commentAnchors.workspace.lazyLoad": true,
     /* bookmark */
+    "bookmarks.showCommandsInContextMenu": false,
     "bookmarks.backgroundLineColor": "rgba(251,126,251,0.1)",
     "bookmarks.navigateThroughAllFiles": true,
     /* togglequotes */
