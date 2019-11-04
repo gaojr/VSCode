@@ -757,10 +757,6 @@
         "command": "-workbench.action.openGlobalKeybindings"
     },
     {
-        "key": "ctrl+alt+o",
-        "command": "openInApplication.open"
-    },
-    {
         "key": "ctrl+l",
         "command": "-expandLineSelection",
         "when": "textInputFocus"
@@ -909,5 +905,9 @@
         "key": "ctrl+shift+u",
         "command": "extension.changeCase.commands",
         "when": "!editorReadonly && editorHasSelection"
+    },
+    {
+        "key": "ctrl+shift+m",
+        "command": "editor.action.joinLines"
     }
 ]
