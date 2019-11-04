@@ -2,7 +2,7 @@
     "workbench.settings.editor": "ui",
     "workbench.iconTheme": "material-icon-theme",
     "material-icon-theme.activeIconPack": "vue",
-    "workbench.colorTheme": "Night Owl",
+    "workbench.colorTheme": "One Dark",
     "workbench.colorCustomizations": {
         // 黑色
         // "activityBar.background": "#3f3f3f",
@@ -27,7 +27,7 @@
     // 'Fira Code','Cascadia Code','PT Mono',
     // 'Alibaba PuHuiTi','Hiragino Sans GB','HYQiHei 55S',
     // '汉仪意宋W',
-    "editor.fontFamily": "'Fira Code','HYQiHei 55S',monospace",
+    "editor.fontFamily": "'Fira Code','PT Mono','HYQiHei 55S','微软雅黑',monospace",
     "editor.fontLigatures": true,
     "editor.scrollBeyondLastLine": false,
     "editor.detectIndentation": false,
@@ -51,6 +51,7 @@
     "editor.wordWrap": "on",
     "editor.wordSeparators": "`~!@#$%^&*()-=+[{]}\\|;:'\",.<>/?",
     "zenMode.hideActivityBar": false,
+    "files.hotExit": "onExitAndWindowClose",
     "files.autoGuessEncoding": false,
     "files.simpleDialog.enable": false,
     "files.trimTrailingWhitespace": true,
@@ -84,7 +85,7 @@
     "telemetry.enableCrashReporter": false,
     "telemetry.enableTelemetry": false,
     "terminal.external.windowsExec": "C:\\WINDOWS\\System32\\cmd.exe",
-    "terminal.integrated.rendererType": "auto",
+    "terminal.integrated.rendererType": "dom",
     "terminal.integrated.shell.windows": "D:\\Program Files\\Git\\bin\\sh.exe",
     "terminal.integrated.cursorStyle": "line",
     "breadcrumbs.enabled": true,
@@ -113,9 +114,6 @@
     ],
     "gitlens.codeLens.authors.enabled": false,
     "gitlens.codeLens.recentChange.command": "gitlens.toggleFileBlame",
-    "gitlens.views.repositories.avatars": false,
-    "gitlens.views.repositories.showBranchComparison": false,
-    "gitlens.mode.statusBar.enabled": false,
     "gitlens.defaultDateFormat": "YYYY-MM-DD HH:mm",
     "gitlens.defaultDateShortFormat": "YY-M-D H:m",
     "gitlens.defaultDateStyle": "relative",
@@ -155,8 +153,11 @@
     "gitlens.views.lineHistory.location": "scm",
     "gitlens.views.repositories.enabled": true,
     "gitlens.views.repositories.location": "scm",
+    "gitlens.views.repositories.avatars": false,
+    "gitlens.views.repositories.showBranchComparison": false,
     "gitlens.views.search.enabled": true,
     "gitlens.views.search.location": "scm",
+    "gitlens.statusBar.enabled": false,
     "gitlens.recentChanges.highlight.locations": [
         "gutter",
         "line",
@@ -191,39 +192,25 @@
             "stash": true
         }
     },
-    // "git-graph.autoCenterCommitDetailsView": true,
-    // "git-graph.combineLocalAndRemoteBranchLabels": true,
     "git-graph.commitDetailsViewLocation": "Docked to Bottom",
-    // "git-graph.customBranchGlobPatterns": [],
-    // "git-graph.dateFormat":"Date & Time",
-    "git-graph.showStatusBarItem": false,
-    "git-graph.dialog.merge.squashCommits": true,
-    "git-graph.dateType": "Commit Date",
+    "git-graph.customBranchGlobPatterns": [
+        { "name": "feature", "glob": "heads/feature/*" },
+        { "name": "hotfix", "glob": "heads/hotfix/*" }
+    ],
     "git-graph.defaultColumnVisibility": {
         "Date": true,
         "Author": true,
         "Commit": false
     },
-    // "git-graph.fetchAvatars": false,
-    "git-graph.initialLoadCommits": 50,
-    "git-graph.graphColours": [
-        "#0085d9",
-        "#d9008f",
-        "#00d90a",
-        "#d98500",
-        "#a300d9",
-        "#ff0000",
-        "#00d9cc",
-        "#e138e8",
-        "#85d900",
-        "#dc5b23",
-        "#6f24d6",
-        "#ffcc00"
-    ],
-    // "git-graph.graphStyle": "rounded",
+    "git-graph.fetchAvatars": false,
+    "git-graph.fetchAndPrune": true,
+    "git-graph.dialog.addTag.pushToRemote": true,
+    "git-graph.dialog.createBranch.checkOut": true,
+    "git-graph.dialog.merge.squashCommits": true,
+    "git-graph.dialog.addTag.type": "Lightweight",
+    "git-graph.initialLoadCommits": 100,
     "git-graph.loadMoreCommits": 50,
-    // "git-graph.tabIconColourTheme": "colour",
-    "git-graph.fetchAndPrune": false,
+    "git-graph.showStatusBarItem": false,
     /* markdown */
     "markdown.preview.breaks": true,
     "markdown.preview.fontFamily": "'Fira Code','PT Serif','HYQihei 55S','Hiragino Sans GB'",
@@ -233,7 +220,7 @@
         // "https://raw.githubusercontent.com/raycon/vscode-markdown-style/master/preview/github.css"
     ],
     "[markdown]": {
-        "editor.fontFamily": "'Sarasa Term SC','Fira Code','Alibaba PuHuiTi',monospace"
+        "editor.fontFamily": "'Sarasa Term SC','Fira Code','HYQihei 55S',monospace"
     },
     "markdown.extension.toc.levels": "2..4",
     "markdown.extension.italic.indicator": "*",
@@ -337,8 +324,7 @@
     "bracket-pair-colorizer-2.showBracketsInGutter": true,
     "bracket-pair-colorizer-2.showHorizontalScopeLine": false,
     /* open-in-application */
-    "openInApplication.applications": {
-    },
+    "openInApplication.applications": {},
     /* python */
     "[python]": {
         "editor.quickSuggestions": {
