@@ -1,8 +1,9 @@
 {
     "workbench.settings.editor": "ui",
     "workbench.iconTheme": "material-icon-theme",
-    "material-icon-theme.activeIconPack": "vue",
+    "material-icon-theme.activeIconPack": "angular",
     "workbench.colorTheme": "One Dark",
+    "oneDark.vivid": true,
     "workbench.colorCustomizations": {
         // 黑色
         // "activityBar.background": "#3f3f3f",
@@ -23,11 +24,12 @@
     "workbench.activityBar.visible": true,
     "workbench.statusBar.visible": true,
     "editor.multiCursorModifier": "alt",
-    // 'Sarasa Term SC','FiraCode QiHei NF','DejaVuSansMono YaHei NF',
-    // 'Fira Code','Cascadia Code','PT Mono',
-    // 'Alibaba PuHuiTi','Hiragino Sans GB','HYQiHei 55S',
-    // '汉仪意宋W',
-    "editor.fontFamily": "'Fira Code','PT Mono','HYQiHei 55S','微软雅黑',monospace",
+    // 'Sarasa Term SC','Sarasa Mono SC','Sarasa Mono T SC','FiraCode QiHei NF','DejaVuSansMono YaHei NF',
+    // 'Fira Code','PT Mono','DejaVu Sans Mono',
+    // 'HYQiHei 55S','Hiragino Sans GB',
+    // 'HYYiSongW','A-OTF Outai Kaisho Std',
+    "editor.fontFamily": "'Fira Code','PT Mono','DejaVu Sans Mono','HYQiHei 55S',monospace,'Microsoft YaHei'",
+    "editor.fontSize": 14,
     "editor.fontLigatures": true,
     "editor.scrollBeyondLastLine": false,
     "editor.detectIndentation": false,
@@ -211,16 +213,33 @@
     "git-graph.initialLoadCommits": 100,
     "git-graph.loadMoreCommits": 50,
     "git-graph.showStatusBarItem": false,
+    "git-graph.contextMenuActionsVisibility": {
+        "remoteBranch": {
+            "checkout": true,
+            "delete": true,
+            "fetch": true,
+            "pull": false,
+            "copyName": true
+        },
+        "stash": {
+            "apply": true,
+            "createBranch": false,
+            "pop": true,
+            "drop": true,
+            "copyName": false,
+            "copyHash": true
+        }
+    },
     /* markdown */
     "markdown.preview.breaks": true,
-    "markdown.preview.fontFamily": "'Fira Code','PT Serif','HYQihei 55S','Hiragino Sans GB'",
-    "markdown.preview.lineHeight": 1.5,
+    "markdown.preview.fontFamily": "'Fira Code','HYQihei 55S'",
+    "markdown.preview.lineHeight": 1.4,
     "markdown.preview.doubleClickToSwitchToEditor": false,
     "markdown.styles": [
-        // "https://raw.githubusercontent.com/raycon/vscode-markdown-style/master/preview/github.css"
+        // TODO "https://raw.githubusercontent.com/raycon/vscode-markdown-style/master/preview/github.css"
     ],
     "[markdown]": {
-        "editor.fontFamily": "'Sarasa Term SC','Fira Code','HYQihei 55S',monospace"
+        "editor.fontFamily": "'Sarasa Mono SC'"
     },
     "markdown.extension.toc.levels": "2..4",
     "markdown.extension.italic.indicator": "*",
