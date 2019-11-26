@@ -167,10 +167,6 @@
         "command": "-workbench.action.closeEditorsInGroup"
     },
     {
-        "key": "ctrl+f4",
-        "command": "-workbench.action.closeActiveEditor"
-    },
-    {
         "key": "ctrl+shift+oem_2",
         "command": "editor.action.blockComment",
         "when": "editorTextFocus && !editorReadonly"
@@ -354,136 +350,6 @@
         "when": "fileMatchOrMatchFocus && searchViewletVisible"
     },
     {
-        "key": "alt+oem_period",
-        "command": "-gitlens.diffWithNext",
-        "when": "editorTextFocus && gitlens:activeIsTracked && gitlens:keymap == 'alternate'"
-    },
-    {
-        "key": "ctrl+shift+g oem_period",
-        "command": "-gitlens.diffWithNext",
-        "when": "editorTextFocus && gitlens:activeIsTracked && gitlens:keymap == 'chorded'"
-    },
-    {
-        "key": "alt+oem_comma",
-        "command": "-gitlens.diffWithPrevious",
-        "when": "editorTextFocus && gitlens:activeIsTracked && gitlens:keymap == 'alternate'"
-    },
-    {
-        "key": "ctrl+shift+g oem_comma",
-        "command": "-gitlens.diffWithPrevious",
-        "when": "editorTextFocus && gitlens:activeIsTracked && gitlens:keymap == 'chorded'"
-    },
-    {
-        "key": "ctrl+shift+g shift+w",
-        "command": "-gitlens.diffWithWorking",
-        "when": "editorTextFocus && gitlens:activeIsTracked && gitlens:keymap == 'chorded'"
-    },
-    {
-        "key": "shift+alt+w",
-        "command": "-gitlens.diffWithWorking",
-        "when": "editorTextFocus && gitlens:activeIsTracked && gitlens:keymap == 'alternate'"
-    },
-    {
-        "key": "ctrl+shift+g shift+oem_comma",
-        "command": "-gitlens.diffLineWithPrevious",
-        "when": "editorTextFocus && gitlens:activeIsTracked && gitlens:keymap == 'chorded'"
-    },
-    {
-        "key": "shift+alt+oem_comma",
-        "command": "-gitlens.diffLineWithPrevious",
-        "when": "editorTextFocus && gitlens:activeIsTracked && gitlens:keymap == 'alternate'"
-    },
-    {
-        "key": "ctrl+shift+g w",
-        "command": "-gitlens.diffLineWithWorking",
-        "when": "editorTextFocus && gitlens:activeIsTracked && gitlens:keymap == 'chorded'"
-    },
-    {
-        "key": "alt+w",
-        "command": "-gitlens.diffLineWithWorking",
-        "when": "editorTextFocus && gitlens:activeIsTracked && gitlens:keymap == 'alternate'"
-    },
-    {
-        "key": "alt+oem_2",
-        "command": "-gitlens.showCommitSearch",
-        "when": "gitlens:enabled && gitlens:keymap == 'alternate'"
-    },
-    {
-        "key": "ctrl+shift+g oem_2",
-        "command": "-gitlens.showCommitSearch",
-        "when": "gitlens:enabled && gitlens:keymap == 'chorded'"
-    },
-    {
-        "key": "ctrl+shift+g c",
-        "command": "-gitlens.showQuickCommitFileDetails",
-        "when": "editorTextFocus && gitlens:enabled && gitlens:keymap == 'chorded'"
-    },
-    {
-        "key": "alt+c",
-        "command": "-gitlens.showQuickCommitFileDetails",
-        "when": "editorTextFocus && gitlens:enabled && gitlens:keymap == 'alternate'"
-    },
-    {
-        "key": "shift+alt+h",
-        "command": "-gitlens.showQuickRepoHistory",
-        "when": "gitlens:enabled && gitlens:keymap == 'alternate'"
-    },
-    {
-        "key": "ctrl+shift+g shift+h",
-        "command": "-gitlens.showQuickRepoHistory",
-        "when": "gitlens:enabled && gitlens:keymap == 'chorded'"
-    },
-    {
-        "key": "alt+h",
-        "command": "-gitlens.showQuickFileHistory",
-        "when": "gitlens:enabled && gitlens:keymap == 'alternate'"
-    },
-    {
-        "key": "ctrl+shift+g h",
-        "command": "-gitlens.showQuickFileHistory",
-        "when": "gitlens:enabled && gitlens:keymap == 'chorded'"
-    },
-    {
-        "key": "ctrl+shift+g oem_minus",
-        "command": "-gitlens.showLastQuickPick",
-        "when": "gitlens:enabled && gitlens:keymap == 'chorded'"
-    },
-    {
-        "key": "alt+oem_minus",
-        "command": "-gitlens.showLastQuickPick",
-        "when": "gitlens:enabled && gitlens:keymap == 'alternate'"
-    },
-    {
-        "key": "ctrl+shift+g s",
-        "command": "-gitlens.showQuickRepoStatus",
-        "when": "gitlens:enabled && gitlens:keymap == 'chorded'"
-    },
-    {
-        "key": "alt+s",
-        "command": "-gitlens.showQuickRepoStatus",
-        "when": "gitlens:enabled && gitlens:keymap == 'alternate'"
-    },
-    {
-        "key": "ctrl+shift+g shift+b",
-        "command": "-gitlens.toggleCodeLens",
-        "when": "editorTextFocus && gitlens:canToggleCodeLens && gitlens:enabled && gitlens:keymap == 'chorded'"
-    },
-    {
-        "key": "shift+alt+b",
-        "command": "-gitlens.toggleCodeLens",
-        "when": "editorTextFocus && gitlens:canToggleCodeLens && gitlens:enabled && gitlens:keymap == 'alternate'"
-    },
-    {
-        "key": "alt+b",
-        "command": "-gitlens.toggleFileBlame",
-        "when": "editorTextFocus && gitlens:activeIsBlameable && gitlens:keymap == 'alternate'"
-    },
-    {
-        "key": "ctrl+shift+g b",
-        "command": "-gitlens.toggleFileBlame",
-        "when": "editorTextFocus && gitlens:activeIsBlameable && gitlens:keymap == 'chorded'"
-    },
-    {
         "key": "ctrl+enter",
         "command": "-search.action.openResultToSide",
         "when": "fileMatchOrMatchFocus && searchViewletVisible"
@@ -543,16 +409,6 @@
         "key": "ctrl+shift+f",
         "command": "-workbench.action.findInFiles",
         "when": "!searchInputBoxFocus"
-    },
-    {
-        "key": "ctrl+shift+g oem_comma",
-        "command": "-gitlens.diffWithPrevious",
-        "when": "editorTextFocus && gitlens:activeIsTracked && !isInDiffEditor && gitlens:keymap == 'chorded'"
-    },
-    {
-        "key": "alt+oem_comma",
-        "command": "-gitlens.diffWithPrevious",
-        "when": "editorTextFocus && gitlens:activeIsTracked && !isInDiffEditor && gitlens:keymap == 'alternate'"
     },
     {
         "key": "ctrl+shift+5",
@@ -640,11 +496,6 @@
         "key": "shift+alt+j",
         "command": "-bookmarks.expandSelectionToPrevious",
         "when": "editorTextFocus"
-    },
-    {
-        "key": "alt+b",
-        "command": "-gitlens.toggleFileBlame",
-        "when": "editorTextFocus && gitlens:keymap == 'alternate' && gitlens:activeFileStatus =~ /blameable/"
     },
     {
         "key": "alt+b",
@@ -909,5 +760,19 @@
     {
         "key": "ctrl+shift+m",
         "command": "editor.action.joinLines"
+    },
+    {
+        "key": "ctrl+w",
+        "command": "workbench.action.terminal.kill",
+        "when": "terminalFocus || terminalIsOpen"
+    },
+    {
+        "key": "ctrl+w",
+        "command": "workbench.action.closeActiveEditor",
+        "when": "editorFocus"
+    },
+    {
+        "key": "ctrl+w",
+        "command": "-workbench.action.closeActiveEditor"
     }
 ]
