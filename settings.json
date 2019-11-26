@@ -24,10 +24,10 @@
     "workbench.activityBar.visible": true,
     "workbench.statusBar.visible": true,
     "editor.multiCursorModifier": "alt",
-    // 'Sarasa Term SC','Sarasa Mono SC','Sarasa Mono T SC','FiraCode QiHei NF','DejaVuSansMono YaHei NF',
-    // 'Fira Code','PT Mono','DejaVu Sans Mono',
-    // 'HYQiHei 55S','Hiragino Sans GB',
-    // 'HYYiSongW','A-OTF Outai Kaisho Std',
+    // 'Sarasa Mono SC','Sarasa Mono T SC'
+    // 'Fira Code','PT Mono','DejaVu Sans Mono','Cascadia Code PL',monaco
+    // 'HYQiHei 55S'
+    // 'HYYiSongW','A-OTF Outai Kaisho Std'
     "editor.fontFamily": "'Fira Code','PT Mono','DejaVu Sans Mono','HYQiHei 55S',monospace,'Microsoft YaHei'",
     "editor.fontSize": 14,
     "editor.fontLigatures": true,
@@ -88,7 +88,7 @@
     "telemetry.enableTelemetry": false,
     "terminal.external.windowsExec": "C:\\WINDOWS\\System32\\cmd.exe",
     "terminal.integrated.rendererType": "dom",
-    "terminal.integrated.shell.windows": "D:\\Program Files\\Git\\bin\\sh.exe",
+    "terminal.integrated.shell.windows": "D:\\Program Files\\Git\\bin\\git.exe",
     "terminal.integrated.cursorStyle": "line",
     "breadcrumbs.enabled": true,
     "breadcrumbs.symbolSortOrder": "name",
@@ -151,7 +151,7 @@
     "gitlens.views.compare.location": "scm",
     "gitlens.views.fileHistory.enabled": true,
     "gitlens.views.fileHistory.location": "scm",
-    "gitlens.views.lineHistory.enabled": false,
+    "gitlens.views.lineHistory.enabled": true,
     "gitlens.views.lineHistory.location": "scm",
     "gitlens.views.repositories.enabled": true,
     "gitlens.views.repositories.location": "scm",
@@ -196,8 +196,9 @@
     },
     "git-graph.commitDetailsViewLocation": "Docked to Bottom",
     "git-graph.customBranchGlobPatterns": [
-        { "name": "feature", "glob": "heads/feature/*" },
-        { "name": "hotfix", "glob": "heads/hotfix/*" }
+        { "name": "常用", "glob": "*/develop" },
+        { "name": "本地", "glob": "heads/*" },
+        { "name": "release", "glob": "*/release/*" }
     ],
     "git-graph.defaultColumnVisibility": {
         "Date": true,
@@ -493,7 +494,7 @@
     ],
     /* beautify */
     "beautify.config": "~/AppData/Roaming/Code/User/.jsbeautifyrc",
-    "beautify.ignore": [],
+    "beautify.ignore": ["*/test.js", "**/test/**/*"],
     "beautify.language": {
         "js": {
             "type": [
@@ -520,5 +521,19 @@
     },
     /* emmet */
     "emmet.showExpandedAbbreviation": "inMarkupAndStylesheetFilesOnly",
-    "emmet.triggerExpansionOnTab": true
+    "emmet.triggerExpansionOnTab": true,
+    /* docker */
+    "docker.defaultRegistryPath": "registry.thunisoft.com:5000",
+    "docker.images.groupBy": "Registry",
+    "docker.images.label": "RepositoryNameAndTag",
+    "docker.images.description": [
+        "CreatedTime"
+    ],
+    "docker.images.sortBy": "Label",
+    /* eslint */
+    "eslint.enable": false,
+    // "eslint.nodePath": null,
+    // "eslint.options": {},
+    "eslint.validate": [ "javascript", "javascriptreact", "html" ],
+    "eslint.quiet": false
 }
