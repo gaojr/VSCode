@@ -89,7 +89,7 @@
   "extensions.showRecommendationsOnlyOnDemand": true,
   /* git */
   "git.enabled": true,
-  "git.path": "D:/Program Files/Git/bin/git.exe",
+  "git.path": "D:\\Program Files\\Git\\bin\\git.exe",
   "git.autorefresh": true,
   "git.ignoreMissingGitWarning": true,
   "git.ignoreLegacyWarning": true,
@@ -378,14 +378,15 @@
   "css.lint.zeroUnits": "warning",
   /* prettier */
   "prettier.requireConfig": true,
-  "prettier.ignorePath": "~/AppData/Roaming/Code/User/.prettierignore",
-  "prettier.configPath": "~/AppData/Roaming/Code/User/.prettierrc.json",
+  "prettier.ignorePath": "%APPDATA%\\Code\\User\\.prettierignore",
+  "prettier.configPath": "%APPDATA%\\Code\\User\\.prettierrc.json",
   /* eslint */
   "eslint.enable": true,
+
   "eslint.format.enable": true,
   "eslint.nodePath": "D:\\nodejs",
   // "eslint.options": {},
-  "eslint.validate": ["javascript", "javascriptreact", "html"],
+  "eslint.validate": ["typescript", "javascript", "javascriptreact", "html"],
   "eslint.quiet": false,
   /* emmet */
   "emmet.showExpandedAbbreviation": "inMarkupAndStylesheetFilesOnly",
