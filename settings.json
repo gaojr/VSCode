@@ -231,19 +231,6 @@
   "markdown.extension.toc.plaintext": false,
   /* comments */
   "commentAnchors.tags.list": [
-    // custom
-    {
-      "tag": "TOTEST",
-      "iconColor": "yellow",
-      "highlightColor": "#f4d13d",
-      "scope": "file"
-    },
-    {
-      "tag": "QUESTION",
-      "iconColor": "purple",
-      "highlightColor": "#BA68C8",
-      "scope": "file"
-    },
     // default
     {
       "tag": "FIXME",
@@ -315,8 +302,9 @@
   /* open-in-application */
   "openInApplication.applications": {},
   /* typescript */
-  "typescript.format.enable": true,
+  "typescript.format.enable": false,
   "[typescript]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint",
     "files.trimTrailingWhitespace": false,
     "editor.rulers": [80, 120, 140]
   },
@@ -345,24 +333,11 @@
   },
   /* javascript */
   "[javascript]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint",
     "files.trimTrailingWhitespace": false,
     "editor.rulers": [80, 120, 140]
   },
   "javascript.format.enable": false,
-  "javascript.format.insertSpaceAfterCommaDelimiter": true,
-  "javascript.format.insertSpaceAfterConstructor": false,
-  "javascript.format.insertSpaceAfterFunctionKeywordForAnonymousFunctions": true,
-  "javascript.format.insertSpaceAfterKeywordsInControlFlowStatements": true,
-  "javascript.format.insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces": false,
-  "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": false,
-  "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": false,
-  "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis": false,
-  "javascript.format.insertSpaceAfterOpeningAndBeforeClosingTemplateStringBraces": false,
-  "javascript.format.insertSpaceAfterSemicolonInForStatements": true,
-  "javascript.format.insertSpaceBeforeAndAfterBinaryOperators": true,
-  "javascript.format.insertSpaceBeforeFunctionParenthesis": false,
-  "javascript.format.placeOpenBraceOnNewLineForControlBlocks": false,
-  "javascript.format.placeOpenBraceOnNewLineForFunctions": false,
   /* html */
   "[html]": {
     "editor.rulers": [80, 120, 140]
@@ -382,11 +357,16 @@
   "prettier.configPath": "%APPDATA%\\Code\\User\\.prettierrc.json",
   /* eslint */
   "eslint.enable": true,
-
   "eslint.format.enable": true,
   "eslint.nodePath": "D:\\nodejs",
-  // "eslint.options": {},
-  "eslint.validate": ["typescript", "javascript", "javascriptreact", "html"],
+  "eslint.validate": [
+    "typescript",
+    "typescriptreact",
+    "javascript",
+    "javascriptreact",
+    "html",
+    "vue"
+  ],
   "eslint.quiet": false,
   /* emmet */
   "emmet.showExpandedAbbreviation": "inMarkupAndStylesheetFilesOnly",
