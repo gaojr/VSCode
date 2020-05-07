@@ -2,7 +2,7 @@
   "arrowParens": "always",
   "bracketSpacing": true,
   "cursorOffset": -1,
-  "endOfLine": "lf",
+  "endOfLine": "auto",
   "filepath": "",
   "htmlWhitespaceSensitivity": "css",
   "insertPragma": false,
@@ -11,8 +11,8 @@
   "overrides": [
     { "files": "*.md", "options": { "parser": "markdown" } },
     { "files": "*.js", "options": { "parser": "babel" } },
-    { "files": "*.json", "options": { "parser": "json" } },
-    { "files": ".prettierrc", "options": { "parser": "json" } }
+    { "files": "*.json", "options": { "parser": "json5" } },
+    { "files": ".prettierrc", "options": { "parser": "json5" } }
   ],
   "plugins": [],
   "pluginSearchDirs": [],
