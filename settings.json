@@ -229,67 +229,6 @@
   "markdown.extension.syntax.plainTheme": true,
   "markdown.extension.toc.githubCompatibility": true,
   "markdown.extension.toc.plaintext": false,
-  /* comments */
-  "commentAnchors.tags.list": [
-    // default
-    {
-      "tag": "FIXME",
-      "iconColor": "red",
-      "highlightColor": "#f44336",
-      "scope": "file"
-    },
-    {
-      "tag": "MARK",
-      "iconColor": "orange",
-      "highlightColor": "#ffa100",
-      "scope": "file"
-    },
-    {
-      "tag": "NOTE",
-      "iconColor": "emerald",
-      "highlightColor": "#2ecc71",
-      "scope": "file"
-    },
-    {
-      "tag": "TODO",
-      "iconColor": "teal",
-      "highlightColor": "#00cec9",
-      "scope": "file"
-    },
-    {
-      "tag": "SECTION",
-      "iconColor": "default",
-      "highlightColor": "default",
-      "scope": "file"
-    },
-    {
-      "enabled": false,
-      "tag": "ANCHOR",
-      "iconColor": "none",
-      "highlightColor": "",
-      "scope": "file"
-    },
-    {
-      "enabled": false,
-      "tag": "REVIEW",
-      "iconColor": "none",
-      "highlightColor": "",
-      "scope": "file"
-    },
-    {
-      "enabled": false,
-      "tag": "STUB",
-      "iconColor": "none",
-      "highlightColor": "",
-      "scope": "file"
-    }
-  ],
-  "commentAnchors.tags.matchCase": false,
-  "commentAnchors.tags.separators": [" ", ":", "-"],
-  "commentAnchors.parseDelay": 400,
-  "commentAnchors.workspace.enabled": false,
-  "commentAnchors.workspace.excludeFiles": "**/{node_modules,.git,.idea,target,out,build,vendor,lib}/**/*",
-  "commentAnchors.workspace.lazyLoad": true,
   /* bookmark */
   "bookmarks.showCommandsInContextMenu": false,
   "bookmarks.navigateThroughAllFiles": true,
