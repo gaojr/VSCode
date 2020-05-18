@@ -39,9 +39,10 @@
   "editor.wordWrap": "on",
   "editor.wordSeparators": "`~!@#$%^&*()-=+[{]}\\|;:'\",.<>/?",
   "zenMode.hideActivityBar": false,
-  "files.defaultLanguage": "{activeEditorLanguage}",
+  "files.defaultLanguage": "markdown",
   "files.hotExit": "onExitAndWindowClose",
-  "files.autoGuessEncoding": false,
+  "files.encoding": "utf8",
+  "files.autoGuessEncoding": true,
   "files.simpleDialog.enable": false,
   "files.trimTrailingWhitespace": true,
   "files.trimFinalNewlines": true,
@@ -298,14 +299,7 @@
   "eslint.enable": true,
   "eslint.format.enable": true,
   "eslint.nodePath": "D:\\nodejs",
-  "eslint.validate": [
-    "typescript",
-    "typescriptreact",
-    "javascript",
-    "javascriptreact",
-    "html",
-    "vue"
-  ],
+  "eslint.validate": ["typescript", "typescriptreact", "javascript", "javascriptreact", "html", "vue"],
   "eslint.quiet": false,
   /* emmet */
   "emmet.showExpandedAbbreviation": "inMarkupAndStylesheetFilesOnly",
