@@ -1,14 +1,17 @@
 {
   "env": {
+    "commonjs": false,
+    "jquery": true,
+    "greasemonkey": false,
     "browser": true,
     "es6": true,
     "node": true
   },
   "extends": [
-    "eslint:recommended",
-    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@jquery/eslint-plugin-jquery",
     "plugin:@typescript-eslint/recommended",
-    "prettier"
+    "eslint:recommended",
+    "plugin:prettier/recommended"
   ],
   "globals": {
     "Atomics": "readonly",
@@ -19,6 +22,6 @@
     "ecmaVersion": 2018,
     "sourceType": "module"
   },
-  "plugins": ["@typescript-eslint", "prettier"],
-  "rules": { "prettier/prettier": 2 }
+  "plugins": ["@typescript-eslint"],
+  "rules": {}
 }
