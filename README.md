@@ -21,11 +21,15 @@ Visual Studio Code 相关
 |  用户数据  | %APPDATA%\\Code\\User              | `解压路径`\\data\\user-data  |
 |    插件    | %USERPROFILE%\\.vscode\\extensions | `解压路径`\\data\\extensions |
 
-## 各文件路径
+## 设置、配置文件路径
 
-- 快捷键 : `用户数据路径`\keybindings.json
-- 语言 : `用户数据路径`\locale.json
-- 设置 : `用户数据路径`\settings.json
+- 快捷键 : `用户数据路径`\\keybindings.json
+- 语言 : `用户数据路径`\\locale.json
+- 设置 : `用户数据路径`\\settings.json
+- eslint 忽略 : `用户数据路径`\\.eslintignore
+- eslint 配置 : `用户数据路径`\\.eslintrc.json
+- prettier 忽略 : `用户数据路径`\\.prettierignore
+- prettier 配置 : `用户数据路径`\\.prettierrc.json
 
 ## 便携版
 
@@ -35,8 +39,8 @@ Visual Studio Code 相关
 
 ### 使用便携版
 
-1. 下载 VS Code zip 包并解压
-2. 在解压目录下创建 `data` 文件夹
+1. 下载 VS Code 的 zip 包并解压
+2. 在解压路径下创建 `data` 文件夹
 3. 复制用户数据目录到 `data` ，并重命名为 `user-data`
 4. 复制插件目录到 `data`
 5. 在 `data` 下创建名为 `tmp` 的空文件夹
@@ -59,3 +63,25 @@ windows 下的目录结构：
 ### 更新便携版
 
 将 `data` 文件夹复制到更新版本的 VS Code 解压路径下。
+
+## prettier + eslint + typescript
+
+npm 安装：
+
+```sh
+npm i -g prettier eslint eslint-config-prettier eslint-plugin-prettier
+npm i -g typescript @typescript-eslint/parser @typescript-eslint/eslint-plugin
+```
+
+命令行使用：
+
+```sh
+# eslint 检测
+eslint * --ext .ts,.js
+# eslint 修复
+eslint --fix * --ext .ts,.js
+# prettier 检测
+prettier --list-different "**/*.{css,ts,js,json,md}"
+# prettier 修复
+prettier --write "**/*.{css,ts,js,json,md}"
+```
