@@ -3,7 +3,6 @@
   "workbench.iconTheme": "material-icon-theme",
   "material-icon-theme.activeIconPack": "angular",
   "workbench.colorTheme": "One Dark",
-  "oneDark.vivid": true,
   "workbench.colorCustomizations": {
     "bookmarks.lineBackground": "#fb7efb01"
   },
@@ -279,18 +278,15 @@
   },
   "javascript.format.enable": false,
   /* html */
+  "html.format.enable": false,
   "[html]": {
     "editor.rulers": [80, 120, 140]
   },
-  "html.format.enable": false,
   /* css */
+  "css.validate": false,
   "[css]": {
     "editor.rulers": [80, 120, 140]
   },
-  "css.validate": true,
-  "css.lint.duplicateProperties": "warning",
-  "css.lint.fontFaceProperties": "ignore",
-  "css.lint.zeroUnits": "warning",
   /* prettier */
   "prettier.requireConfig": true,
   "prettier.ignorePath": "%APPDATA%\\Code\\User\\.prettierignore",
