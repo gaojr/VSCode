@@ -10,6 +10,7 @@
   "jsxSingleQuote": true,
   "overrides": [
     { "files": "*.md", "options": { "parser": "markdown" } },
+    { "files": "*.html", "options": { "parser": "html" } },
     { "files": "*.css", "options": { "parser": "css" } },
     { "files": "*.ts", "options": { "parser": "typescript" } },
     { "files": "*.js", "options": { "parser": "babel" } },
