@@ -1,0 +1,8 @@
+{
+  "extends": ["stylelint-config-recess-order", "stylelint-plugin-stylus/standard", "stylelint-prettier/recommended"],
+  "plugins": ["stylelint-order"],
+  "rules": {
+    "comment-empty-line-before": null,
+    "comment-whitespace-inside": "always"
+  }
+}
