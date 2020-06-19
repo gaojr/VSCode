@@ -774,5 +774,20 @@
     {
         "key": "ctrl+w",
         "command": "-workbench.action.closeActiveEditor"
+    },
+    {
+        "key": "ctrl+shift+f",
+        "command": "stylelint.executeAutofix",
+        "when": "editorTextFocus && editorLangId == 'css'"
+    },
+    {
+        "key": "ctrl+shift+f",
+        "command": "stylelint.executeAutofix",
+        "when": "editorTextFocus && editorLangId == 'scss'"
+    },
+    {
+        "key": "ctrl+shift+f",
+        "command": "stylelint.executeAutofix",
+        "when": "editorTextFocus && editorLangId == 'less'"
     }
 ]
