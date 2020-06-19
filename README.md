@@ -87,7 +87,7 @@ stylelint *.css
 # stylelint 修复
 stylelint --fix *.css
 # prettier 检测
-prettier --list-different "**/*.{css,ts,js,json,md}"
+prettier --list-different "**/*.{ts,js,json,md}"
 # prettier 修复
-prettier --write "**/*.{css,ts,js,json,md}"
+prettier --write "**/*.{ts,js,json,md}"
 ```
