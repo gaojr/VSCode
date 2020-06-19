@@ -27,6 +27,7 @@
     "comments": false,
     "other": true
   },
+  "editor.accessibilitySupport": "off",
   "editor.parameterHints.cycle": true,
   "editor.quickSuggestionsDelay": 100,
   "editor.snippetSuggestions": "top",
@@ -284,7 +285,15 @@
   },
   /* css */
   "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false,
   "[css]": {
+    "editor.rulers": [80, 120, 140]
+  },
+  "[less]": {
+    "editor.rulers": [80, 120, 140]
+  },
+  "[scss]": {
     "editor.rulers": [80, 120, 140]
   },
   /* prettier */
@@ -297,6 +306,9 @@
   "eslint.nodePath": "D:\\nodejs",
   "eslint.validate": ["typescript", "typescriptreact", "javascript", "javascriptreact", "html", "vue"],
   "eslint.quiet": false,
+  /* stylelint */
+  "stylelint.enable": true,
+  "stylelint.validate": ["css", "less", "scss", "html"],
   /* emmet */
   "emmet.showExpandedAbbreviation": "inMarkupAndStylesheetFilesOnly",
   "emmet.triggerExpansionOnTab": true
