@@ -64,13 +64,15 @@ windows 下的目录结构：
 
 将 `data` 文件夹复制到更新版本的 VS Code 解压路径下。
 
-## prettier + eslint + typescript
+## prettier + eslint + typescript + stylelint
 
 npm 安装：
 
 ```sh
-npm i -g prettier eslint eslint-config-prettier eslint-plugin-prettier
+npm i -g prettier
+npm i -g eslint eslint-config-prettier eslint-plugin-prettier
 npm i -g typescript @typescript-eslint/parser @typescript-eslint/eslint-plugin
+npm i -g stylelint stylelint-order stylelint-config-recess-order stylelint-plugin-stylus stylelint-config-prettier stylelint-prettier
 ```
 
 命令行使用：
@@ -80,6 +82,10 @@ npm i -g typescript @typescript-eslint/parser @typescript-eslint/eslint-plugin
 eslint * --ext .ts,.js
 # eslint 修复
 eslint --fix * --ext .ts,.js
+# stylelint 检测
+stylelint *.css
+# stylelint 修复
+stylelint --fix *.css
 # prettier 检测
 prettier --list-different "**/*.{css,ts,js,json,md}"
 # prettier 修复
