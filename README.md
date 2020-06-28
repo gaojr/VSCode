@@ -21,6 +21,11 @@ Visual Studio Code 相关
 |  用户数据  | %APPDATA%\\Code\\User              | `解压路径`\\data\\user-data  |
 |    插件    | %USERPROFILE%\\.vscode\\extensions | `解压路径`\\data\\extensions |
 
+查看appdata的方式:
+- cmd: `%APPDATA%`
+- powershell: `$env:APPDATA`
+- bash: `$APPDATA`
+
 ## 设置、配置文件路径
 
 - 快捷键 : `用户数据路径`\\keybindings.json
@@ -89,5 +94,5 @@ stylelint --fix *.css
 # prettier 检测
 prettier --list-different "**/*.{ts,js,json,md}"
 # prettier 修复
-prettier --write "**/*.{ts,js,json,md}"
+prettier --write "**/*.{ts,js,json,md}" --config $APPDATA\Code\User\.prettierrc.json
 ```
