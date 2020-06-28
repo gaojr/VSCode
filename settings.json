@@ -1,7 +1,7 @@
 {
   "workbench.settings.editor": "ui",
   "workbench.iconTheme": "material-icon-theme",
-  "material-icon-theme.activeIconPack": "angular",
+  "material-icon-theme.activeIconPack": "vue",
   "workbench.colorTheme": "One Dark",
   "workbench.colorCustomizations": {
     "bookmarks.lineBackground": "#fb7efb01"
@@ -10,13 +10,14 @@
   "workbench.activityBar.visible": true,
   "workbench.statusBar.visible": true,
   "editor.multiCursorModifier": "alt",
-  // 'Sarasa Mono SC','Sarasa Mono T SC'
-  // 'Fira Code','PT Mono','DejaVu Sans Mono','Cascadia Code PL',monaco
-  // 'HYQiHei 55S'
-  // 'HYYiSongW','A-OTF Outai Kaisho Std'
+  "editor.tabSize": 2,
+  // 'Sarasa Mono SC' // 中英等宽
+  // 'Fira Code','PT Mono','DejaVu Sans Mono','Cascadia Code PL',monaco // 英文黑体
+  // 'HYQiHei 55S' // 无衬线sans
+  // 'HYYiSongW','A-OTF Outai Kaisho Std' // 衬线serif
   "editor.fontFamily": "'Fira Code','PT Mono','DejaVu Sans Mono','HYQiHei 55S',monospace,'Microsoft YaHei'",
   "editor.fontSize": 14,
-  "editor.fontLigatures": true,
+  "editor.fontLigatures": "'ss06', 'ss07'",
   "editor.scrollBeyondLastLine": false,
   "editor.detectIndentation": false,
   "editor.renderWhitespace": "all",
@@ -75,9 +76,10 @@
   "search.useReplacePreview": false,
   "telemetry.enableCrashReporter": false,
   "telemetry.enableTelemetry": false,
-  "terminal.external.windowsExec": "C:\\WINDOWS\\System32\\cmd.exe",
-  "terminal.integrated.rendererType": "dom",
-  "terminal.integrated.shell.windows": "D:\\Program Files\\Git\\bin\\bash.exe",
+  "terminal.external.windowsExec": "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+  "terminal.integrated.rendererType": "auto",
+  "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+  "terminal.integrated.cwd": "${fileDirname}",
   "terminal.integrated.cursorStyle": "line",
   "terminal.integrated.minimumContrastRatio": 4.5,
   "breadcrumbs.enabled": true,
@@ -215,9 +217,11 @@
   "markdown.preview.doubleClickToSwitchToEditor": false,
   "markdown.styles": [
     // TODO "https://raw.githubusercontent.com/raycon/vscode-markdown-style/master/preview/github.css"
+    // TODO "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
   ],
   "[markdown]": {
     "files.trimTrailingWhitespace": false,
+    "editor.tabSize": 4,
     "editor.fontFamily": "'Sarasa Mono SC'"
   },
   "markdown.extension.toc.levels": "2..4",
@@ -228,8 +232,8 @@
   "markdown.extension.toc.orderedList": true,
   "markdown.extension.syntax.decorations": false,
   "markdown.extension.syntax.plainTheme": true,
-  "markdown.extension.toc.githubCompatibility": true,
   "markdown.extension.toc.plaintext": false,
+  "markdownExtended.disabledPlugins": "container",
   /* bookmark */
   "bookmarks.showCommandsInContextMenu": false,
   "bookmarks.navigateThroughAllFiles": true,
@@ -269,6 +273,7 @@
   /* java */
   "[java]": {
     "files.trimTrailingWhitespace": false,
+    "editor.tabSize": 4,
     "editor.rulers": [80, 120, 140]
   },
   /* javascript */
