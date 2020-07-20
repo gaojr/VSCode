@@ -1,15 +1,17 @@
 {
-  "workbench.settings.editor": "ui",
-  "workbench.iconTheme": "material-icon-theme",
-  "material-icon-theme.activeIconPack": "vue",
-  "workbench.colorTheme": "One Dark",
-  "workbench.colorCustomizations": {
-    "bookmarks.lineBackground": "#fb7efb01"
-  },
   "workbench.enableExperiments": false,
   "workbench.activityBar.visible": true,
   "workbench.statusBar.visible": true,
+  "workbench.settings.editor": "ui",
+  "workbench.iconTheme": "material-icon-theme",
+  "material-icon-theme.activeIconPack": "vue_vuex",
+  "workbench.colorTheme": "One Dark Pro",
+  "workbench.colorCustomizations": {
+    // "bookmarks.lineBackground": "#fb7efb01"
+  },
   "editor.multiCursorModifier": "alt",
+  "editor.semanticHighlighting.enabled": true,
+  "editor.detectIndentation": true,
   "editor.tabSize": 2,
   // 'Sarasa Mono SC' // 中英等宽
   // 'Fira Code','PT Mono','DejaVu Sans Mono','Cascadia Code PL',monaco // 英文黑体
@@ -19,7 +21,6 @@
   "editor.fontSize": 14,
   "editor.fontLigatures": "'ss06', 'ss07'",
   "editor.scrollBeyondLastLine": false,
-  "editor.detectIndentation": false,
   "editor.renderWhitespace": "all",
   "editor.renderControlCharacters": false,
   "editor.acceptSuggestionOnCommitCharacter": false,
@@ -48,13 +49,15 @@
   "files.trimTrailingWhitespace": true,
   "files.trimFinalNewlines": true,
   "files.exclude": {
-    "* */.git": true,
-    "* */.svn": true,
-    "* */.hg": true,
-    "* */CVS": true,
-    "* */.DS_Store": true
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/.idea": true
   },
   "files.associations": {
+    "*.txt": "markdown",
     "*.ftl": "xml",
     "*.extension": "html",
     "*.vue": "html"
@@ -69,9 +72,13 @@
   "diffEditor.renderSideBySide": true,
   "search.collapseResults": "auto",
   "search.exclude": {
+    "**/bower_components": true,
     "**/node_modules": true,
-    "**/bower_components": true
+    "**/out": true,
+    "**/target": true,
+    "**/.mvn": true
   },
+  "search.searchEditor.reusePriorSearchConfiguration": true,
   "search.showLineNumbers": true,
   "search.useReplacePreview": false,
   "telemetry.enableCrashReporter": false,
@@ -79,7 +86,6 @@
   "terminal.external.windowsExec": "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
   "terminal.integrated.rendererType": "auto",
   "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
-  "terminal.integrated.cwd": "${fileDirname}",
   "terminal.integrated.cursorStyle": "line",
   "terminal.integrated.minimumContrastRatio": 4.5,
   "breadcrumbs.enabled": true,
@@ -92,10 +98,14 @@
   "extensions.showRecommendationsOnlyOnDemand": true,
   /* git */
   "git.enabled": true,
-  "git.path": "D:\\Program Files\\Git\\bin\\git.exe",
+  "git.path": "%GIT_HOME%\\bin\\git.exe",
+  "git.alwaysShowStagedChangesResourceGroup": true,
   "git.autorefresh": true,
+  "git.branchSortOrder": "alphabetically",
+  "git.enableStatusBarSync": false,
   "git.ignoreMissingGitWarning": true,
   "git.ignoreLegacyWarning": true,
+  "git.suggestSmartCommit": false,
   "gitlens.codeLens.enabled": false,
   "gitlens.codeLens.scopes": ["document"],
   "gitlens.codeLens.authors.enabled": false,
