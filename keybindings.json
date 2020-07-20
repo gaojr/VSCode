@@ -1,793 +1,774 @@
 // 将键绑定放入此文件中以覆盖默认值
 [
-    {
-        "key": "ctrl+d",
-        "command": "-editor.action.addSelectionToNextFindMatch",
-        "when": "editorFocus"
-    },
-    {
-        "key": "ctrl+k ctrl+u",
-        "command": "-editor.action.removeCommentLine",
-        "when": "editorTextFocus && !editorReadonly"
-    },
-    {
-        "key": "ctrl+k ctrl+c",
-        "command": "-editor.action.addCommentLine",
-        "when": "editorTextFocus && !editorReadonly"
-    },
-    {
-        "key": "shift+alt+up",
-        "command": "editor.action.insertCursorAbove",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "ctrl+alt+up",
-        "command": "-editor.action.insertCursorAbove",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "shift+alt+down",
-        "command": "editor.action.insertCursorBelow",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "ctrl+alt+down",
-        "command": "-editor.action.insertCursorBelow",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "ctrl+alt+down",
-        "command": "editor.action.copyLinesDownAction",
-        "when": "editorTextFocus && !editorReadonly"
-    },
-    {
-        "key": "shift+alt+down",
-        "command": "-editor.action.copyLinesDownAction",
-        "when": "editorTextFocus && !editorReadonly"
-    },
-    {
-        "key": "ctrl+shift+s",
-        "command": "workbench.action.files.saveAll"
-    },
-    {
-        "key": "ctrl+k s",
-        "command": "-workbench.action.files.saveAll"
-    },
-    {
-        "key": "ctrl+k ctrl+r",
-        "command": "-workbench.action.keybindingsReference"
-    },
-    {
-        "key": "shift+alt+f",
-        "command": "workbench.view.search",
-        "when": "!editorFocus && !searchViewletVisible"
-    },
-    {
-        "key": "ctrl+shift+f",
-        "command": "-workbench.view.search",
-        "when": "!editorFocus && !searchViewletVisible"
-    },
-    {
-        "key": "ctrl+m",
-        "command": "-editor.action.toggleTabFocusMode"
-    },
-    {
-        "key": "ctrl+b",
-        "command": "-workbench.action.toggleSidebarVisibility"
-    },
-    {
-        "key": "ctrl+shift+m",
-        "command": "-workbench.actions.view.problems"
-    },
-    {
-        "key": "ctrl+win+w",
-        "command": "-workbench.action.toggleTabsVisibility"
-    },
-    {
-        "key": "ctrl+shift+u",
-        "command": "-workbench.action.output.toggleOutput"
-    },
-    {
-        "key": "ctrl+j",
-        "command": "-workbench.action.togglePanel"
-    },
-    {
-        "key": "f9",
-        "command": "-editor.debug.action.toggleBreakpoint",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "ctrl+shift+y",
-        "command": "-workbench.debug.action.toggleRepl"
-    },
-    {
-        "key": "space",
-        "command": "-debug.toggleBreakpoint",
-        "when": "breakpointsFocused"
-    },
-    {
-        "key": "space",
-        "command": "-list.toggleExpand",
-        "when": "listFocus && !inputFocus"
-    },
-    {
-        "key": "ctrl+k r",
-        "command": "workbench.action.quickOpenNavigatePreviousInRecentFilesPicker",
-        "when": "inQuickOpen && inRecentFilesPicker"
-    },
-    {
-        "key": "ctrl+shift+r",
-        "command": "-workbench.action.quickOpenNavigatePreviousInRecentFilesPicker",
-        "when": "inQuickOpen && inRecentFilesPicker"
-    },
-    {
-        "key": "ctrl+k ctrl+oem_6",
-        "command": "-editor.unfoldRecursively",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "ctrl+k ctrl+oem_4",
-        "command": "-editor.foldRecursively",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "ctrl+k enter",
-        "command": "-workbench.action.keepEditor"
-    },
-    {
-        "key": "ctrl+numpad_multiply",
-        "command": "editor.unfoldAll",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "ctrl+k ctrl+j",
-        "command": "-editor.unfoldAll",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "ctrl+numpad_multiply",
-        "command": "editor.foldAll",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "ctrl+k ctrl+0",
-        "command": "-editor.foldAll",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "ctrl+k ctrl+w",
-        "command": "-workbench.action.closeAllEditors"
-    },
-    {
-        "key": "ctrl+k u",
-        "command": "-workbench.action.closeUnmodifiedEditors"
-    },
-    {
-        "key": "ctrl+k w",
-        "command": "-workbench.action.closeEditorsInGroup"
-    },
-    {
-        "key": "ctrl+shift+oem_2",
-        "command": "editor.action.blockComment",
-        "when": "editorTextFocus && !editorReadonly"
-    },
-    {
-        "key": "shift+alt+a",
-        "command": "-editor.action.blockComment",
-        "when": "editorTextFocus && !editorReadonly"
-    },
-    {
-        "key": "ctrl+k ctrl+oem_2",
-        "command": "-editor.foldAllBlockComments",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "shift+delete",
-        "command": "-editor.action.clipboardCutAction",
-        "when": "editorTextFocus && !editorReadonly"
-    },
-    {
-        "key": "ctrl+alt+s",
-        "command": "workbench.action.files.saveAs"
-    },
-    {
-        "key": "ctrl+shift+s",
-        "command": "-workbench.action.files.saveAs"
-    },
-    {
-        "key": "shift+enter",
-        "command": "editor.action.insertLineBefore",
-        "when": "editorTextFocus && !editorReadonly"
-    },
-    {
-        "key": "ctrl+shift+enter",
-        "command": "-editor.action.insertLineBefore",
-        "when": "editorTextFocus && !editorReadonly"
-    },
-    {
-        "key": "shift+alt+i",
-        "command": "-editor.action.insertCursorAtEndOfEachLineSelected",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "ctrl+k ctrl+d",
-        "command": "-editor.action.moveSelectionToNextFindMatch",
-        "when": "editorFocus"
-    },
-    {
-        "key": "ctrl+k f12",
-        "command": "-editor.action.openDeclarationToTheSide",
-        "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
-    },
-    {
-        "key": "ctrl+9",
-        "command": "-workbench.action.lastEditorInGroup"
-    },
-    {
-        "key": "ctrl+tab",
-        "command": "-workbench.action.openNextRecentlyUsedEditorInGroup"
-    },
-    {
-        "key": "shift+escape",
-        "command": "-workbench.action.terminal.hideFindWidget",
-        "when": "terminalFindWidgetVisible && terminalFocus"
-    },
-    {
-        "key": "ctrl+pagedown",
-        "command": "-selectNextPageSuggestion",
-        "when": "editorTextFocus && suggestWidgetMultipleSuggestions && suggestWidgetVisible"
-    },
-    {
-        "key": "ctrl+pageup",
-        "command": "-selectPrevPageSuggestion",
-        "when": "editorTextFocus && suggestWidgetMultipleSuggestions && suggestWidgetVisible"
-    },
-    {
-        "key": "ctrl+shift+alt+pagedown",
-        "command": "-cursorColumnSelectPageDown",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "ctrl+shift+alt+pageup",
-        "command": "-cursorColumnSelectPageUp",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "ctrl+shift+tab",
-        "command": "-workbench.action.openPreviousRecentlyUsedEditorInGroup"
-    },
-    {
-        "key": "ctrl+k ctrl+9",
-        "command": "-editor.unfoldAllMarkerRegions",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "ctrl+k ctrl+8",
-        "command": "-editor.foldAllMarkerRegions",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "ctrl+k ctrl+7",
-        "command": "-editor.foldLevel7",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "ctrl+shift+oem_plus",
-        "command": "-workbench.action.zoomIn"
-    },
-    {
-        "key": "ctrl+shift+oem_3",
-        "command": "-workbench.action.terminal.new"
-    },
-    {
-        "key": "ctrl+shift+p",
-        "command": "-workbench.action.showCommands"
-    },
-    {
-        "key": "shift+alt+x",
-        "command": "workbench.view.extensions"
-    },
-    {
-        "key": "ctrl+shift+x",
-        "command": "-workbench.view.extensions"
-    },
-    {
-        "key": "shift+alt+g",
-        "command": "workbench.view.scm"
-    },
-    {
-        "key": "ctrl+shift+g",
-        "command": "-workbench.view.scm"
-    },
-    {
-        "key": "shift+f10",
-        "command": "-editor.action.showContextMenu",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "shift+alt+d",
-        "command": "workbench.view.debug"
-    },
-    {
-        "key": "ctrl+shift+d",
-        "command": "-workbench.view.debug"
-    },
-    {
-        "key": "shift+alt+e",
-        "command": "workbench.view.explorer"
-    },
-    {
-        "key": "ctrl+shift+e",
-        "command": "-workbench.view.explorer"
-    },
-    {
-        "key": "ctrl+shift+oem_comma",
-        "command": "-editor.action.inPlaceReplace.up",
-        "when": "editorTextFocus && !editorReadonly"
-    },
-    {
-        "key": "ctrl+shift+oem_period",
-        "command": "-editor.action.inPlaceReplace.down",
-        "when": "editorTextFocus && !editorReadonly"
-    },
-    {
-        "key": "ctrl+shift+f3",
-        "command": "-editor.action.previousSelectionMatchFindAction",
-        "when": "editorFocus"
-    },
-    {
-        "key": "ctrl+f3",
-        "command": "-editor.action.nextSelectionMatchFindAction",
-        "when": "editorFocus"
-    },
-    {
-        "key": "ctrl+shift+oem_minus",
-        "command": "-workbench.action.zoomOut"
-    },
-    {
-        "key": "delete",
-        "command": "-search.action.remove",
-        "when": "fileMatchOrMatchFocus && searchViewletVisible"
-    },
-    {
-        "key": "ctrl+enter",
-        "command": "-search.action.openResultToSide",
-        "when": "fileMatchOrMatchFocus && searchViewletVisible"
-    },
-    {
-        "key": "ctrl+shift+f",
-        "command": "-workbench.view.search",
-        "when": "!searchViewletVisible"
-    },
-    {
-        "key": "ctrl+shift+o",
-        "command": "-workbench.action.gotoSymbol"
-    },
-    {
-        "key": "ctrl+shift+j",
-        "command": "-workbench.action.search.toggleQueryDetails",
-        "when": "searchViewletVisible"
-    },
-    {
-        "key": "ctrl+shift+c",
-        "command": "copyFilePath",
-        "when": "!editorTextFocus"
-    },
-    {
-        "key": "shift+alt+c",
-        "command": "-copyFilePath",
-        "when": "!editorTextFocus"
-    },
-    {
-        "key": "ctrl+shift+c",
-        "command": "search.action.copyPath",
-        "when": "fileMatchOrFolderMatchFocus"
-    },
-    {
-        "key": "shift+alt+c",
-        "command": "-search.action.copyPath",
-        "when": "fileMatchOrFolderMatchFocus"
-    },
-    {
-        "key": "ctrl+shift+c",
-        "command": "workbench.action.files.copyPathOfActiveFile"
-    },
-    {
-        "key": "ctrl+k p",
-        "command": "-workbench.action.files.copyPathOfActiveFile"
-    },
-    {
-        "key": "ctrl+p",
-        "command": "-workbench.action.quickOpen"
-    },
-    {
-        "key": "shift+alt+f",
-        "command": "workbench.action.findInFiles",
-        "when": "!searchInputBoxFocus"
-    },
-    {
-        "key": "ctrl+shift+f",
-        "command": "-workbench.action.findInFiles",
-        "when": "!searchInputBoxFocus"
-    },
-    {
-        "key": "ctrl+shift+5",
-        "command": "-workbench.action.terminal.split",
-        "when": "terminalFocus"
-    },
-    {
-        "key": "ctrl+oem_5",
-        "command": "-workbench.action.terminal.split",
-        "when": "terminalFocus"
-    },
-    {
-        "key": "shift+escape",
-        "command": "-workbench.action.closeQuickOpen",
-        "when": "inQuickOpen"
-    },
-    {
-        "key": "ctrl+e",
-        "command": "-workbench.action.quickOpenNavigateNextInFilePicker",
-        "when": "inFilesPicker && inQuickOpen"
-    },
-    {
-        "key": "ctrl+shift+r",
-        "command": "workbench.action.quickOpen"
-    },
-    {
-        "key": "ctrl+e",
-        "command": "-workbench.action.quickOpen"
-    },
-    {
-        "key": "ctrl+j",
-        "command": "editor.emmet.action.splitJoinTag"
-    },
-    {
-        "key": "ctrl+shift+m",
-        "command": "editor.emmet.action.mergeLines"
-    },
-    {
-        "key": "ctrl+q",
-        "command": "-workbench.action.quickOpenView"
-    },
-    {
-        "key": "ctrl+q",
-        "command": "-workbench.action.quickOpenNavigateNextInViewPicker",
-        "when": "inQuickOpen && inViewsPicker"
-    },
-    {
-        "key": "ctrl+shift+q",
-        "command": "-workbench.action.quickOpenNavigatePreviousInViewPicker",
-        "when": "inQuickOpen && inViewsPicker"
-    },
-    {
-        "key": "ctrl+t",
-        "command": "-workbench.action.showAllSymbols"
-    },
-    {
-        "key": "ctrl+k ctrl+t",
-        "command": "-workbench.action.selectTheme"
-    },
-    {
-        "key": "ctrl+shift+f",
-        "command": "-workbench.action.findInFiles"
-    },
-    {
-        "key": "shift+alt+l",
-        "command": "-bookmarks.expandSelectionToNext",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "ctrl+alt+j",
-        "command": "-bookmarks.jumpToPrevious",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "ctrl+alt+l",
-        "command": "-bookmarks.jumpToNext",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "shift+alt+k",
-        "command": "-bookmarks.shrinkSelection",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "shift+alt+j",
-        "command": "-bookmarks.expandSelectionToPrevious",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "alt+b",
-        "command": "bookmarks.toggle",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "ctrl+alt+k",
-        "command": "-bookmarks.toggle",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "alt+l",
-        "command": "bookmarks.toggleLabeled"
-    },
-    {
-        "key": "alt+l",
-        "command": "-toggleFindInSelection",
-        "when": "editorFocus"
-    },
-    {
-        "key": "ctrl+k ctrl+shift+s",
-        "command": "-workbench.action.files.saveWithoutFormatting"
-    },
-    {
-        "key": "shift+alt+f",
-        "command": "-editor.action.formatDocument.none",
-        "when": "editorTextFocus && !editorHasDocumentFormattingProvider && !editorHasDocumentFormattingProvider && !editorReadonly"
-    },
-    {
-        "key": "ctrl+shift+f",
-        "command": "editor.action.formatSelection",
-        "when": "editorHasDocumentSelectionFormattingProvider && editorHasDocumentSelectionFormattingProvider && editorTextFocus && !editorReadonly"
-    },
-    {
-        "key": "ctrl+k ctrl+f",
-        "command": "-editor.action.formatSelection",
-        "when": "editorHasDocumentSelectionFormattingProvider && editorHasDocumentSelectionFormattingProvider && editorTextFocus && !editorReadonly"
-    },
-    {
-        "key": "ctrl+shift+f",
-        "command": "editor.action.formatDocument",
-        "when": "editorHasDocumentFormattingProvider && editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly"
-    },
-    {
-        "key": "shift+alt+f",
-        "command": "-editor.action.formatDocument",
-        "when": "editorHasDocumentFormattingProvider && editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly"
-    },
-    {
-        "key": "ctrl+t",
-        "command": "editor.emmet.action.matchTag"
-    },
-    {
-        "key": "ctrl+shift+b",
-        "command": "-workbench.action.tasks.build"
-    },
-    {
-        "key": "ctrl+k d",
-        "command": "-workbench.files.action.compareWithSaved"
-    },
-    {
-        "key": "ctrl+k e",
-        "command": "-workbench.files.action.focusOpenEditorsView",
-        "when": "workbench.explorer.openEditorsView.active"
-    },
-    {
-        "key": "ctrl+shift+c",
-        "command": "-workbench.action.terminal.openNativeConsole",
-        "when": "!terminalFocus"
-    },
-    {
-        "key": "f9",
-        "command": "workbench.action.terminal.toggleTerminal"
-    },
-    {
-        "key": "ctrl+oem_3",
-        "command": "-workbench.action.terminal.toggleTerminal"
-    },
-    {
-        "key": "ctrl+d",
-        "command": "editor.action.deleteLines",
-        "when": "textInputFocus && !editorReadonly"
-    },
-    {
-        "key": "ctrl+shift+k",
-        "command": "-editor.action.deleteLines",
-        "when": "textInputFocus && !editorReadonly"
-    },
-    {
-        "key": "ctrl+alt+up",
-        "command": "editor.action.copyLinesUpAction",
-        "when": "editorTextFocus && !editorReadonly"
-    },
-    {
-        "key": "shift+alt+up",
-        "command": "-editor.action.copyLinesUpAction",
-        "when": "editorTextFocus && !editorReadonly"
-    },
-    {
-        "key": "ctrl+oem_comma",
-        "command": "-workbench.action.openSettings"
-    },
-    {
-        "key": "ctrl+k ctrl+m",
-        "command": "-workbench.extensions.action.showRecommendedKeymapExtensions"
-    },
-    {
-        "key": "ctrl+k ctrl+s",
-        "command": "-workbench.action.openGlobalKeybindings"
-    },
-    {
-        "key": "ctrl+l",
-        "command": "-expandLineSelection",
-        "when": "textInputFocus"
-    },
-    {
-        "key": "ctrl+f2",
-        "command": "-editor.action.changeAll",
-        "when": "editorTextFocus && !editorReadonly"
-    },
-    {
-        "key": "ctrl+f2",
-        "command": "editor.action.selectHighlights",
-        "when": "editorFocus"
-    },
-    {
-        "key": "ctrl+shift+l",
-        "command": "-editor.action.selectHighlights",
-        "when": "editorFocus"
-    },
-    {
-        "key": "ctrl+shift+v",
-        "command": "markdown.showPreviewToSide",
-        "when": "editorLangId == 'markdown'"
-    },
-    {
-        "key": "ctrl+k v",
-        "command": "-markdown.showPreviewToSide",
-        "when": "editorLangId == 'markdown'"
-    },
-    {
-        "key": "ctrl+shift+v",
-        "command": "-markdown.showPreview",
-        "when": "editorLangId == 'markdown'"
-    },
-    {
-        "key": "shift+alt+up",
-        "command": "-markdown.extension.onCopyLineUp",
-        "when": "editorTextFocus && !editorReadonly && !suggestWidgetVisible && editorLangId == 'markdown'"
-    },
-    {
-        "key": "shift+alt+down",
-        "command": "-markdown.extension.onCopyLineDown",
-        "when": "editorTextFocus && !editorReadonly && !suggestWidgetVisible && editorLangId == 'markdown'"
-    },
-    {
-        "key": "ctrl+m",
-        "command": "-markdown.extension.editing.toggleMath",
-        "when": "editorTextFocus && !editorReadonly && editorLangId == 'markdown'"
-    },
-    {
-        "key": "ctrl+shift+v",
-        "command": "-markdown.extension.togglePreview",
-        "when": "!terminalFocus"
-    },
-    {
-        "key": "ctrl+k v",
-        "command": "-markdown.extension.togglePreviewToSide",
-        "when": "!terminalFocus"
-    },
-    {
-        "key": "ctrl+b",
-        "command": "-markdownExtended.toggleBold",
-        "when": "editorTextFocus && editorLangId == 'markdown'"
-    },
-    {
-        "key": "ctrl+shift+t ctrl+shift+f",
-        "command": "-markdownExtended.formateTable",
-        "when": "editorTextFocus && editorLangId == 'markdown'"
-    },
-    {
-        "key": "ctrl+m",
-        "command": "-markdownExtended.toggleMark",
-        "when": "editorTextFocus && editorLangId == 'markdown'"
-    },
-    {
-        "key": "shift+alt+oem_3",
-        "command": "-markdownExtended.toggleCodeBlock",
-        "when": "editorTextFocus && editorLangId == 'markdown'"
-    },
-    {
-        "key": "ctrl+shift+q",
-        "command": "-markdownExtended.toggleBlockQuote",
-        "when": "editorTextFocus && editorLangId == 'markdown'"
-    },
-    {
-        "key": "alt+oem_3",
-        "command": "-markdownExtended.toggleCodeInline",
-        "when": "editorTextFocus && editorLangId == 'markdown'"
-    },
-    {
-        "key": "alt+s",
-        "command": "-markdownExtended.toggleStrikethrough",
-        "when": "editorTextFocus && editorLangId == 'markdown'"
-    },
-    {
-        "key": "ctrl+l ctrl+o",
-        "command": "-markdownExtended.toggleOList",
-        "when": "editorTextFocus && editorLangId == 'markdown'"
-    },
-    {
-        "key": "ctrl+i",
-        "command": "-markdownExtended.toggleItalics",
-        "when": "editorTextFocus && editorLangId == 'markdown'"
-    },
-    {
-        "key": "ctrl+u",
-        "command": "-markdownExtended.toggleUnderLine",
-        "when": "editorTextFocus && editorLangId == 'markdown'"
-    },
-    {
-        "key": "ctrl+shift+u",
-        "command": "-markdownExtended.toggleSuperscript",
-        "when": "editorTextFocus && editorLangId == 'markdown'"
-    },
-    {
-        "key": "ctrl+l ctrl+u",
-        "command": "-markdownExtended.toggleUList",
-        "when": "editorTextFocus && editorLangId == 'markdown'"
-    },
-    {
-        "key": "ctrl+shift+l",
-        "command": "-markdownExtended.toggleSubscript",
-        "when": "editorTextFocus && editorLangId == 'markdown'"
-    },
-    {
-        "key": "ctrl+shift+d ctrl+shift+r",
-        "command": "-markdownExtended.DeleteRow",
-        "when": "editorTextFocus && editorLangId == 'markdown'"
-    },
-    {
-        "key": "ctrl+shift+t ctrl+shift+a",
-        "command": "-markdownExtended.addRowAbove",
-        "when": "editorTextFocus && editorLangId == 'markdown'"
-    },
-    {
-        "key": "ctrl+shift+t ctrl+shift+b",
-        "command": "-markdownExtended.addRowBelow",
-        "when": "editorTextFocus && editorLangId == 'markdown'"
-    },
-    {
-        "key": "ctrl+shift+t ctrl+shift+p",
-        "command": "-markdownExtended.pasteAsTable",
-        "when": "editorTextFocus && editorLangId == 'markdown'"
-    },
-    {
-        "key": "ctrl+shift+u",
-        "command": "extension.changeCase.commands",
-        "when": "!editorReadonly && editorHasSelection"
-    },
-    {
-        "key": "ctrl+shift+m",
-        "command": "editor.action.joinLines"
-    },
-    {
-        "key": "ctrl+w",
-        "command": "workbench.action.terminal.kill",
-        "when": "terminalFocus || terminalIsOpen"
-    },
-    {
-        "key": "ctrl+w",
-        "command": "workbench.action.closeActiveEditor",
-        "when": "editorFocus"
-    },
-    {
-        "key": "ctrl+w",
-        "command": "-workbench.action.closeActiveEditor"
-    },
-    {
-        "key": "ctrl+shift+f",
-        "command": "stylelint.executeAutofix",
-        "when": "editorTextFocus && editorLangId == 'css'"
-    },
-    {
-        "key": "ctrl+shift+f",
-        "command": "stylelint.executeAutofix",
-        "when": "editorTextFocus && editorLangId == 'scss'"
-    },
-    {
-        "key": "ctrl+shift+f",
-        "command": "stylelint.executeAutofix",
-        "when": "editorTextFocus && editorLangId == 'less'"
-    }
+  {
+    "key": "ctrl+d",
+    "command": "-editor.action.addSelectionToNextFindMatch",
+    "when": "editorFocus"
+  },
+  {
+    "key": "ctrl+k ctrl+u",
+    "command": "-editor.action.removeCommentLine",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+k ctrl+c",
+    "command": "-editor.action.addCommentLine",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "shift+alt+up",
+    "command": "editor.action.insertCursorAbove",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+alt+up",
+    "command": "-editor.action.insertCursorAbove",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "shift+alt+down",
+    "command": "editor.action.insertCursorBelow",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+alt+down",
+    "command": "-editor.action.insertCursorBelow",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+alt+down",
+    "command": "editor.action.copyLinesDownAction",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "shift+alt+down",
+    "command": "-editor.action.copyLinesDownAction",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+shift+s",
+    "command": "workbench.action.files.saveAll"
+  },
+  {
+    "key": "ctrl+k s",
+    "command": "-workbench.action.files.saveAll"
+  },
+  {
+    "key": "ctrl+k ctrl+r",
+    "command": "-workbench.action.keybindingsReference"
+  },
+  {
+    "key": "ctrl+m",
+    "command": "-editor.action.toggleTabFocusMode"
+  },
+  {
+    "key": "ctrl+b",
+    "command": "-workbench.action.toggleSidebarVisibility"
+  },
+  {
+    "key": "ctrl+shift+m",
+    "command": "-workbench.actions.view.problems"
+  },
+  {
+    "key": "ctrl+win+w",
+    "command": "-workbench.action.toggleTabsVisibility"
+  },
+  {
+    "key": "ctrl+shift+u",
+    "command": "-workbench.action.output.toggleOutput"
+  },
+  {
+    "key": "ctrl+j",
+    "command": "-workbench.action.togglePanel"
+  },
+  {
+    "key": "f9",
+    "command": "-editor.debug.action.toggleBreakpoint",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+shift+y",
+    "command": "-workbench.debug.action.toggleRepl"
+  },
+  {
+    "key": "space",
+    "command": "-debug.toggleBreakpoint",
+    "when": "breakpointsFocused"
+  },
+  {
+    "key": "space",
+    "command": "-list.toggleExpand",
+    "when": "listFocus && !inputFocus"
+  },
+  {
+    "key": "ctrl+k r",
+    "command": "workbench.action.quickOpenNavigatePreviousInRecentFilesPicker",
+    "when": "inQuickOpen && inRecentFilesPicker"
+  },
+  {
+    "key": "ctrl+shift+r",
+    "command": "-workbench.action.quickOpenNavigatePreviousInRecentFilesPicker",
+    "when": "inQuickOpen && inRecentFilesPicker"
+  },
+  {
+    "key": "ctrl+k ctrl+oem_6",
+    "command": "-editor.unfoldRecursively",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+k ctrl+oem_4",
+    "command": "-editor.foldRecursively",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+k enter",
+    "command": "-workbench.action.keepEditor"
+  },
+  {
+    "key": "ctrl+numpad_multiply",
+    "command": "editor.unfoldAll",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+k ctrl+j",
+    "command": "-editor.unfoldAll",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+numpad_multiply",
+    "command": "editor.foldAll",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+k ctrl+0",
+    "command": "-editor.foldAll",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+k ctrl+w",
+    "command": "-workbench.action.closeAllEditors"
+  },
+  {
+    "key": "ctrl+k u",
+    "command": "-workbench.action.closeUnmodifiedEditors"
+  },
+  {
+    "key": "ctrl+k w",
+    "command": "-workbench.action.closeEditorsInGroup"
+  },
+  {
+    "key": "ctrl+shift+oem_2",
+    "command": "editor.action.blockComment",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "shift+alt+a",
+    "command": "-editor.action.blockComment",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+k ctrl+oem_2",
+    "command": "-editor.foldAllBlockComments",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "shift+delete",
+    "command": "-editor.action.clipboardCutAction",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+alt+s",
+    "command": "workbench.action.files.saveAs"
+  },
+  {
+    "key": "ctrl+shift+s",
+    "command": "-workbench.action.files.saveAs"
+  },
+  {
+    "key": "shift+enter",
+    "command": "editor.action.insertLineBefore",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+shift+enter",
+    "command": "-editor.action.insertLineBefore",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "shift+alt+i",
+    "command": "-editor.action.insertCursorAtEndOfEachLineSelected",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+k ctrl+d",
+    "command": "-editor.action.moveSelectionToNextFindMatch",
+    "when": "editorFocus"
+  },
+  {
+    "key": "ctrl+k f12",
+    "command": "-editor.action.openDeclarationToTheSide",
+    "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
+  },
+  {
+    "key": "ctrl+9",
+    "command": "-workbench.action.lastEditorInGroup"
+  },
+  {
+    "key": "ctrl+tab",
+    "command": "-workbench.action.openNextRecentlyUsedEditorInGroup"
+  },
+  {
+    "key": "shift+escape",
+    "command": "-workbench.action.terminal.hideFindWidget",
+    "when": "terminalFindWidgetVisible && terminalFocus"
+  },
+  {
+    "key": "ctrl+pagedown",
+    "command": "-selectNextPageSuggestion",
+    "when": "editorTextFocus && suggestWidgetMultipleSuggestions && suggestWidgetVisible"
+  },
+  {
+    "key": "ctrl+pageup",
+    "command": "-selectPrevPageSuggestion",
+    "when": "editorTextFocus && suggestWidgetMultipleSuggestions && suggestWidgetVisible"
+  },
+  {
+    "key": "ctrl+shift+alt+pagedown",
+    "command": "-cursorColumnSelectPageDown",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+shift+alt+pageup",
+    "command": "-cursorColumnSelectPageUp",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+shift+tab",
+    "command": "-workbench.action.openPreviousRecentlyUsedEditorInGroup"
+  },
+  {
+    "key": "ctrl+k ctrl+9",
+    "command": "-editor.unfoldAllMarkerRegions",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+k ctrl+8",
+    "command": "-editor.foldAllMarkerRegions",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+k ctrl+7",
+    "command": "-editor.foldLevel7",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+shift+oem_plus",
+    "command": "-workbench.action.zoomIn"
+  },
+  {
+    "key": "ctrl+shift+oem_3",
+    "command": "-workbench.action.terminal.new"
+  },
+  {
+    "key": "ctrl+shift+p",
+    "command": "-workbench.action.showCommands"
+  },
+  {
+    "key": "shift+alt+x",
+    "command": "workbench.view.extensions"
+  },
+  {
+    "key": "ctrl+shift+x",
+    "command": "-workbench.view.extensions"
+  },
+  {
+    "key": "shift+alt+g",
+    "command": "workbench.view.scm"
+  },
+  {
+    "key": "ctrl+shift+g",
+    "command": "-workbench.view.scm"
+  },
+  {
+    "key": "shift+f10",
+    "command": "-editor.action.showContextMenu",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "shift+alt+d",
+    "command": "workbench.view.debug"
+  },
+  {
+    "key": "ctrl+shift+d",
+    "command": "-workbench.view.debug"
+  },
+  {
+    "key": "shift+alt+e",
+    "command": "workbench.view.explorer"
+  },
+  {
+    "key": "ctrl+shift+e",
+    "command": "-workbench.view.explorer"
+  },
+  {
+    "key": "ctrl+shift+oem_comma",
+    "command": "-editor.action.inPlaceReplace.up",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+shift+oem_period",
+    "command": "-editor.action.inPlaceReplace.down",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+shift+f3",
+    "command": "-editor.action.previousSelectionMatchFindAction",
+    "when": "editorFocus"
+  },
+  {
+    "key": "ctrl+f3",
+    "command": "-editor.action.nextSelectionMatchFindAction",
+    "when": "editorFocus"
+  },
+  {
+    "key": "ctrl+shift+oem_minus",
+    "command": "-workbench.action.zoomOut"
+  },
+  {
+    "key": "delete",
+    "command": "-search.action.remove",
+    "when": "fileMatchOrMatchFocus && searchViewletVisible"
+  },
+  {
+    "key": "ctrl+enter",
+    "command": "-search.action.openResultToSide",
+    "when": "fileMatchOrMatchFocus && searchViewletVisible"
+  },
+  {
+    "key": "ctrl+shift+o",
+    "command": "-workbench.action.gotoSymbol"
+  },
+  {
+    "key": "ctrl+shift+j",
+    "command": "-workbench.action.search.toggleQueryDetails",
+    "when": "searchViewletVisible"
+  },
+  {
+    "key": "ctrl+shift+c",
+    "command": "copyFilePath",
+    "when": "!editorTextFocus"
+  },
+  {
+    "key": "shift+alt+c",
+    "command": "-copyFilePath",
+    "when": "!editorTextFocus"
+  },
+  {
+    "key": "ctrl+shift+c",
+    "command": "search.action.copyPath",
+    "when": "fileMatchOrFolderMatchFocus"
+  },
+  {
+    "key": "shift+alt+c",
+    "command": "-search.action.copyPath",
+    "when": "fileMatchOrFolderMatchFocus"
+  },
+  {
+    "key": "ctrl+shift+c",
+    "command": "workbench.action.files.copyPathOfActiveFile"
+  },
+  {
+    "key": "ctrl+k p",
+    "command": "-workbench.action.files.copyPathOfActiveFile"
+  },
+  {
+    "key": "ctrl+p",
+    "command": "-workbench.action.quickOpen"
+  },
+  {
+    "key": "ctrl+shift+5",
+    "command": "-workbench.action.terminal.split",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+oem_5",
+    "command": "-workbench.action.terminal.split",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "shift+escape",
+    "command": "-workbench.action.closeQuickOpen",
+    "when": "inQuickOpen"
+  },
+  {
+    "key": "ctrl+e",
+    "command": "-workbench.action.quickOpenNavigateNextInFilePicker",
+    "when": "inFilesPicker && inQuickOpen"
+  },
+  {
+    "key": "ctrl+shift+r",
+    "command": "workbench.action.quickOpen"
+  },
+  {
+    "key": "ctrl+e",
+    "command": "-workbench.action.quickOpen"
+  },
+  {
+    "key": "ctrl+j",
+    "command": "editor.emmet.action.splitJoinTag"
+  },
+  {
+    "key": "ctrl+shift+m",
+    "command": "editor.emmet.action.mergeLines"
+  },
+  {
+    "key": "ctrl+q",
+    "command": "-workbench.action.quickOpenView"
+  },
+  {
+    "key": "ctrl+q",
+    "command": "-workbench.action.quickOpenNavigateNextInViewPicker",
+    "when": "inQuickOpen && inViewsPicker"
+  },
+  {
+    "key": "ctrl+shift+q",
+    "command": "-workbench.action.quickOpenNavigatePreviousInViewPicker",
+    "when": "inQuickOpen && inViewsPicker"
+  },
+  {
+    "key": "ctrl+t",
+    "command": "-workbench.action.showAllSymbols"
+  },
+  {
+    "key": "ctrl+k ctrl+t",
+    "command": "-workbench.action.selectTheme"
+  },
+  {
+    "key": "shift+alt+l",
+    "command": "-bookmarks.expandSelectionToNext",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+alt+j",
+    "command": "-bookmarks.jumpToPrevious",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+alt+l",
+    "command": "-bookmarks.jumpToNext",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "shift+alt+k",
+    "command": "-bookmarks.shrinkSelection",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "shift+alt+j",
+    "command": "-bookmarks.expandSelectionToPrevious",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+b",
+    "command": "bookmarks.toggle",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+alt+k",
+    "command": "-bookmarks.toggle",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+l",
+    "command": "bookmarks.toggleLabeled"
+  },
+  {
+    "key": "alt+l",
+    "command": "-toggleFindInSelection",
+    "when": "editorFocus"
+  },
+  {
+    "key": "ctrl+k ctrl+shift+s",
+    "command": "-workbench.action.files.saveWithoutFormatting"
+  },
+  {
+    "key": "ctrl+t",
+    "command": "editor.emmet.action.matchTag"
+  },
+  {
+    "key": "ctrl+shift+b",
+    "command": "-workbench.action.tasks.build"
+  },
+  {
+    "key": "ctrl+k d",
+    "command": "-workbench.files.action.compareWithSaved"
+  },
+  {
+    "key": "ctrl+k e",
+    "command": "-workbench.files.action.focusOpenEditorsView",
+    "when": "workbench.explorer.openEditorsView.active"
+  },
+  {
+    "key": "ctrl+shift+c",
+    "command": "-workbench.action.terminal.openNativeConsole",
+    "when": "!terminalFocus"
+  },
+  {
+    "key": "f9",
+    "command": "workbench.action.terminal.toggleTerminal"
+  },
+  {
+    "key": "ctrl+oem_3",
+    "command": "-workbench.action.terminal.toggleTerminal"
+  },
+  {
+    "key": "ctrl+d",
+    "command": "editor.action.deleteLines",
+    "when": "textInputFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+shift+k",
+    "command": "-editor.action.deleteLines",
+    "when": "textInputFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+alt+up",
+    "command": "editor.action.copyLinesUpAction",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "shift+alt+up",
+    "command": "-editor.action.copyLinesUpAction",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+oem_comma",
+    "command": "-workbench.action.openSettings"
+  },
+  {
+    "key": "ctrl+k ctrl+m",
+    "command": "-workbench.extensions.action.showRecommendedKeymapExtensions"
+  },
+  {
+    "key": "ctrl+k ctrl+s",
+    "command": "-workbench.action.openGlobalKeybindings"
+  },
+  {
+    "key": "ctrl+l",
+    "command": "-expandLineSelection",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "ctrl+f2",
+    "command": "-editor.action.changeAll",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+f2",
+    "command": "editor.action.selectHighlights",
+    "when": "editorFocus"
+  },
+  {
+    "key": "ctrl+shift+l",
+    "command": "-editor.action.selectHighlights",
+    "when": "editorFocus"
+  },
+  {
+    "key": "ctrl+shift+v",
+    "command": "markdown.showPreviewToSide",
+    "when": "editorLangId == 'markdown'"
+  },
+  {
+    "key": "ctrl+k v",
+    "command": "-markdown.showPreviewToSide",
+    "when": "editorLangId == 'markdown'"
+  },
+  {
+    "key": "ctrl+shift+v",
+    "command": "-markdown.showPreview",
+    "when": "editorLangId == 'markdown'"
+  },
+  {
+    "key": "shift+alt+up",
+    "command": "-markdown.extension.onCopyLineUp",
+    "when": "editorTextFocus && !editorReadonly && !suggestWidgetVisible && editorLangId == 'markdown'"
+  },
+  {
+    "key": "shift+alt+down",
+    "command": "-markdown.extension.onCopyLineDown",
+    "when": "editorTextFocus && !editorReadonly && !suggestWidgetVisible && editorLangId == 'markdown'"
+  },
+  {
+    "key": "ctrl+m",
+    "command": "-markdown.extension.editing.toggleMath",
+    "when": "editorTextFocus && !editorReadonly && editorLangId == 'markdown'"
+  },
+  {
+    "key": "ctrl+shift+v",
+    "command": "-markdown.extension.togglePreview",
+    "when": "!terminalFocus"
+  },
+  {
+    "key": "ctrl+k v",
+    "command": "-markdown.extension.togglePreviewToSide",
+    "when": "!terminalFocus"
+  },
+  {
+    "key": "ctrl+b",
+    "command": "-markdownExtended.toggleBold",
+    "when": "editorTextFocus && editorLangId == 'markdown'"
+  },
+  {
+    "key": "ctrl+shift+t ctrl+shift+f",
+    "command": "-markdownExtended.formateTable",
+    "when": "editorTextFocus && editorLangId == 'markdown'"
+  },
+  {
+    "key": "ctrl+m",
+    "command": "-markdownExtended.toggleMark",
+    "when": "editorTextFocus && editorLangId == 'markdown'"
+  },
+  {
+    "key": "shift+alt+oem_3",
+    "command": "-markdownExtended.toggleCodeBlock",
+    "when": "editorTextFocus && editorLangId == 'markdown'"
+  },
+  {
+    "key": "ctrl+shift+q",
+    "command": "-markdownExtended.toggleBlockQuote",
+    "when": "editorTextFocus && editorLangId == 'markdown'"
+  },
+  {
+    "key": "alt+oem_3",
+    "command": "-markdownExtended.toggleCodeInline",
+    "when": "editorTextFocus && editorLangId == 'markdown'"
+  },
+  {
+    "key": "alt+s",
+    "command": "-markdownExtended.toggleStrikethrough",
+    "when": "editorTextFocus && editorLangId == 'markdown'"
+  },
+  {
+    "key": "ctrl+l ctrl+o",
+    "command": "-markdownExtended.toggleOList",
+    "when": "editorTextFocus && editorLangId == 'markdown'"
+  },
+  {
+    "key": "ctrl+i",
+    "command": "-markdownExtended.toggleItalics",
+    "when": "editorTextFocus && editorLangId == 'markdown'"
+  },
+  {
+    "key": "ctrl+u",
+    "command": "-markdownExtended.toggleUnderLine",
+    "when": "editorTextFocus && editorLangId == 'markdown'"
+  },
+  {
+    "key": "ctrl+shift+u",
+    "command": "-markdownExtended.toggleSuperscript",
+    "when": "editorTextFocus && editorLangId == 'markdown'"
+  },
+  {
+    "key": "ctrl+l ctrl+u",
+    "command": "-markdownExtended.toggleUList",
+    "when": "editorTextFocus && editorLangId == 'markdown'"
+  },
+  {
+    "key": "ctrl+shift+l",
+    "command": "-markdownExtended.toggleSubscript",
+    "when": "editorTextFocus && editorLangId == 'markdown'"
+  },
+  {
+    "key": "ctrl+shift+d ctrl+shift+r",
+    "command": "-markdownExtended.DeleteRow",
+    "when": "editorTextFocus && editorLangId == 'markdown'"
+  },
+  {
+    "key": "ctrl+shift+t ctrl+shift+a",
+    "command": "-markdownExtended.addRowAbove",
+    "when": "editorTextFocus && editorLangId == 'markdown'"
+  },
+  {
+    "key": "ctrl+shift+t ctrl+shift+b",
+    "command": "-markdownExtended.addRowBelow",
+    "when": "editorTextFocus && editorLangId == 'markdown'"
+  },
+  {
+    "key": "ctrl+shift+t ctrl+shift+p",
+    "command": "-markdownExtended.pasteAsTable",
+    "when": "editorTextFocus && editorLangId == 'markdown'"
+  },
+  {
+    "key": "ctrl+shift+u",
+    "command": "extension.changeCase.commands",
+    "when": "!editorReadonly && editorHasSelection"
+  },
+  {
+    "key": "ctrl+shift+m",
+    "command": "editor.action.joinLines"
+  },
+  {
+    "key": "ctrl+w",
+    "command": "workbench.action.terminal.kill",
+    "when": "terminalFocus || terminalIsOpen"
+  },
+  {
+    "key": "ctrl+w",
+    "command": "workbench.action.closeActiveEditor",
+    "when": "editorFocus"
+  },
+  {
+    "key": "ctrl+w",
+    "command": "-workbench.action.closeActiveEditor"
+  },
+  {
+    "key": "ctrl+shift+f",
+    "command": "-workbench.view.search",
+    "when": "!searchViewletVisible"
+  },
+  {
+    "key": "ctrl+k ctrl+f",
+    "command": "-editor.action.formatSelection",
+    "when": "editorHasDocumentSelectionFormattingProvider && editorHasDocumentSelectionFormattingProvider && editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "shift+alt+f",
+    "command": "-editor.action.formatDocument",
+    "when": "editorHasDocumentFormattingProvider && editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly && !inCompositeEditor"
+  },
+  {
+    "key": "shift+alt+f",
+    "command": "-editor.action.formatDocument.none",
+    "when": "editorTextFocus && !editorHasDocumentFormattingProvider && !editorHasDocumentFormattingProvider && !editorReadonly"
+  },
+  {
+    "key": "ctrl+shift+f",
+    "command": "editor.action.formatDocument",
+    "when": "editorHasDocumentFormattingProvider && editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+shift+f",
+    "command": "editor.action.formatSelection",
+    "when": "editorHasDocumentSelectionFormattingProvider && editorHasDocumentSelectionFormattingProvider && editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+shift+f",
+    "command": "stylelint.executeAutofix",
+    "when": "editorTextFocus && editorLangId == 'css'"
+  },
+  {
+    "key": "ctrl+shift+f",
+    "command": "stylelint.executeAutofix",
+    "when": "editorTextFocus && editorLangId == 'scss'"
+  },
+  {
+    "key": "ctrl+shift+f",
+    "command": "stylelint.executeAutofix",
+    "when": "editorTextFocus && editorLangId == 'less'"
+  },
+  {
+    "key": "shift+alt+f",
+    "command": "search.action.openNewEditor",
+    "args": { "showIncludesExcludes": true }
+  }
 ]
