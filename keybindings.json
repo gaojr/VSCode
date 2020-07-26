@@ -722,11 +722,6 @@
     "command": "-workbench.action.closeActiveEditor"
   },
   {
-    "key": "ctrl+shift+f",
-    "command": "-workbench.view.search",
-    "when": "!searchViewletVisible"
-  },
-  {
     "key": "ctrl+k ctrl+f",
     "command": "-editor.action.formatSelection",
     "when": "editorHasDocumentSelectionFormattingProvider && editorHasDocumentSelectionFormattingProvider && editorTextFocus && !editorReadonly"
@@ -740,6 +735,26 @@
     "key": "shift+alt+f",
     "command": "-editor.action.formatDocument.none",
     "when": "editorTextFocus && !editorHasDocumentFormattingProvider && !editorHasDocumentFormattingProvider && !editorReadonly"
+  },
+  {
+    "key": "shift+alt+f",
+    "command": "-notebook.formatCell",
+    "when": "editorHasDocumentFormattingProvider && editorTextFocus && inCompositeEditor && notebookEditable && !editorReadonly && activeEditor == 'workbench.editor.notebook'"
+  },
+  {
+    "key": "shift+alt+f",
+    "command": "-notebook.format",
+    "when": "notebookEditable && !editorTextFocus && activeEditor == 'workbench.editor.notebook'"
+  },
+  {
+    "key": "shift+alt+f",
+    "command": "search.action.openNewEditor",
+    "args": { "showIncludesExcludes": true }
+  },
+  {
+    "key": "ctrl+shift+f",
+    "command": "-workbench.view.search",
+    "when": "!searchViewletVisible"
   },
   {
     "key": "ctrl+shift+f",
@@ -765,10 +780,5 @@
     "key": "ctrl+shift+f",
     "command": "stylelint.executeAutofix",
     "when": "editorTextFocus && editorLangId == 'less'"
-  },
-  {
-    "key": "shift+alt+f",
-    "command": "search.action.openNewEditor",
-    "args": { "showIncludesExcludes": true }
   }
 ]
