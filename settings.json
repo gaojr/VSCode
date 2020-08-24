@@ -17,7 +17,7 @@
   // 'Fira Code','PT Mono','DejaVu Sans Mono','Cascadia Code PL',monaco // 英文黑体
   // 'HYQiHei 55S' // 无衬线sans
   // 'HYYiSongW','A-OTF Outai Kaisho Std' // 衬线serif
-  "editor.fontFamily": "'Fira Code','PT Mono','DejaVu Sans Mono','HYQiHei 55S',monospace,'Microsoft YaHei'",
+  "editor.fontFamily": "'Fira Code','PT Mono','DejaVu Sans Mono','HYQiHei 55S',monospace,'Microsoft YaHei',fontawesome",
   "editor.fontSize": 14,
   "editor.fontLigatures": "'ss06', 'ss07'",
   "editor.scrollBeyondLastLine": false,
@@ -86,12 +86,16 @@
   "terminal.external.windowsExec": "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
   "terminal.integrated.rendererType": "auto",
   "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+  "terminal.integrated.fontFamily": "'Fira Code','Sarasa Mono SC',fontawesome",
   "terminal.integrated.cursorStyle": "line",
   "terminal.integrated.minimumContrastRatio": 4.5,
   "breadcrumbs.enabled": true,
   "breadcrumbs.symbolSortOrder": "name",
   "update.mode": "none",
   "update.enableWindowsBackgroundUpdates": false,
+  /* 同步 */
+  "settingsSync.ignoredSettings": ["-git.path"],
+  "settingsSync.ignoredExtensions": [],
   /* 扩展相关 */
   "extensions.autoUpdate": false,
   "extensions.ignoreRecommendations": false,
@@ -244,6 +248,10 @@
   "markdown.extension.syntax.plainTheme": true,
   "markdown.extension.toc.plaintext": false,
   "markdownExtended.disabledPlugins": "container",
+  /* front matter */
+  "frontMatter.taxonomy.dateFormat": "yyyy-MM-dd HH-mm-ss",
+  "frontMatter.taxonomy.categories": [],
+  "frontMatter.taxonomy.tags": [],
   /* bookmark */
   "bookmarks.showCommandsInContextMenu": false,
   "bookmarks.navigateThroughAllFiles": true,
