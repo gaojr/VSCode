@@ -266,10 +266,10 @@
     "rangeBehavior": 3
   },
   "highlight.maxMatches": 200,
-  "highlight.regexFlags": "gi",
+  "highlight.regexFlags": "g",
   "highlight.regexes": {
     // todo FFA500
-    "(REM *)(TODO)(:? *)(.*)": {
+    "(REM *)(TODO|[Tt]odo)(:? *)(.*)": {
       "filterLanguageRegex": "markdown|bat",
       "decorations": [
         {},
@@ -282,7 +282,7 @@
         { "color": "#FFA500" }
       ]
     },
-    "(-- *)(TODO)(:? *)(.*)": {
+    "(-- *)(TODO|[Tt]odo)(:? *)(.*)": {
       "filterLanguageRegex": "markdown|sql",
       "decorations": [
         {},
@@ -295,7 +295,7 @@
         { "color": "#FFA500" }
       ]
     },
-    "(# *)(TODO)(:? *)(.*)": {
+    "(# *)(TODO|[Tt]odo)(:? *)(.*)": {
       "filterLanguageRegex": "markdown|dockfile|ini|properties|shell|yaml",
       "decorations": [
         {},
@@ -308,7 +308,7 @@
         { "color": "#FFA500" }
       ]
     },
-    "(// *)(TODO)(:? *)(.*)": {
+    "(// *)(TODO|[Tt]odo)(:? *)(.*)": {
       "filterLanguageRegex": "markdown|c|cpp|cs|java|javascript|json|php|typescript",
       "decorations": [
         {},
@@ -321,7 +321,7 @@
         { "color": "#FFA500" }
       ]
     },
-    "(<!-- *)(TODO)(:? *)(.*)( *-->)": {
+    "(<!-- *)(TODO|[Tt]odo)(:? *)(.*)( *-->)": {
       "filterLanguageRegex": "markdown|html|xml",
       "decorations": [
         {},
@@ -335,7 +335,7 @@
         {}
       ]
     },
-    "(/\\* *)(TODO)(:? *)(.*)(\\*/)": {
+    "(/\\* *)(TODO|[Tt]odo)(:? *)(.*)(\\*/)": {
       "filterLanguageRegex": "markdown|c|cpp|cs|java|javascript|json|php|typescript|css|sql",
       "decorations": [
         {},
@@ -350,7 +350,7 @@
       ]
     },
     // fixme FF0000
-    "(REM *)(FIXME)(:? *)(.*)": {
+    "(REM *)(FIXME|[Ff]ixme)(:? *)(.*)": {
       "filterLanguageRegex": "markdown|bat",
       "decorations": [
         {},
@@ -360,23 +360,23 @@
           "color": "#FF0000"
         },
         { "color": "#FF0000" },
-        { "color": "#FFA500" }
+        { "color": "#FF0000" }
       ]
     },
-    "(-- *)(FIXME)(:? *)(.*)": {
+    "(-- *)(FIXME|[Ff]ixme)(:? *)(.*)": {
       "filterLanguageRegex": "markdown|sql",
       "decorations": [
         {},
         {
           "fontWeight": "bold",
-          "overviewRulerColor": "#FFA500",
-          "color": "#FFA500"
+          "overviewRulerColor": "#FF0000",
+          "color": "#FF0000"
         },
-        { "color": "#FFA500" },
-        { "color": "#FFA500" }
+        { "color": "#FF0000" },
+        { "color": "#FF0000" }
       ]
     },
-    "(# *)(FIXME)(:? *)(.*)": {
+    "(# *)(FIXME|[Ff]ixme)(:? *)(.*)": {
       "filterLanguageRegex": "markdown|dockfile|ini|properties|shell|yaml",
       "decorations": [
         {},
@@ -389,7 +389,7 @@
         { "color": "#FF0000" }
       ]
     },
-    "(// *)(FIXME)(:? *)(.*)": {
+    "(// *)(FIXME|[Ff]ixme)(:? *)(.*)": {
       "filterLanguageRegex": "markdown|c|cpp|cs|java|javascript|json|php|typescript",
       "decorations": [
         {},
@@ -402,7 +402,7 @@
         { "color": "#FF0000" }
       ]
     },
-    "(<!-- *)(FIXME)(:? *)(.*)( *-->)": {
+    "(<!-- *)(FIXME|[Ff]ixme)(:? *)(.*)( *-->)": {
       "filterLanguageRegex": "markdown|html|xml",
       "decorations": [
         {},
@@ -416,7 +416,7 @@
         {}
       ]
     },
-    "(/\\* *)(FIXME)(:? *)(.*)(\\*/)": {
+    "(/\\* *)(FIXME|[Ff]ixme)(:? *)(.*)(\\*/)": {
       "filterLanguageRegex": "markdown|c|cpp|cs|java|javascript|json|php|typescript|css|sql",
       "decorations": [
         {},
@@ -431,7 +431,7 @@
       ]
     },
     // note 4169E1
-    "(REM *)(NOTE)(:? *)(.*)": {
+    "(REM *)(NOTE|[Nn]ote)(:? *)(.*)": {
       "filterLanguageRegex": "markdown|bat",
       "decorations": [
         {},
@@ -441,23 +441,23 @@
           "color": "#4169E1"
         },
         { "color": "#4169E1" },
-        { "color": "#FFA500" }
+        { "color": "#4169E1" }
       ]
     },
-    "(-- *)(NOTE)(:? *)(.*)": {
+    "(-- *)(NOTE|[Nn]ote)(:? *)(.*)": {
       "filterLanguageRegex": "markdown|sql",
       "decorations": [
         {},
         {
           "fontWeight": "bold",
-          "overviewRulerColor": "#FFA500",
-          "color": "#FFA500"
+          "overviewRulerColor": "#4169E1",
+          "color": "#4169E1"
         },
-        { "color": "#FFA500" },
-        { "color": "#FFA500" }
+        { "color": "#4169E1" },
+        { "color": "#4169E1" }
       ]
     },
-    "(# *)(NOTE)(:? *)(.*)": {
+    "(# *)(NOTE|[Nn]ote)(:? *)(.*)": {
       "filterLanguageRegex": "markdown|dockfile|ini|properties|shell|yaml",
       "decorations": [
         {},
@@ -470,7 +470,7 @@
         { "color": "#4169E1" }
       ]
     },
-    "(// *)(NOTE)(:? *)(.*)": {
+    "(// *)(NOTE|[Nn]ote)(:? *)(.*)": {
       "filterLanguageRegex": "markdown|c|cpp|cs|java|javascript|json|php|typescript",
       "decorations": [
         {},
@@ -483,7 +483,7 @@
         { "color": "#4169E1" }
       ]
     },
-    "(<!-- *)(NOTE)(:? *)(.*)( *-->)": {
+    "(<!-- *)(NOTE|[Nn]ote)(:? *)(.*)( *-->)": {
       "filterLanguageRegex": "markdown|html|xml",
       "decorations": [
         {},
@@ -497,7 +497,7 @@
         {}
       ]
     },
-    "(/\\* *)(NOTE)(:? *)(.*)(\\*/)": {
+    "(/\\* *)(NOTE|[Nn]ote)(:? *)(.*)(\\*/)": {
       "filterLanguageRegex": "markdown|c|cpp|cs|java|javascript|json|php|typescript|css|sql",
       "decorations": [
         {},
