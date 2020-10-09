@@ -40,6 +40,7 @@
   "editor.minimap.renderCharacters": true,
   "editor.wordWrap": "on",
   "editor.wordSeparators": "`~!@#$%^&*()-=+[{]}\\|;:'\",.<>/?",
+  "editor.renameOnType": true,
   "zenMode.hideActivityBar": false,
   "files.defaultLanguage": "markdown",
   "files.hotExit": "onExitAndWindowClose",
@@ -131,19 +132,26 @@
   "gitlens.currentLine.enabled": true,
   "gitlens.currentLine.dateFormat": "YYYY-MM-DD",
   "gitlens.currentLine.format": "${author},${date}",
+  "gitlens.statusBar.enabled": false,
   "gitlens.statusBar.alignment": "left",
   "gitlens.statusBar.dateFormat": "YYYY-MM-DD HH:mm",
   "gitlens.statusBar.format": "${date} (${id}) ${message}", // 状态栏
   "gitlens.hovers.avatars": false,
   "gitlens.hovers.annotations.over": "annotation",
+  "gitlens.hovers.detailsMarkdownFormat": "**${author}**, ${ago} *(${date})* \n\n${message}\n\n${commands}",
   "gitlens.advanced.messages": {
     "suppressFileNotUnderSourceControlWarning": true,
     "suppressShowKeyBindingsNotice": true
   },
   "gitlens.views.commitFileFormat": "${filePath}",
+  "gitlens.views.commitFileDescriptionFormat": "${directory}${ ← originalPath}",
   "gitlens.views.commitFormat": "${author}>${message}",
+  "gitlens.views.commitDescriptionFormat": "${changes • }${author}, ${agoOrDate}",
+  "gitlens.views.stashDescriptionFormat": "${changes • }${agoOrDate}",
+  "gitlens.views.stashFileDescriptionFormat": "${directory}${ ← originalPath}",
   "gitlens.views.stashFileFormat": "${filePath}",
   "gitlens.views.stashFormat": "${author}>${message}",
+  "gitlens.views.statusFileDescriptionFormat": "${directory}${ ← originalPath}",
   "gitlens.views.statusFileFormat": "${working}${filePath}",
   "gitlens.views.compare.enabled": true,
   "gitlens.views.compare.location": "scm",
@@ -157,17 +165,10 @@
   "gitlens.views.repositories.showBranchComparison": false,
   "gitlens.views.search.enabled": true,
   "gitlens.views.search.location": "scm",
-  "gitlens.statusBar.enabled": false,
   "gitlens.recentChanges.highlight.locations": ["gutter", "line", "overview"],
+  "gitlens.sortBranchesBy": "name:asc",
   "gitlens.menus": {
-    "editor": {
-      "blame": false,
-      "clipboard": false,
-      "compare": true,
-      "details": false,
-      "history": false,
-      "remote": false
-    },
+    "editor": false,
     "editorGroup": {
       "blame": true,
       "compare": true
@@ -188,24 +189,23 @@
       "stash": true
     }
   },
-  "git-graph.commitDetailsViewLocation": "Docked to Bottom",
+  "git-graph.commitDetailsView.location": "Docked to Bottom",
   "git-graph.customBranchGlobPatterns": [
-    { "name": "常用", "glob": "*/develop" },
-    { "name": "本地", "glob": "heads/*" },
-    { "name": "release", "glob": "*/release/*" }
+    { "name": "release", "glob": "*/release/*" },
+    { "name": "本地", "glob": "heads/*" }
   ],
   "git-graph.defaultColumnVisibility": {
     "Date": true,
     "Author": true,
     "Commit": false
   },
-  "git-graph.fetchAvatars": false,
-  "git-graph.fetchAndPrune": true,
+  "git-graph.repository.commits.fetchAvatars": false,
+  "git-graph.repository.fetchAndPrune": true,
   "git-graph.dialog.addTag.pushToRemote": true,
   "git-graph.dialog.createBranch.checkOut": true,
   "git-graph.dialog.addTag.type": "Lightweight",
-  "git-graph.initialLoadCommits": 100,
-  "git-graph.loadMoreCommits": 50,
+  "git-graph.repository.commits.initialLoad": 100,
+  "git-graph.repository.commits.loadMore": 50,
   "git-graph.showStatusBarItem": false,
   "git-graph.contextMenuActionsVisibility": {
     "remoteBranch": {
@@ -224,6 +224,10 @@
       "copyHash": true
     }
   },
+  "gitmoji.outputType": "code",
+  "gitmoji.additionalEmojis": [
+  ],
+  "gitmoji.onlyUseAdditionalEmojis": false,
   /* markdown */
   "markdown.preview.breaks": true,
   "markdown.preview.fontFamily": "'Fira Code','HYQihei 55S'",
@@ -257,6 +261,257 @@
   "bookmarks.navigateThroughAllFiles": true,
   /* togglequotes */
   "togglequotes.chars": ["\"", "'"],
+  /* highlight */
+  "highlight.decorations": {
+    "rangeBehavior": 3
+  },
+  "highlight.maxMatches": 200,
+  "highlight.regexFlags": "gi",
+  "highlight.regexes": {
+    // todo FFA500
+    "(REM *)(TODO)(:? *)(.*)": {
+      "filterLanguageRegex": "markdown|bat",
+      "decorations": [
+        {},
+        {
+          "fontWeight": "bold",
+          "overviewRulerColor": "#FFA500",
+          "color": "#FFA500"
+        },
+        { "color": "#FFA500" },
+        { "color": "#FFA500" }
+      ]
+    },
+    "(-- *)(TODO)(:? *)(.*)": {
+      "filterLanguageRegex": "markdown|sql",
+      "decorations": [
+        {},
+        {
+          "fontWeight": "bold",
+          "overviewRulerColor": "#FFA500",
+          "color": "#FFA500"
+        },
+        { "color": "#FFA500" },
+        { "color": "#FFA500" }
+      ]
+    },
+    "(# *)(TODO)(:? *)(.*)": {
+      "filterLanguageRegex": "markdown|dockfile|ini|properties|shell|yaml",
+      "decorations": [
+        {},
+        {
+          "fontWeight": "bold",
+          "overviewRulerColor": "#FFA500",
+          "color": "#FFA500"
+        },
+        { "color": "#FFA500" },
+        { "color": "#FFA500" }
+      ]
+    },
+    "(// *)(TODO)(:? *)(.*)": {
+      "filterLanguageRegex": "markdown|c|cpp|cs|java|javascript|json|php|typescript",
+      "decorations": [
+        {},
+        {
+          "fontWeight": "bold",
+          "overviewRulerColor": "#FFA500",
+          "color": "#FFA500"
+        },
+        { "color": "#FFA500" },
+        { "color": "#FFA500" }
+      ]
+    },
+    "(<!-- *)(TODO)(:? *)(.*)( *-->)": {
+      "filterLanguageRegex": "markdown|html|xml",
+      "decorations": [
+        {},
+        {
+          "fontWeight": "bold",
+          "overviewRulerColor": "#FFA500",
+          "color": "#FFA500"
+        },
+        { "color": "#FFA500" },
+        { "color": "#FFA500" },
+        {}
+      ]
+    },
+    "(/\\* *)(TODO)(:? *)(.*)(\\*/)": {
+      "filterLanguageRegex": "markdown|c|cpp|cs|java|javascript|json|php|typescript|css|sql",
+      "decorations": [
+        {},
+        {
+          "fontWeight": "bold",
+          "overviewRulerColor": "#FFA500",
+          "color": "#FFA500"
+        },
+        { "color": "#FFA500" },
+        { "color": "#FFA500" },
+        {}
+      ]
+    },
+    // fixme FF0000
+    "(REM *)(FIXME)(:? *)(.*)": {
+      "filterLanguageRegex": "markdown|bat",
+      "decorations": [
+        {},
+        {
+          "fontWeight": "bold",
+          "overviewRulerColor": "#FF0000",
+          "color": "#FF0000"
+        },
+        { "color": "#FF0000" },
+        { "color": "#FFA500" }
+      ]
+    },
+    "(-- *)(FIXME)(:? *)(.*)": {
+      "filterLanguageRegex": "markdown|sql",
+      "decorations": [
+        {},
+        {
+          "fontWeight": "bold",
+          "overviewRulerColor": "#FFA500",
+          "color": "#FFA500"
+        },
+        { "color": "#FFA500" },
+        { "color": "#FFA500" }
+      ]
+    },
+    "(# *)(FIXME)(:? *)(.*)": {
+      "filterLanguageRegex": "markdown|dockfile|ini|properties|shell|yaml",
+      "decorations": [
+        {},
+        {
+          "fontWeight": "bold",
+          "overviewRulerColor": "#FF0000",
+          "color": "#FF0000"
+        },
+        { "color": "#FF0000" },
+        { "color": "#FF0000" }
+      ]
+    },
+    "(// *)(FIXME)(:? *)(.*)": {
+      "filterLanguageRegex": "markdown|c|cpp|cs|java|javascript|json|php|typescript",
+      "decorations": [
+        {},
+        {
+          "fontWeight": "bold",
+          "overviewRulerColor": "#FF0000",
+          "color": "#FF0000"
+        },
+        { "color": "#FF0000" },
+        { "color": "#FF0000" }
+      ]
+    },
+    "(<!-- *)(FIXME)(:? *)(.*)( *-->)": {
+      "filterLanguageRegex": "markdown|html|xml",
+      "decorations": [
+        {},
+        {
+          "fontWeight": "bold",
+          "overviewRulerColor": "#FF0000",
+          "color": "#FF0000"
+        },
+        { "color": "#FF0000" },
+        { "color": "#FF0000" },
+        {}
+      ]
+    },
+    "(/\\* *)(FIXME)(:? *)(.*)(\\*/)": {
+      "filterLanguageRegex": "markdown|c|cpp|cs|java|javascript|json|php|typescript|css|sql",
+      "decorations": [
+        {},
+        {
+          "fontWeight": "bold",
+          "overviewRulerColor": "#FF0000",
+          "color": "#FF0000"
+        },
+        { "color": "#FF0000" },
+        { "color": "#FF0000" },
+        {}
+      ]
+    },
+    // note 4169E1
+    "(REM *)(NOTE)(:? *)(.*)": {
+      "filterLanguageRegex": "markdown|bat",
+      "decorations": [
+        {},
+        {
+          "fontWeight": "bold",
+          "overviewRulerColor": "#4169E1",
+          "color": "#4169E1"
+        },
+        { "color": "#4169E1" },
+        { "color": "#FFA500" }
+      ]
+    },
+    "(-- *)(NOTE)(:? *)(.*)": {
+      "filterLanguageRegex": "markdown|sql",
+      "decorations": [
+        {},
+        {
+          "fontWeight": "bold",
+          "overviewRulerColor": "#FFA500",
+          "color": "#FFA500"
+        },
+        { "color": "#FFA500" },
+        { "color": "#FFA500" }
+      ]
+    },
+    "(# *)(NOTE)(:? *)(.*)": {
+      "filterLanguageRegex": "markdown|dockfile|ini|properties|shell|yaml",
+      "decorations": [
+        {},
+        {
+          "fontWeight": "bold",
+          "overviewRulerColor": "#4169E1",
+          "color": "#4169E1"
+        },
+        { "color": "#4169E1" },
+        { "color": "#4169E1" }
+      ]
+    },
+    "(// *)(NOTE)(:? *)(.*)": {
+      "filterLanguageRegex": "markdown|c|cpp|cs|java|javascript|json|php|typescript",
+      "decorations": [
+        {},
+        {
+          "fontWeight": "bold",
+          "overviewRulerColor": "#4169E1",
+          "color": "#4169E1"
+        },
+        { "color": "#4169E1" },
+        { "color": "#4169E1" }
+      ]
+    },
+    "(<!-- *)(NOTE)(:? *)(.*)( *-->)": {
+      "filterLanguageRegex": "markdown|html|xml",
+      "decorations": [
+        {},
+        {
+          "fontWeight": "bold",
+          "overviewRulerColor": "#4169E1",
+          "color": "#4169E1"
+        },
+        { "color": "#4169E1" },
+        { "color": "#4169E1" },
+        {}
+      ]
+    },
+    "(/\\* *)(NOTE)(:? *)(.*)(\\*/)": {
+      "filterLanguageRegex": "markdown|c|cpp|cs|java|javascript|json|php|typescript|css|sql",
+      "decorations": [
+        {},
+        {
+          "fontWeight": "bold",
+          "overviewRulerColor": "#4169E1",
+          "color": "#4169E1"
+        },
+        { "color": "#4169E1" },
+        { "color": "#4169E1" },
+        {}
+      ]
+    }
+  },
   /* bracket-pair-colorizer */
   "bracket-pair-colorizer-2.highlightActiveScope": true,
   "bracket-pair-colorizer-2.showBracketsInGutter": true,
@@ -320,9 +575,12 @@
     "editor.rulers": [80, 120, 140]
   },
   /* prettier */
-  "prettier.requireConfig": true,
-  "prettier.ignorePath": "%APPDATA%\\Code\\User\\.prettierignore",
-  "prettier.configPath": "%APPDATA%\\Code\\User\\.prettierrc.json",
+  "prettier.requireConfig": false,
+  "prettier.ignorePath": ".prettierignore",
+  "prettier.configPath": ".prettierrc.json",
+  "prettier.resolveGlobalModules": false,
+  "prettier.prettierPath": "%APPDATA%\\Roaming\\npm\\node_modules\\prettier",
+  "prettier.documentSelectors": ["**/*.{json,md,js,ts,css}"],
   /* eslint */
   "eslint.enable": true,
   "eslint.format.enable": true,
