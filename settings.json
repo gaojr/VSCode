@@ -9,6 +9,8 @@
   "workbench.colorCustomizations": {
     // "bookmarks.lineBackground": "#fb7efb01"
   },
+  "workbench.editor.pinnedTabSizing": "compact",
+  "editor.maxTokenizationLineLength": 10000,
   "editor.multiCursorModifier": "alt",
   "editor.semanticHighlighting.enabled": true,
   "editor.detectIndentation": true,
@@ -35,7 +37,7 @@
   "editor.snippetSuggestions": "top",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.matchBrackets": "never",
-  "editor.minimap.enabled": true,
+  "editor.minimap.enabled": false,
   "editor.minimap.maxColumn": 120,
   "editor.minimap.renderCharacters": true,
   "editor.wordWrap": "on",
@@ -84,12 +86,9 @@
   "search.useReplacePreview": false,
   "telemetry.enableCrashReporter": false,
   "telemetry.enableTelemetry": false,
-  "terminal.external.windowsExec": "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
   "terminal.integrated.rendererType": "auto",
-  "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
   "terminal.integrated.fontFamily": "'Fira Code','Sarasa Mono SC',fontawesome",
   "terminal.integrated.cursorStyle": "line",
-  "terminal.integrated.minimumContrastRatio": 4.5,
   "breadcrumbs.enabled": true,
   "breadcrumbs.symbolSortOrder": "name",
   "update.mode": "none",
@@ -270,7 +269,7 @@
   "highlight.regexes": {
     // todo FFA500
     "(REM *)(TODO|[Tt]odo)(:? *)(.*)": {
-      "filterLanguageRegex": "markdown|bat",
+      "filterLanguageRegex": "bat",
       "decorations": [
         {},
         {
@@ -283,7 +282,7 @@
       ]
     },
     "(-- *)(TODO|[Tt]odo)(:? *)(.*)": {
-      "filterLanguageRegex": "markdown|sql",
+      "filterLanguageRegex": "sql",
       "decorations": [
         {},
         {
@@ -296,7 +295,7 @@
       ]
     },
     "(# *)(TODO|[Tt]odo)(:? *)(.*)": {
-      "filterLanguageRegex": "markdown|dockfile|ini|properties|shell|yaml",
+      "filterLanguageRegex": "dockfile|ini|properties|shell|yaml",
       "decorations": [
         {},
         {
@@ -309,7 +308,7 @@
       ]
     },
     "(// *)(TODO|[Tt]odo)(:? *)(.*)": {
-      "filterLanguageRegex": "markdown|c|cpp|cs|java|javascript|json|php|typescript",
+      "filterLanguageRegex": "c|cpp|cs|java|javascript|json|php|typescript",
       "decorations": [
         {},
         {
@@ -336,7 +335,7 @@
       ]
     },
     "(/\\* *)(TODO|[Tt]odo)(:? *)(.*)(\\*/)": {
-      "filterLanguageRegex": "markdown|c|cpp|cs|java|javascript|json|php|typescript|css|sql",
+      "filterLanguageRegex": "c|cpp|cs|java|javascript|json|php|typescript|css|sql",
       "decorations": [
         {},
         {
@@ -351,7 +350,7 @@
     },
     // fixme FF0000
     "(REM *)(FIXME|[Ff]ixme)(:? *)(.*)": {
-      "filterLanguageRegex": "markdown|bat",
+      "filterLanguageRegex": "bat",
       "decorations": [
         {},
         {
@@ -364,7 +363,7 @@
       ]
     },
     "(-- *)(FIXME|[Ff]ixme)(:? *)(.*)": {
-      "filterLanguageRegex": "markdown|sql",
+      "filterLanguageRegex": "sql",
       "decorations": [
         {},
         {
@@ -377,7 +376,7 @@
       ]
     },
     "(# *)(FIXME|[Ff]ixme)(:? *)(.*)": {
-      "filterLanguageRegex": "markdown|dockfile|ini|properties|shell|yaml",
+      "filterLanguageRegex": "dockfile|ini|properties|shell|yaml",
       "decorations": [
         {},
         {
@@ -390,7 +389,7 @@
       ]
     },
     "(// *)(FIXME|[Ff]ixme)(:? *)(.*)": {
-      "filterLanguageRegex": "markdown|c|cpp|cs|java|javascript|json|php|typescript",
+      "filterLanguageRegex": "c|cpp|cs|java|javascript|json|php|typescript",
       "decorations": [
         {},
         {
@@ -417,7 +416,7 @@
       ]
     },
     "(/\\* *)(FIXME|[Ff]ixme)(:? *)(.*)(\\*/)": {
-      "filterLanguageRegex": "markdown|c|cpp|cs|java|javascript|json|php|typescript|css|sql",
+      "filterLanguageRegex": "c|cpp|cs|java|javascript|json|php|typescript|css|sql",
       "decorations": [
         {},
         {
@@ -432,7 +431,7 @@
     },
     // note 4169E1
     "(REM *)(NOTE|[Nn]ote)(:? *)(.*)": {
-      "filterLanguageRegex": "markdown|bat",
+      "filterLanguageRegex": "bat",
       "decorations": [
         {},
         {
@@ -445,7 +444,7 @@
       ]
     },
     "(-- *)(NOTE|[Nn]ote)(:? *)(.*)": {
-      "filterLanguageRegex": "markdown|sql",
+      "filterLanguageRegex": "sql",
       "decorations": [
         {},
         {
@@ -458,7 +457,7 @@
       ]
     },
     "(# *)(NOTE|[Nn]ote)(:? *)(.*)": {
-      "filterLanguageRegex": "markdown|dockfile|ini|properties|shell|yaml",
+      "filterLanguageRegex": "dockfile|ini|properties|shell|yaml",
       "decorations": [
         {},
         {
@@ -471,7 +470,7 @@
       ]
     },
     "(// *)(NOTE|[Nn]ote)(:? *)(.*)": {
-      "filterLanguageRegex": "markdown|c|cpp|cs|java|javascript|json|php|typescript",
+      "filterLanguageRegex": "c|cpp|cs|java|javascript|json|php|typescript",
       "decorations": [
         {},
         {
@@ -498,7 +497,7 @@
       ]
     },
     "(/\\* *)(NOTE|[Nn]ote)(:? *)(.*)(\\*/)": {
-      "filterLanguageRegex": "markdown|c|cpp|cs|java|javascript|json|php|typescript|css|sql",
+      "filterLanguageRegex": "c|cpp|cs|java|javascript|json|php|typescript|css|sql",
       "decorations": [
         {},
         {
@@ -516,6 +515,7 @@
   "bracket-pair-colorizer-2.highlightActiveScope": true,
   "bracket-pair-colorizer-2.showBracketsInGutter": true,
   "bracket-pair-colorizer-2.showHorizontalScopeLine": false,
+  "bracket-pair-colorizer-2.excludedLanguages": ["log"],
   /* open-in-application */
   "openInApplication.applications": {},
   /* typescript */
@@ -582,7 +582,7 @@
   "prettier.prettierPath": "%APPDATA%\\Roaming\\npm\\node_modules\\prettier",
   "prettier.documentSelectors": ["**/*.{json,md,js,ts,css}"],
   /* eslint */
-  "eslint.enable": true,
+  "eslint.alwaysShowStatus": true,
   "eslint.format.enable": true,
   "eslint.nodePath": "D:\\nodejs",
   "eslint.validate": ["typescript", "typescriptreact", "javascript", "javascriptreact", "html", "vue"],
