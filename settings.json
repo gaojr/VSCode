@@ -1,171 +1,256 @@
 {
-  "workbench.enableExperiments": false,
-  "workbench.activityBar.visible": true,
-  "workbench.statusBar.visible": true,
-  "workbench.settings.editor": "ui",
-  "workbench.iconTheme": "material-icon-theme",
-  "material-icon-theme.activeIconPack": "vue_vuex",
-  "workbench.colorTheme": "One Dark Pro",
-  "workbench.colorCustomizations": {
-    // "bookmarks.lineBackground": "#fb7efb01"
+  "[css]": {
+    "editor.rulers": [
+      120,
+      140,
+      80
+    ]
   },
-  "workbench.editor.pinnedTabSizing": "compact",
-  "editor.maxTokenizationLineLength": 10000,
-  "editor.multiCursorModifier": "alt",
-  "editor.semanticHighlighting.enabled": true,
-  "editor.detectIndentation": true,
-  "editor.tabSize": 2,
-  // 'Sarasa Mono SC' // 中英等宽
-  // 'Fira Code','PT Mono','DejaVu Sans Mono','Cascadia Code PL',monaco // 英文黑体
-  // 'HYQiHei 55S' // 无衬线sans
-  // 'HYYiSongW','A-OTF Outai Kaisho Std' // 衬线serif
-  "editor.fontFamily": "'Fira Code','PT Mono','DejaVu Sans Mono','HYQiHei 55S',monospace,'Microsoft YaHei',fontawesome",
-  "editor.fontSize": 14,
-  "editor.fontLigatures": "'ss06', 'ss07'",
-  "editor.scrollBeyondLastLine": false,
-  "editor.renderWhitespace": "all",
-  "editor.renderControlCharacters": false,
+  "[html]": {
+    "editor.rulers": [
+      120,
+      140,
+      80
+    ]
+  },
+  "[java]": {
+    "editor.rulers": [
+      120,
+      140,
+      80
+    ],
+    "editor.tabSize": 4,
+    "files.trimTrailingWhitespace": false
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+    "editor.rulers": [
+      120,
+      140,
+      80
+    ],
+    "files.trimTrailingWhitespace": false
+  },
+  "[json]": {
+    "editor.rulers": [
+      120,
+      140,
+      80
+    ]
+  },
+  "[jsonc]": {
+    "editor.rulers": [
+      120,
+      140,
+      80
+    ]
+  },
+  "[less]": {
+    "editor.rulers": [
+      120,
+      140,
+      80
+    ]
+  },
+  "[markdown]": {
+    "editor.fontFamily": "'Sarasa Mono SC'",
+    "editor.tabSize": 4,
+    "files.trimTrailingWhitespace": false
+  },
+  "[scss]": {
+    "editor.rulers": [
+      120,
+      140,
+      80
+    ]
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+    "editor.rulers": [
+      120,
+      140,
+      80
+    ],
+    "files.trimTrailingWhitespace": false
+  },
+  "[xml]": {
+    "editor.rulers": [
+      120,
+      140,
+      80
+    ],
+    "files.trimTrailingWhitespace": false
+  },
+  "[yaml]": {
+    "editor.rulers": [
+      120,
+      140,
+      80
+    ],
+    "files.trimTrailingWhitespace": false
+  },
+  "bookmarks.navigateThroughAllFiles": true,
+  "bookmarks.showCommandsInContextMenu": false,
+  "bracket-pair-colorizer-2.excludedLanguages": [
+    "log"
+  ],
+  "bracket-pair-colorizer-2.highlightActiveScope": true,
+  "bracket-pair-colorizer-2.showBracketsInGutter": true,
+  "bracket-pair-colorizer-2.showHorizontalScopeLine": false,
+  "breadcrumbs.enabled": true,
+  "breadcrumbs.symbolSortOrder": "name",
+  "css.validate": false,
+  "diffEditor.ignoreTrimWhitespace": true,
+  "diffEditor.renderSideBySide": true,
   "editor.acceptSuggestionOnCommitCharacter": false,
-  "editor.quickSuggestions": {
-    "strings": false,
-    "comments": false,
-    "other": true
-  },
   "editor.accessibilitySupport": "off",
-  "editor.parameterHints.cycle": true,
-  "editor.quickSuggestionsDelay": 100,
-  "editor.snippetSuggestions": "top",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.detectIndentation": true,
+  "editor.fontFamily": "'Fira Code','PT Mono','DejaVu Sans Mono','HYQiHei 55S',monospace,'Microsoft YaHei',fontawesome",
+  "editor.fontLigatures": "'ss06', 'ss07'",
+  "editor.fontSize": 14,
   "editor.matchBrackets": "never",
+  "editor.maxTokenizationLineLength": 10000,
   "editor.minimap.enabled": false,
   "editor.minimap.maxColumn": 120,
   "editor.minimap.renderCharacters": true,
-  "editor.wordWrap": "on",
-  "editor.wordSeparators": "`~!@#$%^&*()-=+[{]}\\|;:'\",.<>/?",
+  "editor.multiCursorModifier": "alt",
+  "editor.parameterHints.cycle": true,
+  "editor.quickSuggestions": {
+    "comments": false,
+    "other": true,
+    "strings": false
+  },
+  "editor.quickSuggestionsDelay": 100,
   "editor.renameOnType": true,
-  "zenMode.hideActivityBar": false,
-  "files.defaultLanguage": "markdown",
-  "files.hotExit": "onExitAndWindowClose",
-  "files.encoding": "utf8",
-  "files.autoGuessEncoding": true,
-  "files.simpleDialog.enable": false,
-  "files.trimTrailingWhitespace": true,
-  "files.trimFinalNewlines": true,
-  "files.exclude": {
-    "**/.git": true,
-    "**/.svn": true,
-    "**/.hg": true,
-    "**/CVS": true,
-    "**/.DS_Store": true,
-    "**/.idea": true
-  },
-  "files.associations": {
-    "*.txt": "markdown",
-    "*.ftl": "xml",
-    "*.extension": "html",
-    "*.vue": "html"
-  },
-  "window.menuBarVisibility": "default",
-  "window.newWindowDimensions": "inherit",
-  "window.restoreWindows": "all",
-  "window.title": "${dirty}${activeEditorShort}${separator}${rootName}",
-  "window.titleBarStyle": "custom",
-  "window.zoomLevel": 0,
-  "diffEditor.ignoreTrimWhitespace": true,
-  "diffEditor.renderSideBySide": true,
-  "search.collapseResults": "auto",
-  "search.exclude": {
-    "**/bower_components": true,
-    "**/node_modules": true,
-    "**/out": true,
-    "**/target": true,
-    "**/.mvn": true
-  },
-  "search.searchEditor.reusePriorSearchConfiguration": true,
-  "search.showLineNumbers": true,
-  "search.useReplacePreview": false,
-  "telemetry.enableCrashReporter": false,
-  "telemetry.enableTelemetry": false,
-  "terminal.integrated.rendererType": "auto",
-  "terminal.integrated.fontFamily": "'Fira Code','Sarasa Mono SC',fontawesome",
-  "terminal.integrated.cursorStyle": "line",
-  "breadcrumbs.enabled": true,
-  "breadcrumbs.symbolSortOrder": "name",
-  "update.mode": "none",
-  "update.enableWindowsBackgroundUpdates": false,
-  /* 同步 */
-  "settingsSync.ignoredSettings": ["-git.path"],
-  "settingsSync.ignoredExtensions": [],
-  /* 扩展相关 */
+  "editor.renderControlCharacters": false,
+  "editor.renderWhitespace": "all",
+  "editor.scrollBeyondLastLine": false,
+  "editor.semanticHighlighting.enabled": true,
+  "editor.snippetSuggestions": "top",
+  "editor.tabSize": 2,
+  "editor.wordSeparators": "`~!@#$%^&*()-=+[{]}\\|;:'\",.<>/?",
+  "editor.wordWrap": "on",
+  "emmet.showExpandedAbbreviation": "inMarkupAndStylesheetFilesOnly",
+  "emmet.triggerExpansionOnTab": true,
+  "eslint.alwaysShowStatus": true,
+  "eslint.format.enable": true,
+  "eslint.nodePath": "D:\\nodejs",
+  "eslint.quiet": false,
+  "eslint.validate": [
+    "html",
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "vue"
+  ],
   "extensions.autoUpdate": false,
   "extensions.ignoreRecommendations": false,
   "extensions.showRecommendationsOnlyOnDemand": true,
-  /* git */
-  "git.enabled": true,
-  "git.path": "%GIT_HOME%\\bin\\git.exe",
+  "files.associations": {
+    "*.extension": "html",
+    "*.ftl": "xml",
+    "*.txt": "markdown",
+    "*.vue": "html"
+  },
+  "files.autoGuessEncoding": true,
+  "files.defaultLanguage": "markdown",
+  "files.encoding": "utf8",
+  "files.exclude": {
+    "**/.DS_Store": true,
+    "**/.git": true,
+    "**/.hg": true,
+    "**/.idea": true,
+    "**/.svn": true,
+    "**/CVS": true
+  },
+  "files.hotExit": "onExitAndWindowClose",
+  "files.simpleDialog.enable": false,
+  "files.trimFinalNewlines": true,
+  "files.trimTrailingWhitespace": true,
+  "frontMatter.taxonomy.categories": [],
+  "frontMatter.taxonomy.dateFormat": "yyyy-MM-dd HH-mm-ss",
+  "frontMatter.taxonomy.tags": [],
+  "git-graph.commitDetailsView.location": "Docked to Bottom",
+  "git-graph.contextMenuActionsVisibility": {
+    "remoteBranch": {
+      "checkout": true,
+      "copyName": true,
+      "delete": true,
+      "fetch": true,
+      "pull": false
+    },
+    "stash": {
+      "apply": true,
+      "copyHash": true,
+      "copyName": false,
+      "createBranch": false,
+      "drop": true,
+      "pop": true
+    }
+  },
+  "git-graph.customBranchGlobPatterns": [
+    {
+      "glob": "*/release/*",
+      "name": "release"
+    },
+    {
+      "glob": "heads/*",
+      "name": "本地"
+    }
+  ],
+  "git-graph.defaultColumnVisibility": {
+    "Author": true,
+    "Commit": false,
+    "Date": true
+  },
+  "git-graph.dialog.addTag.pushToRemote": true,
+  "git-graph.dialog.addTag.type": "Lightweight",
+  "git-graph.dialog.createBranch.checkOut": true,
+  "git-graph.repository.commits.fetchAvatars": false,
+  "git-graph.repository.commits.initialLoad": 100,
+  "git-graph.repository.commits.loadMore": 50,
+  "git-graph.repository.fetchAndPrune": true,
+  "git-graph.showStatusBarItem": false,
   "git.alwaysShowStagedChangesResourceGroup": true,
   "git.autorefresh": true,
   "git.branchSortOrder": "alphabetically",
   "git.enableStatusBarSync": false,
-  "git.ignoreMissingGitWarning": true,
+  "git.enabled": true,
   "git.ignoreLegacyWarning": true,
+  "git.ignoreMissingGitWarning": true,
+  "git.path": "%GIT_HOME%\\bin\\git.exe",
   "git.suggestSmartCommit": false,
-  "gitlens.codeLens.enabled": false,
-  "gitlens.codeLens.scopes": ["document"],
-  "gitlens.codeLens.authors.enabled": false,
-  "gitlens.codeLens.recentChange.command": "gitlens.toggleFileBlame",
-  "gitlens.defaultDateFormat": "YYYY-MM-DD HH:mm",
-  "gitlens.defaultDateShortFormat": "YY-M-D H:m",
-  "gitlens.defaultDateStyle": "relative",
-  "gitlens.defaultGravatarsStyle": "retro",
-  "gitlens.blame.avatars": false,
-  "gitlens.blame.ignoreWhitespace": true,
-  "gitlens.blame.dateFormat": "YYYYMMDD",
-  "gitlens.blame.format": "${date} ${author|8}", // 责问
-  "gitlens.blame.heatmap.location": "left",
-  "gitlens.blame.highlight.locations": [
-    // "gutter",// 行号
-    "line", // 行
-    "overview" // 滚动栏
-  ],
-  "gitlens.currentLine.enabled": true,
-  "gitlens.currentLine.dateFormat": "YYYY-MM-DD",
-  "gitlens.currentLine.format": "${author},${date}",
-  "gitlens.statusBar.enabled": false,
-  "gitlens.statusBar.alignment": "left",
-  "gitlens.statusBar.dateFormat": "YYYY-MM-DD HH:mm",
-  "gitlens.statusBar.format": "${date} (${id}) ${message}", // 状态栏
-  "gitlens.hovers.avatars": false,
-  "gitlens.hovers.annotations.over": "annotation",
-  "gitlens.hovers.detailsMarkdownFormat": "**${author}**, ${ago} *(${date})* \n\n${message}\n\n${commands}",
   "gitlens.advanced.messages": {
     "suppressFileNotUnderSourceControlWarning": true,
     "suppressShowKeyBindingsNotice": true
   },
-  "gitlens.views.commitFileFormat": "${filePath}",
-  "gitlens.views.commitFileDescriptionFormat": "${directory}${ ← originalPath}",
-  "gitlens.views.commitFormat": "${author}>${message}",
-  "gitlens.views.commitDescriptionFormat": "${changes • }${author}, ${agoOrDate}",
-  "gitlens.views.stashDescriptionFormat": "${changes • }${agoOrDate}",
-  "gitlens.views.stashFileDescriptionFormat": "${directory}${ ← originalPath}",
-  "gitlens.views.stashFileFormat": "${filePath}",
-  "gitlens.views.stashFormat": "${author}>${message}",
-  "gitlens.views.statusFileDescriptionFormat": "${directory}${ ← originalPath}",
-  "gitlens.views.statusFileFormat": "${working}${filePath}",
-  "gitlens.views.compare.enabled": true,
-  "gitlens.views.compare.location": "scm",
-  "gitlens.views.fileHistory.enabled": true,
-  "gitlens.views.fileHistory.location": "scm",
-  "gitlens.views.lineHistory.enabled": true,
-  "gitlens.views.lineHistory.location": "scm",
-  "gitlens.views.repositories.enabled": true,
-  "gitlens.views.repositories.location": "scm",
-  "gitlens.views.repositories.avatars": false,
-  "gitlens.views.repositories.showBranchComparison": false,
-  "gitlens.views.search.enabled": true,
-  "gitlens.views.search.location": "scm",
-  "gitlens.recentChanges.highlight.locations": ["gutter", "line", "overview"],
-  "gitlens.sortBranchesBy": "name:asc",
+  "gitlens.blame.avatars": false,
+  "gitlens.blame.dateFormat": "YYYYMMDD",
+  "gitlens.blame.format": "${date} ${author|8}",
+  "gitlens.blame.heatmap.location": "left",
+  "gitlens.blame.highlight.locations": [
+    "line",
+    "overview"
+  ],
+  "gitlens.blame.ignoreWhitespace": true,
+  "gitlens.codeLens.authors.enabled": false,
+  "gitlens.codeLens.enabled": false,
+  "gitlens.codeLens.recentChange.command": "gitlens.toggleFileBlame",
+  "gitlens.codeLens.scopes": [
+    "document"
+  ],
+  "gitlens.currentLine.dateFormat": "YYYY-MM-DD",
+  "gitlens.currentLine.enabled": true,
+  "gitlens.currentLine.format": "${author},${date}",
+  "gitlens.defaultDateFormat": "YYYY-MM-DD HH:mm",
+  "gitlens.defaultDateShortFormat": "YY-M-D H:m",
+  "gitlens.defaultDateStyle": "relative",
+  "gitlens.defaultGravatarsStyle": "retro",
+  "gitlens.hovers.annotations.over": "annotation",
+  "gitlens.hovers.avatars": false,
+  "gitlens.hovers.detailsMarkdownFormat": "**${author}**, ${ago} *(${date})* \n\n${message}\n\n${commands}",
   "gitlens.menus": {
     "editor": false,
     "editorGroup": {
@@ -188,409 +273,437 @@
       "stash": true
     }
   },
-  "git-graph.commitDetailsView.location": "Docked to Bottom",
-  "git-graph.customBranchGlobPatterns": [
-    { "name": "release", "glob": "*/release/*" },
-    { "name": "本地", "glob": "heads/*" }
+  "gitlens.recentChanges.highlight.locations": [
+    "gutter",
+    "line",
+    "overview"
   ],
-  "git-graph.defaultColumnVisibility": {
-    "Date": true,
-    "Author": true,
-    "Commit": false
-  },
-  "git-graph.repository.commits.fetchAvatars": false,
-  "git-graph.repository.fetchAndPrune": true,
-  "git-graph.dialog.addTag.pushToRemote": true,
-  "git-graph.dialog.createBranch.checkOut": true,
-  "git-graph.dialog.addTag.type": "Lightweight",
-  "git-graph.repository.commits.initialLoad": 100,
-  "git-graph.repository.commits.loadMore": 50,
-  "git-graph.showStatusBarItem": false,
-  "git-graph.contextMenuActionsVisibility": {
-    "remoteBranch": {
-      "checkout": true,
-      "delete": true,
-      "fetch": true,
-      "pull": false,
-      "copyName": true
-    },
-    "stash": {
-      "apply": true,
-      "createBranch": false,
-      "pop": true,
-      "drop": true,
-      "copyName": false,
-      "copyHash": true
-    }
-  },
-  "gitmoji.outputType": "code",
-  "gitmoji.additionalEmojis": [
-  ],
+  "gitlens.sortBranchesBy": "name:asc",
+  "gitlens.statusBar.alignment": "left",
+  "gitlens.statusBar.dateFormat": "YYYY-MM-DD HH:mm",
+  "gitlens.statusBar.enabled": false,
+  "gitlens.statusBar.format": "${date} (${id}) ${message}",
+  "gitlens.views.commitDescriptionFormat": "${changes • }${author}, ${agoOrDate}",
+  "gitlens.views.commitFileDescriptionFormat": "${directory}${ ← originalPath}",
+  "gitlens.views.commitFileFormat": "${filePath}",
+  "gitlens.views.commitFormat": "${author}>${message}",
+  "gitlens.views.compare.enabled": true,
+  "gitlens.views.compare.location": "scm",
+  "gitlens.views.fileHistory.enabled": true,
+  "gitlens.views.fileHistory.location": "scm",
+  "gitlens.views.lineHistory.enabled": true,
+  "gitlens.views.lineHistory.location": "scm",
+  "gitlens.views.repositories.avatars": false,
+  "gitlens.views.repositories.enabled": true,
+  "gitlens.views.repositories.location": "scm",
+  "gitlens.views.repositories.showBranchComparison": false,
+  "gitlens.views.search.enabled": true,
+  "gitlens.views.search.location": "scm",
+  "gitlens.views.stashDescriptionFormat": "${changes • }${agoOrDate}",
+  "gitlens.views.stashFileDescriptionFormat": "${directory}${ ← originalPath}",
+  "gitlens.views.stashFileFormat": "${filePath}",
+  "gitlens.views.stashFormat": "${author}>${message}",
+  "gitlens.views.statusFileDescriptionFormat": "${directory}${ ← originalPath}",
+  "gitlens.views.statusFileFormat": "${working}${filePath}",
+  "gitmoji.additionalEmojis": [],
   "gitmoji.onlyUseAdditionalEmojis": false,
-  /* markdown */
-  "markdown.preview.breaks": true,
-  "markdown.preview.fontFamily": "'Fira Code','HYQihei 55S'",
-  "markdown.preview.lineHeight": 1.4,
-  "markdown.preview.doubleClickToSwitchToEditor": false,
-  "markdown.styles": [
-    // TODO "https://raw.githubusercontent.com/raycon/vscode-markdown-style/master/preview/github.css"
-    // TODO "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-  ],
-  "[markdown]": {
-    "files.trimTrailingWhitespace": false,
-    "editor.tabSize": 4,
-    "editor.fontFamily": "'Sarasa Mono SC'"
-  },
-  "markdown.extension.toc.levels": "2..4",
-  "markdown.extension.italic.indicator": "*",
-  "markdown.extension.list.indentationSize": "inherit",
-  "markdown.extension.print.absoluteImgPath": false,
-  "markdown.extension.toc.unorderedList.marker": "*",
-  "markdown.extension.toc.orderedList": true,
-  "markdown.extension.syntax.decorations": false,
-  "markdown.extension.syntax.plainTheme": true,
-  "markdown.extension.toc.plaintext": false,
-  "markdownExtended.disabledPlugins": "container",
-  /* front matter */
-  "frontMatter.taxonomy.dateFormat": "yyyy-MM-dd HH-mm-ss",
-  "frontMatter.taxonomy.categories": [],
-  "frontMatter.taxonomy.tags": [],
-  /* bookmark */
-  "bookmarks.showCommandsInContextMenu": false,
-  "bookmarks.navigateThroughAllFiles": true,
-  /* togglequotes */
-  "togglequotes.chars": ["\"", "'"],
-  /* highlight */
+  "gitmoji.outputType": "code",
   "highlight.decorations": {
     "rangeBehavior": 3
   },
   "highlight.maxMatches": 200,
   "highlight.regexFlags": "g",
   "highlight.regexes": {
-    // todo FFA500
-    "(REM *)(TODO|[Tt]odo)(:? *)(.*)": {
-      "filterLanguageRegex": "bat",
-      "decorations": [
-        {},
-        {
-          "fontWeight": "bold",
-          "overviewRulerColor": "#FFA500",
-          "color": "#FFA500"
-        },
-        { "color": "#FFA500" },
-        { "color": "#FFA500" }
-      ]
-    },
-    "(-- *)(TODO|[Tt]odo)(:? *)(.*)": {
-      "filterLanguageRegex": "sql",
-      "decorations": [
-        {},
-        {
-          "fontWeight": "bold",
-          "overviewRulerColor": "#FFA500",
-          "color": "#FFA500"
-        },
-        { "color": "#FFA500" },
-        { "color": "#FFA500" }
-      ]
-    },
-    "(# *)(TODO|[Tt]odo)(:? *)(.*)": {
-      "filterLanguageRegex": "dockfile|ini|properties|shell|yaml",
-      "decorations": [
-        {},
-        {
-          "fontWeight": "bold",
-          "overviewRulerColor": "#FFA500",
-          "color": "#FFA500"
-        },
-        { "color": "#FFA500" },
-        { "color": "#FFA500" }
-      ]
-    },
-    "(// *)(TODO|[Tt]odo)(:? *)(.*)": {
-      "filterLanguageRegex": "c|cpp|cs|java|javascript|json|php|typescript",
-      "decorations": [
-        {},
-        {
-          "fontWeight": "bold",
-          "overviewRulerColor": "#FFA500",
-          "color": "#FFA500"
-        },
-        { "color": "#FFA500" },
-        { "color": "#FFA500" }
-      ]
-    },
-    "(<!-- *)(TODO|[Tt]odo)(:? *)(.*)( *-->)": {
-      "filterLanguageRegex": "markdown|html|xml",
-      "decorations": [
-        {},
-        {
-          "fontWeight": "bold",
-          "overviewRulerColor": "#FFA500",
-          "color": "#FFA500"
-        },
-        { "color": "#FFA500" },
-        { "color": "#FFA500" },
-        {}
-      ]
-    },
-    "(/\\* *)(TODO|[Tt]odo)(:? *)(.*)(\\*/)": {
-      "filterLanguageRegex": "c|cpp|cs|java|javascript|json|php|typescript|css|sql",
-      "decorations": [
-        {},
-        {
-          "fontWeight": "bold",
-          "overviewRulerColor": "#FFA500",
-          "color": "#FFA500"
-        },
-        { "color": "#FFA500" },
-        { "color": "#FFA500" },
-        {}
-      ]
-    },
-    // fixme FF0000
-    "(REM *)(FIXME|[Ff]ixme)(:? *)(.*)": {
-      "filterLanguageRegex": "bat",
-      "decorations": [
-        {},
-        {
-          "fontWeight": "bold",
-          "overviewRulerColor": "#FF0000",
-          "color": "#FF0000"
-        },
-        { "color": "#FF0000" },
-        { "color": "#FF0000" }
-      ]
-    },
-    "(-- *)(FIXME|[Ff]ixme)(:? *)(.*)": {
-      "filterLanguageRegex": "sql",
-      "decorations": [
-        {},
-        {
-          "fontWeight": "bold",
-          "overviewRulerColor": "#FF0000",
-          "color": "#FF0000"
-        },
-        { "color": "#FF0000" },
-        { "color": "#FF0000" }
-      ]
-    },
     "(# *)(FIXME|[Ff]ixme)(:? *)(.*)": {
-      "filterLanguageRegex": "dockfile|ini|properties|shell|yaml",
       "decorations": [
         {},
         {
+          "color": "#FF0000",
           "fontWeight": "bold",
-          "overviewRulerColor": "#FF0000",
+          "overviewRulerColor": "#FF0000"
+        },
+        {
           "color": "#FF0000"
         },
-        { "color": "#FF0000" },
-        { "color": "#FF0000" }
-      ]
-    },
-    "(// *)(FIXME|[Ff]ixme)(:? *)(.*)": {
-      "filterLanguageRegex": "c|cpp|cs|java|javascript|json|php|typescript",
-      "decorations": [
-        {},
         {
-          "fontWeight": "bold",
-          "overviewRulerColor": "#FF0000",
           "color": "#FF0000"
-        },
-        { "color": "#FF0000" },
-        { "color": "#FF0000" }
-      ]
-    },
-    "(<!-- *)(FIXME|[Ff]ixme)(:? *)(.*)( *-->)": {
-      "filterLanguageRegex": "markdown|html|xml",
-      "decorations": [
-        {},
-        {
-          "fontWeight": "bold",
-          "overviewRulerColor": "#FF0000",
-          "color": "#FF0000"
-        },
-        { "color": "#FF0000" },
-        { "color": "#FF0000" },
-        {}
-      ]
-    },
-    "(/\\* *)(FIXME|[Ff]ixme)(:? *)(.*)(\\*/)": {
-      "filterLanguageRegex": "c|cpp|cs|java|javascript|json|php|typescript|css|sql",
-      "decorations": [
-        {},
-        {
-          "fontWeight": "bold",
-          "overviewRulerColor": "#FF0000",
-          "color": "#FF0000"
-        },
-        { "color": "#FF0000" },
-        { "color": "#FF0000" },
-        {}
-      ]
-    },
-    // note 4169E1
-    "(REM *)(NOTE|[Nn]ote)(:? *)(.*)": {
-      "filterLanguageRegex": "bat",
-      "decorations": [
-        {},
-        {
-          "fontWeight": "bold",
-          "overviewRulerColor": "#4169E1",
-          "color": "#4169E1"
-        },
-        { "color": "#4169E1" },
-        { "color": "#4169E1" }
-      ]
-    },
-    "(-- *)(NOTE|[Nn]ote)(:? *)(.*)": {
-      "filterLanguageRegex": "sql",
-      "decorations": [
-        {},
-        {
-          "fontWeight": "bold",
-          "overviewRulerColor": "#4169E1",
-          "color": "#4169E1"
-        },
-        { "color": "#4169E1" },
-        { "color": "#4169E1" }
-      ]
+        }
+      ],
+      "filterLanguageRegex": "dockfile|ini|properties|shell|yaml"
     },
     "(# *)(NOTE|[Nn]ote)(:? *)(.*)": {
-      "filterLanguageRegex": "dockfile|ini|properties|shell|yaml",
       "decorations": [
         {},
         {
+          "color": "#4169E1",
           "fontWeight": "bold",
-          "overviewRulerColor": "#4169E1",
+          "overviewRulerColor": "#4169E1"
+        },
+        {
           "color": "#4169E1"
         },
-        { "color": "#4169E1" },
-        { "color": "#4169E1" }
-      ]
+        {
+          "color": "#4169E1"
+        }
+      ],
+      "filterLanguageRegex": "dockfile|ini|properties|shell|yaml"
+    },
+    "(# *)(TODO|[Tt]odo)(:? *)(.*)": {
+      "decorations": [
+        {},
+        {
+          "color": "#FFA500",
+          "fontWeight": "bold",
+          "overviewRulerColor": "#FFA500"
+        },
+        {
+          "color": "#FFA500"
+        },
+        {
+          "color": "#FFA500"
+        }
+      ],
+      "filterLanguageRegex": "dockfile|ini|properties|shell|yaml"
+    },
+    "(-- *)(FIXME|[Ff]ixme)(:? *)(.*)": {
+      "decorations": [
+        {},
+        {
+          "color": "#FF0000",
+          "fontWeight": "bold",
+          "overviewRulerColor": "#FF0000"
+        },
+        {
+          "color": "#FF0000"
+        },
+        {
+          "color": "#FF0000"
+        }
+      ],
+      "filterLanguageRegex": "sql"
+    },
+    "(-- *)(NOTE|[Nn]ote)(:? *)(.*)": {
+      "decorations": [
+        {},
+        {
+          "color": "#4169E1",
+          "fontWeight": "bold",
+          "overviewRulerColor": "#4169E1"
+        },
+        {
+          "color": "#4169E1"
+        },
+        {
+          "color": "#4169E1"
+        }
+      ],
+      "filterLanguageRegex": "sql"
+    },
+    "(-- *)(TODO|[Tt]odo)(:? *)(.*)": {
+      "decorations": [
+        {},
+        {
+          "color": "#FFA500",
+          "fontWeight": "bold",
+          "overviewRulerColor": "#FFA500"
+        },
+        {
+          "color": "#FFA500"
+        },
+        {
+          "color": "#FFA500"
+        }
+      ],
+      "filterLanguageRegex": "sql"
+    },
+    "(// *)(FIXME|[Ff]ixme)(:? *)(.*)": {
+      "decorations": [
+        {},
+        {
+          "color": "#FF0000",
+          "fontWeight": "bold",
+          "overviewRulerColor": "#FF0000"
+        },
+        {
+          "color": "#FF0000"
+        },
+        {
+          "color": "#FF0000"
+        }
+      ],
+      "filterLanguageRegex": "c|cpp|cs|java|javascript|json|php|typescript"
     },
     "(// *)(NOTE|[Nn]ote)(:? *)(.*)": {
-      "filterLanguageRegex": "c|cpp|cs|java|javascript|json|php|typescript",
       "decorations": [
         {},
         {
+          "color": "#4169E1",
           "fontWeight": "bold",
-          "overviewRulerColor": "#4169E1",
+          "overviewRulerColor": "#4169E1"
+        },
+        {
           "color": "#4169E1"
         },
-        { "color": "#4169E1" },
-        { "color": "#4169E1" }
-      ]
+        {
+          "color": "#4169E1"
+        }
+      ],
+      "filterLanguageRegex": "c|cpp|cs|java|javascript|json|php|typescript"
     },
-    "(<!-- *)(NOTE|[Nn]ote)(:? *)(.*)( *-->)": {
-      "filterLanguageRegex": "markdown|html|xml",
+    "(// *)(TODO|[Tt]odo)(:? *)(.*)": {
       "decorations": [
         {},
         {
+          "color": "#FFA500",
           "fontWeight": "bold",
-          "overviewRulerColor": "#4169E1",
-          "color": "#4169E1"
+          "overviewRulerColor": "#FFA500"
         },
-        { "color": "#4169E1" },
-        { "color": "#4169E1" },
+        {
+          "color": "#FFA500"
+        },
+        {
+          "color": "#FFA500"
+        }
+      ],
+      "filterLanguageRegex": "c|cpp|cs|java|javascript|json|php|typescript"
+    },
+    "(/\\* *)(FIXME|[Ff]ixme)(:? *)(.*)(\\*/)": {
+      "decorations": [
+        {},
+        {
+          "color": "#FF0000",
+          "fontWeight": "bold",
+          "overviewRulerColor": "#FF0000"
+        },
+        {
+          "color": "#FF0000"
+        },
+        {
+          "color": "#FF0000"
+        },
         {}
-      ]
+      ],
+      "filterLanguageRegex": "c|cpp|cs|java|javascript|json|php|typescript|css|sql"
     },
     "(/\\* *)(NOTE|[Nn]ote)(:? *)(.*)(\\*/)": {
-      "filterLanguageRegex": "c|cpp|cs|java|javascript|json|php|typescript|css|sql",
       "decorations": [
         {},
         {
+          "color": "#4169E1",
           "fontWeight": "bold",
-          "overviewRulerColor": "#4169E1",
+          "overviewRulerColor": "#4169E1"
+        },
+        {
           "color": "#4169E1"
         },
-        { "color": "#4169E1" },
-        { "color": "#4169E1" },
+        {
+          "color": "#4169E1"
+        },
         {}
-      ]
+      ],
+      "filterLanguageRegex": "c|cpp|cs|java|javascript|json|php|typescript|css|sql"
+    },
+    "(/\\* *)(TODO|[Tt]odo)(:? *)(.*)(\\*/)": {
+      "decorations": [
+        {},
+        {
+          "color": "#FFA500",
+          "fontWeight": "bold",
+          "overviewRulerColor": "#FFA500"
+        },
+        {
+          "color": "#FFA500"
+        },
+        {
+          "color": "#FFA500"
+        },
+        {}
+      ],
+      "filterLanguageRegex": "c|cpp|cs|java|javascript|json|php|typescript|css|sql"
+    },
+    "(<!-- *)(FIXME|[Ff]ixme)(:? *)(.*)( *-->)": {
+      "decorations": [
+        {},
+        {
+          "color": "#FF0000",
+          "fontWeight": "bold",
+          "overviewRulerColor": "#FF0000"
+        },
+        {
+          "color": "#FF0000"
+        },
+        {
+          "color": "#FF0000"
+        },
+        {}
+      ],
+      "filterLanguageRegex": "markdown|html|xml"
+    },
+    "(<!-- *)(NOTE|[Nn]ote)(:? *)(.*)( *-->)": {
+      "decorations": [
+        {},
+        {
+          "color": "#4169E1",
+          "fontWeight": "bold",
+          "overviewRulerColor": "#4169E1"
+        },
+        {
+          "color": "#4169E1"
+        },
+        {
+          "color": "#4169E1"
+        },
+        {}
+      ],
+      "filterLanguageRegex": "markdown|html|xml"
+    },
+    "(<!-- *)(TODO|[Tt]odo)(:? *)(.*)( *-->)": {
+      "decorations": [
+        {},
+        {
+          "color": "#FFA500",
+          "fontWeight": "bold",
+          "overviewRulerColor": "#FFA500"
+        },
+        {
+          "color": "#FFA500"
+        },
+        {
+          "color": "#FFA500"
+        },
+        {}
+      ],
+      "filterLanguageRegex": "markdown|html|xml"
+    },
+    "(REM *)(FIXME|[Ff]ixme)(:? *)(.*)": {
+      "decorations": [
+        {},
+        {
+          "color": "#FF0000",
+          "fontWeight": "bold",
+          "overviewRulerColor": "#FF0000"
+        },
+        {
+          "color": "#FF0000"
+        },
+        {
+          "color": "#FF0000"
+        }
+      ],
+      "filterLanguageRegex": "bat"
+    },
+    "(REM *)(NOTE|[Nn]ote)(:? *)(.*)": {
+      "decorations": [
+        {},
+        {
+          "color": "#4169E1",
+          "fontWeight": "bold",
+          "overviewRulerColor": "#4169E1"
+        },
+        {
+          "color": "#4169E1"
+        },
+        {
+          "color": "#4169E1"
+        }
+      ],
+      "filterLanguageRegex": "bat"
+    },
+    "(REM *)(TODO|[Tt]odo)(:? *)(.*)": {
+      "decorations": [
+        {},
+        {
+          "color": "#FFA500",
+          "fontWeight": "bold",
+          "overviewRulerColor": "#FFA500"
+        },
+        {
+          "color": "#FFA500"
+        },
+        {
+          "color": "#FFA500"
+        }
+      ],
+      "filterLanguageRegex": "bat"
     }
   },
-  /* bracket-pair-colorizer */
-  "bracket-pair-colorizer-2.highlightActiveScope": true,
-  "bracket-pair-colorizer-2.showBracketsInGutter": true,
-  "bracket-pair-colorizer-2.showHorizontalScopeLine": false,
-  "bracket-pair-colorizer-2.excludedLanguages": ["log"],
-  /* open-in-application */
-  "openInApplication.applications": {},
-  /* typescript */
-  "typescript.format.enable": false,
-  "[typescript]": {
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint",
-    "files.trimTrailingWhitespace": false,
-    "editor.rulers": [80, 120, 140]
-  },
-  /* xml */
-  "[xml]": {
-    "files.trimTrailingWhitespace": false,
-    "editor.rulers": [80, 120, 140]
-  },
-  /* yaml */
-  "[yaml]": {
-    "files.trimTrailingWhitespace": false,
-    "editor.rulers": [80, 120, 140]
-  },
-  /* json */
-  "json.format.enable": false,
-  "[json]": {
-    "editor.rulers": [80, 120, 140]
-  },
-  "[jsonc]": {
-    "editor.rulers": [80, 120, 140]
-  },
-  /* java */
-  "[java]": {
-    "files.trimTrailingWhitespace": false,
-    "editor.tabSize": 4,
-    "editor.rulers": [80, 120, 140]
-  },
-  /* javascript */
-  "[javascript]": {
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint",
-    "files.trimTrailingWhitespace": false,
-    "editor.rulers": [80, 120, 140]
-  },
-  "javascript.format.enable": false,
-  /* html */
   "html.format.enable": false,
-  "[html]": {
-    "editor.rulers": [80, 120, 140]
-  },
-  /* css */
-  "css.validate": false,
+  "javascript.format.enable": false,
+  "json.format.enable": false,
   "less.validate": false,
-  "scss.validate": false,
-  "[css]": {
-    "editor.rulers": [80, 120, 140]
-  },
-  "[less]": {
-    "editor.rulers": [80, 120, 140]
-  },
-  "[scss]": {
-    "editor.rulers": [80, 120, 140]
-  },
-  /* prettier */
-  "prettier.requireConfig": false,
-  "prettier.ignorePath": ".prettierignore",
+  "markdown.extension.italic.indicator": "*",
+  "markdown.extension.list.indentationSize": "inherit",
+  "markdown.extension.print.absoluteImgPath": false,
+  "markdown.extension.syntax.decorations": false,
+  "markdown.extension.syntax.plainTheme": true,
+  "markdown.extension.toc.levels": "2..4",
+  "markdown.extension.toc.orderedList": true,
+  "markdown.extension.toc.plaintext": false,
+  "markdown.extension.toc.unorderedList.marker": "*",
+  "markdown.preview.breaks": true,
+  "markdown.preview.doubleClickToSwitchToEditor": false,
+  "markdown.preview.fontFamily": "'Fira Code','HYQihei 55S'",
+  "markdown.preview.lineHeight": 1.4,
+  "markdown.styles": [],
+  "markdownExtended.disabledPlugins": "container",
+  "material-icon-theme.activeIconPack": "vue_vuex",
+  "openInApplication.applications": {},
   "prettier.configPath": ".prettierrc.json",
-  "prettier.resolveGlobalModules": false,
+  "prettier.documentSelectors": [
+    "**/*.{json,md,js,ts,css}"
+  ],
+  "prettier.ignorePath": ".prettierignore",
   "prettier.prettierPath": "%APPDATA%\\Roaming\\npm\\node_modules\\prettier",
-  "prettier.documentSelectors": ["**/*.{json,md,js,ts,css}"],
-  /* eslint */
-  "eslint.alwaysShowStatus": true,
-  "eslint.format.enable": true,
-  "eslint.nodePath": "D:\\nodejs",
-  "eslint.validate": ["typescript", "typescriptreact", "javascript", "javascriptreact", "html", "vue"],
-  "eslint.quiet": false,
-  /* stylelint */
+  "prettier.requireConfig": false,
+  "prettier.resolveGlobalModules": false,
+  "scss.validate": false,
+  "search.collapseResults": "auto",
+  "search.exclude": {
+    "**/.mvn": true,
+    "**/bower_components": true,
+    "**/node_modules": true,
+    "**/out": true,
+    "**/target": true
+  },
+  "search.searchEditor.reusePriorSearchConfiguration": true,
+  "search.showLineNumbers": true,
+  "search.useReplacePreview": false,
+  "settingsSync.ignoredExtensions": [],
+  "settingsSync.ignoredSettings": [
+    "-git.path"
+  ],
   "stylelint.enable": true,
-  "stylelint.validate": ["css", "less", "scss", "html"],
-  /* emmet */
-  "emmet.showExpandedAbbreviation": "inMarkupAndStylesheetFilesOnly",
-  "emmet.triggerExpansionOnTab": true
+  "stylelint.validate": [
+    "css",
+    "html",
+    "less",
+    "scss"
+  ],
+  "telemetry.enableCrashReporter": false,
+  "telemetry.enableTelemetry": false,
+  "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.fontFamily": "'Fira Code','Sarasa Mono SC',fontawesome",
+  "terminal.integrated.rendererType": "auto",
+  "togglequotes.chars": [
+    "\"",
+    "'"
+  ],
+  "typescript.format.enable": false,
+  "update.enableWindowsBackgroundUpdates": false,
+  "update.mode": "none",
+  "window.menuBarVisibility": "default",
+  "window.newWindowDimensions": "inherit",
+  "window.restoreWindows": "all",
+  "window.title": "${dirty}${activeEditorShort}${separator}${rootName}",
+  "window.titleBarStyle": "custom",
+  "window.zoomLevel": 0,
+  "workbench.activityBar.visible": true,
+  "workbench.colorCustomizations": {},
+  "workbench.colorTheme": "One Dark Pro",
+  "workbench.editor.pinnedTabSizing": "compact",
+  "workbench.enableExperiments": false,
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.settings.editor": "ui",
+  "workbench.statusBar.visible": true,
+  "zenMode.hideActivityBar": false
 }
