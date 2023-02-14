@@ -1,56 +1,28 @@
 {
   "[css]": {
-    "editor.rulers": [
-      120,
-      140,
-      80
-    ]
+    "editor.rulers": [80, 120, 140]
   },
   "[html]": {
-    "editor.rulers": [
-      120,
-      140,
-      80
-    ]
+    "editor.rulers": [80, 120, 140]
   },
   "[java]": {
-    "editor.rulers": [
-      120,
-      140,
-      80
-    ],
+    "editor.rulers": [80, 120, 140],
     "editor.tabSize": 4,
     "files.trimTrailingWhitespace": false
   },
   "[javascript]": {
     "editor.defaultFormatter": "dbaeumer.vscode-eslint",
-    "editor.rulers": [
-      120,
-      140,
-      80
-    ],
+    "editor.rulers": [80, 120, 140],
     "files.trimTrailingWhitespace": false
   },
   "[json]": {
-    "editor.rulers": [
-      120,
-      140,
-      80
-    ]
+    "editor.rulers": [80, 120, 140]
   },
   "[jsonc]": {
-    "editor.rulers": [
-      120,
-      140,
-      80
-    ]
+    "editor.rulers": [80, 120, 140]
   },
   "[less]": {
-    "editor.rulers": [
-      120,
-      140,
-      80
-    ]
+    "editor.rulers": [80, 120, 140]
   },
   "[markdown]": {
     "editor.fontFamily": "'Sarasa Mono SC'",
@@ -58,63 +30,49 @@
     "files.trimTrailingWhitespace": false
   },
   "[scss]": {
-    "editor.rulers": [
-      120,
-      140,
-      80
-    ]
+    "editor.rulers": [80, 120, 140]
   },
   "[typescript]": {
     "editor.defaultFormatter": "dbaeumer.vscode-eslint",
-    "editor.rulers": [
-      120,
-      140,
-      80
-    ],
+    "editor.rulers": [80, 120, 140],
     "files.trimTrailingWhitespace": false
   },
   "[xml]": {
-    "editor.rulers": [
-      120,
-      140,
-      80
-    ],
+    "editor.rulers": [80, 120, 140],
     "files.trimTrailingWhitespace": false
   },
   "[yaml]": {
-    "editor.rulers": [
-      120,
-      140,
-      80
-    ],
+    "editor.rulers": [80, 120, 140],
     "files.trimTrailingWhitespace": false
   },
   "bookmarks.navigateThroughAllFiles": true,
   "bookmarks.showCommandsInContextMenu": false,
-  "bracket-pair-colorizer-2.excludedLanguages": [
-    "log"
-  ],
-  "bracket-pair-colorizer-2.highlightActiveScope": true,
-  "bracket-pair-colorizer-2.showBracketsInGutter": true,
-  "bracket-pair-colorizer-2.showHorizontalScopeLine": false,
   "breadcrumbs.enabled": true,
   "breadcrumbs.symbolSortOrder": "name",
+  "codesnap.transparentBackground": true,
   "css.validate": false,
-  "diffEditor.ignoreTrimWhitespace": true,
-  "diffEditor.renderSideBySide": true,
+  "diffEditor.ignoreTrimWhitespace": false,
   "editor.acceptSuggestionOnCommitCharacter": false,
   "editor.accessibilitySupport": "off",
+  "editor.autoClosingBrackets": "languageDefined",
+  "editor.bracketPairColorization.enabled": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.detectIndentation": true,
-  "editor.fontFamily": "'Fira Code','PT Mono','DejaVu Sans Mono','HYQiHei 55S',monospace,'Microsoft YaHei',fontawesome",
-  "editor.fontLigatures": "'ss06', 'ss07'",
-  "editor.fontSize": 14,
+  "editor.fontFamily": "'Fira Codes','FiraCode NF','PT Mono','HYQiHei 55S',monospace,'Microsoft YaHei',fontawesome",
+  "editor.fontLigatures": "'cv01', 'cv02', 'cv16', 'ss06', 'ss07'",
+  "editor.guides.bracketPairs": "active",
+  "editor.guides.bracketPairsHorizontal": "active",
+  "editor.guides.indentation": true,
+  "editor.guides.highlightActiveIndentation": true,
+  "editor.linkedEditing": true,
   "editor.matchBrackets": "never",
   "editor.maxTokenizationLineLength": 10000,
   "editor.minimap.enabled": false,
   "editor.minimap.maxColumn": 120,
   "editor.minimap.renderCharacters": true,
-  "editor.multiCursorModifier": "alt",
+  "editor.unicodeHighlight.invisibleCharacters": false,
+  "editor.unicodeHighlight.nonBasicASCII": false,
+  "editor.unicodeHighlight.ambiguousCharacters": false,
   "editor.parameterHints.cycle": true,
   "editor.quickSuggestions": {
     "comments": false,
@@ -122,20 +80,19 @@
     "strings": false
   },
   "editor.quickSuggestionsDelay": 100,
-  "editor.renameOnType": true,
-  "editor.renderControlCharacters": false,
+  "editor.renderControlCharacters": true,
   "editor.renderWhitespace": "all",
   "editor.scrollBeyondLastLine": false,
   "editor.semanticHighlighting.enabled": true,
   "editor.snippetSuggestions": "top",
+  "editor.suggest.preview": true,
   "editor.tabSize": 2,
   "editor.wordSeparators": "`~!@#$%^&*()-=+[{]}\\|;:'\",.<>/?",
   "editor.wordWrap": "on",
   "emmet.showExpandedAbbreviation": "inMarkupAndStylesheetFilesOnly",
   "emmet.triggerExpansionOnTab": true,
-  "eslint.alwaysShowStatus": true,
   "eslint.format.enable": true,
-  "eslint.nodePath": "D:\\nodejs",
+  "eslint.nodePath": "%NODE_PATH%",
   "eslint.quiet": false,
   "eslint.validate": [
     "html",
@@ -146,8 +103,7 @@
     "vue"
   ],
   "extensions.autoUpdate": false,
-  "extensions.ignoreRecommendations": false,
-  "extensions.showRecommendationsOnlyOnDemand": true,
+  "extensions.ignoreRecommendations": true,
   "files.associations": {
     "*.extension": "html",
     "*.ftl": "xml",
@@ -169,17 +125,25 @@
   "files.simpleDialog.enable": false,
   "files.trimFinalNewlines": true,
   "files.trimTrailingWhitespace": true,
-  "frontMatter.taxonomy.categories": [],
-  "frontMatter.taxonomy.dateFormat": "yyyy-MM-dd HH-mm-ss",
-  "frontMatter.taxonomy.tags": [],
+  "git-autoconfig.configList": [
+    {
+      "user.email": "gaojr427@hotmail.com",
+      "user.name": "gaojr"
+    }
+  ],
   "git-graph.commitDetailsView.location": "Docked to Bottom",
   "git-graph.contextMenuActionsVisibility": {
     "remoteBranch": {
       "checkout": true,
       "copyName": true,
+      "createArchive": false,
+      "createPullRequest": false,
       "delete": true,
       "fetch": true,
-      "pull": false
+      "merge": true,
+      "pull": false,
+      "selectInBranchesDropdown": false,
+      "unselectInBranchesDropdown": false
     },
     "stash": {
       "apply": true,
@@ -208,6 +172,8 @@
   "git-graph.dialog.addTag.pushToRemote": true,
   "git-graph.dialog.addTag.type": "Lightweight",
   "git-graph.dialog.createBranch.checkOut": true,
+  "git-graph.dialog.fetchRemote.prune": true,
+  "git-graph.dialog.fetchRemote.pruneTags": true,
   "git-graph.repository.commits.fetchAvatars": false,
   "git-graph.repository.commits.initialLoad": 100,
   "git-graph.repository.commits.loadMore": 50,
@@ -222,92 +188,7 @@
   "git.ignoreMissingGitWarning": true,
   "git.path": "%GIT_HOME%\\bin\\git.exe",
   "git.suggestSmartCommit": false,
-  "gitlens.advanced.messages": {
-    "suppressFileNotUnderSourceControlWarning": true,
-    "suppressShowKeyBindingsNotice": true
-  },
-  "gitlens.blame.avatars": false,
-  "gitlens.blame.dateFormat": "YYYYMMDD",
-  "gitlens.blame.format": "${date} ${author|8}",
-  "gitlens.blame.heatmap.location": "left",
-  "gitlens.blame.highlight.locations": [
-    "line",
-    "overview"
-  ],
-  "gitlens.blame.ignoreWhitespace": true,
-  "gitlens.codeLens.authors.enabled": false,
-  "gitlens.codeLens.enabled": false,
-  "gitlens.codeLens.recentChange.command": "gitlens.toggleFileBlame",
-  "gitlens.codeLens.scopes": [
-    "document"
-  ],
-  "gitlens.currentLine.dateFormat": "YYYY-MM-DD",
-  "gitlens.currentLine.enabled": true,
-  "gitlens.currentLine.format": "${author},${date}",
-  "gitlens.defaultDateFormat": "YYYY-MM-DD HH:mm",
-  "gitlens.defaultDateShortFormat": "YY-M-D H:m",
-  "gitlens.defaultDateStyle": "relative",
-  "gitlens.defaultGravatarsStyle": "retro",
-  "gitlens.hovers.annotations.over": "annotation",
-  "gitlens.hovers.avatars": false,
-  "gitlens.hovers.detailsMarkdownFormat": "**${author}**, ${ago} *(${date})* \n\n${message}\n\n${commands}",
-  "gitlens.menus": {
-    "editor": false,
-    "editorGroup": {
-      "blame": true,
-      "compare": true
-    },
-    "editorTab": false,
-    "explorer": false,
-    "scmGroup": {
-      "compare": false,
-      "openClose": true,
-      "stash": true,
-      "stashInline": true
-    },
-    "scmItem": {
-      "clipboard": true,
-      "compare": false,
-      "history": false,
-      "remote": false,
-      "stash": true
-    }
-  },
-  "gitlens.recentChanges.highlight.locations": [
-    "gutter",
-    "line",
-    "overview"
-  ],
-  "gitlens.sortBranchesBy": "name:asc",
-  "gitlens.statusBar.alignment": "left",
-  "gitlens.statusBar.dateFormat": "YYYY-MM-DD HH:mm",
-  "gitlens.statusBar.enabled": false,
-  "gitlens.statusBar.format": "${date} (${id}) ${message}",
-  "gitlens.views.commitDescriptionFormat": "${changes • }${author}, ${agoOrDate}",
-  "gitlens.views.commitFileDescriptionFormat": "${directory}${ ← originalPath}",
-  "gitlens.views.commitFileFormat": "${filePath}",
-  "gitlens.views.commitFormat": "${author}>${message}",
-  "gitlens.views.compare.enabled": true,
-  "gitlens.views.compare.location": "scm",
-  "gitlens.views.fileHistory.enabled": true,
-  "gitlens.views.fileHistory.location": "scm",
-  "gitlens.views.lineHistory.enabled": true,
-  "gitlens.views.lineHistory.location": "scm",
-  "gitlens.views.repositories.avatars": false,
-  "gitlens.views.repositories.enabled": true,
-  "gitlens.views.repositories.location": "scm",
-  "gitlens.views.repositories.showBranchComparison": false,
-  "gitlens.views.search.enabled": true,
-  "gitlens.views.search.location": "scm",
-  "gitlens.views.stashDescriptionFormat": "${changes • }${agoOrDate}",
-  "gitlens.views.stashFileDescriptionFormat": "${directory}${ ← originalPath}",
-  "gitlens.views.stashFileFormat": "${filePath}",
-  "gitlens.views.stashFormat": "${author}>${message}",
-  "gitlens.views.statusFileDescriptionFormat": "${directory}${ ← originalPath}",
-  "gitlens.views.statusFileFormat": "${working}${filePath}",
-  "gitmoji.additionalEmojis": [],
-  "gitmoji.onlyUseAdditionalEmojis": false,
-  "gitmoji.outputType": "code",
+  "git.statusLimit": 10000,
   "highlight.decorations": {
     "rangeBehavior": 3
   },
@@ -634,7 +515,7 @@
   "markdown.extension.italic.indicator": "*",
   "markdown.extension.list.indentationSize": "inherit",
   "markdown.extension.print.absoluteImgPath": false,
-  "markdown.extension.syntax.decorations": false,
+  "markdown.extension.theming.decoration.renderCodeSpan": false,
   "markdown.extension.syntax.plainTheme": true,
   "markdown.extension.toc.levels": "2..4",
   "markdown.extension.toc.orderedList": true,
@@ -642,12 +523,13 @@
   "markdown.extension.toc.unorderedList.marker": "*",
   "markdown.preview.breaks": true,
   "markdown.preview.doubleClickToSwitchToEditor": false,
-  "markdown.preview.fontFamily": "'Fira Code','HYQihei 55S'",
+  "markdown.preview.fontFamily": "'Fira Code','HYQihei 55S','Microsoft YaHei'",
   "markdown.preview.lineHeight": 1.4,
   "markdown.styles": [],
-  "markdownExtended.disabledPlugins": "container",
-  "material-icon-theme.activeIconPack": "vue_vuex",
-  "openInApplication.applications": {},
+  "npm.fetchOnlinePackageInfo": false,
+  "openInApplication.applications": {
+    "log": "glogg.exe"
+  },
   "prettier.configPath": ".prettierrc.json",
   "prettier.documentSelectors": [
     "**/*.{json,md,js,ts,css}"
@@ -665,45 +547,63 @@
     "**/out": true,
     "**/target": true
   },
+  "search.followSymlinks": false,
+  "search.maxResults": 10000,
   "search.searchEditor.reusePriorSearchConfiguration": true,
   "search.showLineNumbers": true,
   "search.useReplacePreview": false,
+  "security.workspace.trust.enabled": false,
   "settingsSync.ignoredExtensions": [],
   "settingsSync.ignoredSettings": [
     "-git.path"
   ],
-  "stylelint.enable": true,
-  "stylelint.validate": [
-    "css",
-    "html",
-    "less",
-    "scss"
-  ],
-  "telemetry.enableCrashReporter": false,
-  "telemetry.enableTelemetry": false,
+  "telemetry.telemetryLevel": "off",
+  "terminal.explorerKind": "integrated",
   "terminal.integrated.cursorStyle": "line",
-  "terminal.integrated.fontFamily": "'Fira Code','Sarasa Mono SC',fontawesome",
-  "terminal.integrated.rendererType": "auto",
+  "terminal.integrated.defaultProfile.windows": "powershell",
+  "terminal.integrated.enablePersistentSessions": false,
+  "terminal.integrated.fontFamily": "'Fira Code','FiraCode NF','Sarasa Mono SC',fontawesome",
+  "terminal.integrated.gpuAcceleration": "auto",
+  "terminal.integrated.profiles.windows": {
+    "bash": {
+      "path": "%GIT_HOME%\\bin\\bash.exe",
+      "args": ["--login"],
+      "overrideName": true,
+      "color": "terminal.ansiYellow",
+      "icon": "terminal-bash"
+    },
+    "powershell": {
+      "source": "PowerShell",
+      "overrideName": true,
+      "color": "terminal.ansiBlue",
+      "icon": "terminal-powershell"
+    }
+  },
+  "terminal.integrated.tabs.title": "${process}",
+  "terminal.integrated.tabs.description": "${task}${separator}${local}${separator}${cwdFolder}",
+  "timeline.excludeSources": null,
   "togglequotes.chars": [
     "\"",
     "'"
   ],
   "typescript.format.enable": false,
   "update.enableWindowsBackgroundUpdates": false,
-  "update.mode": "none",
-  "window.menuBarVisibility": "default",
+  "update.mode": "manual",
+  "window.menuBarVisibility": "classic",
   "window.newWindowDimensions": "inherit",
   "window.restoreWindows": "all",
   "window.title": "${dirty}${activeEditorShort}${separator}${rootName}",
   "window.titleBarStyle": "custom",
-  "window.zoomLevel": 0,
   "workbench.activityBar.visible": true,
   "workbench.colorCustomizations": {},
-  "workbench.colorTheme": "One Dark Pro",
+  "workbench.colorTheme": "Nord Light",
+  "workbench.editor.languageDetection": false,
   "workbench.editor.pinnedTabSizing": "compact",
   "workbench.enableExperiments": false,
-  "workbench.iconTheme": "material-icon-theme",
+  "workbench.layoutControl.enabled": false,
   "workbench.settings.editor": "ui",
+  "workbench.settings.enableNaturalLanguageSearch": false,
   "workbench.statusBar.visible": true,
+  "workbench.startupEditor": "welcomePageInEmptyWorkbench",
   "zenMode.hideActivityBar": false
 }
