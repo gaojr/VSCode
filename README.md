@@ -13,6 +13,12 @@ Visual Studio Code 相关
 3. .zip
    - 便携版，解压即可用
    - 不支持自动更新
+4. cli
+   - 命令行工具
+   - 无图形化界面
+
+注意：win7系统需要下载1.70.3及之前的版本，此版本之后都不再支持win7了[^1]
+[^1]: [Visual Studio Code July 2022](https://code.visualstudio.com/updates/v1_70)
 
 ## 文件路径（windows）
 
