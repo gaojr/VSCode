@@ -102,3 +102,24 @@ prettier --list-different "**/*.{ts,js,json,md}"
 # prettier 修复
 prettier --write "**/*.{ts,js,json,md}" --config $APPDATA\Code\User\.prettierrc.json
 ```
+
+## 推荐扩展
+
+- [Bookmarks - Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=alefragnani.Bookmarks)
+- [change-case - Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=wmaurer.change-case)
+- [CodeSnap - Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=adpyke.codesnap)
+- [EditorConfig for VS Code - Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
+- [ESLint - Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+- [Git Graph - Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph)
+- [git-autoconfig - Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=shyykoserhiy.git-autoconfig)
+- [Highlight - Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=fabiospampinato.vscode-highlight)
+- [Markdown All in One - Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)
+- [Markdown Extended - Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=jebbs.markdown-extended)
+- [Markdown Preview Github Styling - Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=bierner.markdown-preview-github-styles)
+- [Markdown Preview Mermaid Support - Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=bierner.markdown-mermaid)
+- [Nord Light - Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=huytd.nord-light)
+- [Open Folder Context Menus for VS Code - Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=chrisdias.vscode-opennewinstance)
+- [Open in Application - Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=fabiospampinato.vscode-open-in-application)
+- [Prettier - Code formatter - Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+- [Toggle Quotes - Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=BriteSnow.vscode-toggle-quotes)
+- [Workspace Cache Clean - Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=MamoruDS.workspace-cacheclean)
